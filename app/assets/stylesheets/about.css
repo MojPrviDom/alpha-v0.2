@@ -1,0 +1,93 @@
+/* 			O NAMA 			*/
+
+
+#inner_o_nama{
+	width: 70%;
+	height: auto;
+	margin: 6em auto 0 auto;
+	text-align: center;
+}
+
+#inner_o_nama h1 {
+	margin-top: 1em;
+}
+
+
+#logo_o_nama {
+	background-color: #2c2c2c;
+	border-radius: 100em;
+	width: 7em;
+	height: 7em;
+	margin: 0 auto;
+	opacity: 0.3;
+}
+
+#logo_o_nama:hover {
+	background-color: #2c2c2c;
+	opacity: 0.25;
+}
+
+#logo_o_nama_inner {	
+	width: 7em;
+	height: 7em;
+	vertical-align: middle;
+	margin: 0 auto;
+	text-align: center;
+	display: table-cell;
+}
+
+
+#logo_o_nama img {
+	width: 20%;
+	height: auto;
+}
+
+#logo_o_nama_outer{
+	width: auto;
+	height: auto;
+}
+
+.lijevi_textbox, .desni_textbox {
+	float: left;
+	text-align: justify;
+	width:47.143%;
+	height: auto;
+	margin-top: 1em;
+}
+
+.lijevi_textbox {
+	margin-right: 2.857%;
+}
+
+#siromastvo {
+	margin-top: 5em;
+	margin-bottom: 5em;
+
+}
+
+#siromastvo img{
+	width: 100%;
+}
+
+
+.clear{
+	clear: both;
+}
+
+
+
+@media screen and (max-width: 1200px ){
+	.lijevi_textbox, .desni_textbox {
+		float: none;
+		text-align: justify;
+		width:100%;
+		
+	}
+	#siromastvo img{
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+
+
+
+}
