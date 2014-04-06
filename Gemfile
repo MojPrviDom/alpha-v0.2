@@ -32,6 +32,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Using for tableless contact model and valiation
+# Read more:https://github.com/cgriego/active_attr
+gem 'active_attr' 
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
