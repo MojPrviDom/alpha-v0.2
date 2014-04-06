@@ -9,18 +9,30 @@
 </head>
 <body>
 
+	<!--<ul id="nav">-->
+	<ul style="background-color: #ddd;">
+		<li> <%= link_to image_tag("icons/home.png",		:alt=> "home"),			root_path %>		</li>
+		<li> <%= link_to image_tag("icons/news.png",		:alt=> "news"),			root_path %>		</li>
+		<li> <%= link_to image_tag("icons/info.png",		:alt=> "about us"),		about_path %>		</li>
+		<li> <%= link_to image_tag("icons/donation.png",	:alt=> "donation"),		donations_path %>	</li>
+		<li> <%= link_to image_tag("icons/volunteer.png",	:alt=> "volunteer"),	volunteer_path %>	</li>
+		<li> <%= link_to image_tag("icons/contact.png",		:alt=> "Contact Us"),	root_path %>		</li>
+	</ul>
+
+
+
 	<div id="container">
 		<%= yield %>
 	</div>
 
 	<div id="facebook_1200">
-		<%= image_tag("F_icon.svg.png", :alt=> "logo") %>
+		<%= image_tag("icons/facebook.png", :alt=> "logo") %>
 	</div>
 
 	<div id="footer">  
 		<%= image_tag("footer/footer.png", :alt=> "logo") %>
 
-	  	<div id="facebook"><%= image_tag("icons/F_icon.svg.png", :alt=> "logo") %></div>
+	  	<div id="facebook"><%= image_tag("icons/facebook.png", :alt=> "logo") %></div>
 
 	 	<p> © Copyright Moj Prvi Dom 2008-2014. All rights reserved.</p>
 	 </div>
