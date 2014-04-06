@@ -1,0 +1,131 @@
+/* 		CONTAC FORM  PAGE  */
+
+
+
+#inner_kontakt {
+	width: 500px;
+	margin: 6em auto 0 auto;
+	text-align: center;
+}
+
+
+
+.name {
+	float: left;
+	width: auto;
+	margin-right: 2em;
+}
+
+.email{
+	float: left;
+	width: auto;
+}
+
+.name input[type="text"], .email input[type="text"] {
+	width:16.855em;
+}
+
+.predmet {
+	width: 100%;
+	clear: both;
+}
+
+.predmet input[type="text"]{
+	width: 100%;
+}
+
+
+.name input[type="text"], .email input[type="text"], .predmet input[type="text"], textarea, input[type="submit"], input[placeholder], textarea[placeholder] {
+	height: 2em;
+	background-color: #f5f5f5;
+	border: 1px solid #e1e1e1;
+	font-family: verdana;
+	color:#2f3034;
+	padding-left: 4px;
+	margin-bottom: 1.5em;
+}
+
+.name input[type="text"]:focus, .email input[type="text"]:focus, .predmet input[type="text"]:focus, textarea:focus, input[type="submit"]:active {
+	border:1px solid #b1b1b1;
+}
+
+
+textarea {
+	min-height: 10em;
+	max-height: 20em;
+	max-width: 100%;
+	min-width: 100%;
+}
+
+input[type="submit"] {
+	width: 5em;
+}
+
+#inner p, #inner h1 {
+	text-align: center;
+}
+
+#inner h1 {
+	margin-top: 1em;
+}
+
+.broj {
+	font-size: 22px;
+}
+
+.poziv_donirate {
+	font-size: 9px;
+	font-style: italic;
+	color:#b1b1b1;
+}
+
+#logo_kontakt {
+	background-color: #2c2c2c;
+	border-radius: 100em;
+	width: 7em;
+	height: 7em;
+	margin: 0 auto;
+	opacity: 0.3;
+}
+
+#logo_kontakt:hover {
+	background-color: #2c2c2c;
+	opacity: 0.25;
+}
+
+#logo_kontakt_inner {	
+	width: 7em;
+	height: 7em;
+	vertical-align: middle;
+	margin: 0 auto;
+	text-align: center;
+	display: table-cell;
+}
+
+
+#logo_kontakt img {
+	width: 40%;
+	height: auto;
+}
+
+#logo_kontakt_outer{
+	width: auto;
+	height: auto;
+}
+
+
+@media screen  and (max-width:575px) {
+	#inner_kontakt {
+		width: 100%;
+	}
+
+
+	.name input[type="text"], .name{
+	width: 100%;
+	}	
+
+	.email input[type="text"], .email{
+	width:100%;
+	}
+}
+

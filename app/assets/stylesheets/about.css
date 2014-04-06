@@ -1,16 +1,11 @@
 /* 			O NAMA 			*/
 
 
-#inner_o_nama{
-	width: 70%;
-	height: auto;
-	margin: 6em auto 0 auto;
-	text-align: center;
-}
-
 #inner_o_nama h1 {
 	margin-top: 1em;
+
 }
+
 
 
 #logo_o_nama {
@@ -86,7 +81,7 @@
 	#siromastvo img{
 	margin-top: 5em;
 	margin-bottom: 5em;
-}
+	}
 
 
 

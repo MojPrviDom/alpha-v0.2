@@ -1,22 +1,30 @@
+* {
+	margin:0;
+	padding:0;
+}
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+
 
 body {
 	font-size:  14px;
-	*background-color: #fff;
+	/*background-color: #fff;*/
 	background-repeat: repeat-x;
 	width: 100%;
 	height: 100%;
-	font-family:"Open Sans",sans-serif;
+	font-family: "Open Sans",sans-serif;
 	line-height: 21px;
 
 
 }
 
+
 #container {
-	width: 80%;
+	width: 70%;
 	height: auto;
-	margin: 6em auto 0 auto;
-	text-align: center
+	*background-color: blue;
+	margin: 0 auto;
 }
 
 
@@ -26,7 +34,7 @@ body {
 #footer {
 	background: #2c2c2c; 
 	-webkit-box-shadow: inset 0 1em 1em -0.5em rgba(0,0,0,0.5);
-	height:18.28em; 
+	height:auto; 
 	background-repeat:no-repeat;
 	text-align: center;
 	box-shadow: inset 0 1em 1em -0.5em rgba(0,0,0,0.5);
@@ -39,12 +47,16 @@ body {
 	color: #c1c1c1;
 }
 
+#footer_img img {
+	min-width: 50%;
+	height:auto;
+}
+
 #facebook {
-	height: 18.28em;
+	height: 18.5em;
 	width: auto;
 	background-color: #3b5998;
-	right: 0;
-	position: absolute;
+	float: right;
 	margin-top: -12.6em;
 }
 
@@ -93,13 +105,13 @@ body {
 	#footer {
 		margin-top: 0;
 	}
-}
 
-
-@media screen and (max-width: 490px ){
 	#container {
-		width: 95%;
-		
+		width: 90%;
 	}
 
+	#footer_img img {
+	width: 98%;
+	height:auto;
+	}
 }

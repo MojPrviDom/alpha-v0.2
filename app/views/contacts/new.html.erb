@@ -2,7 +2,7 @@
     <div id="logo_kontakt_outer">
       <div id="logo_kontakt" >
         <div id="logo_kontakt_inner">
-        <%= image_tag("icons/email_big.png", :alt=> "kontakt") %>
+        <%= image_tag("email_big.png", :alt=> "kontakt") %>
        </div>
       </div>
     </div>
@@ -16,9 +16,11 @@
 <br/><br/>
 <p>ILI</p>
 <p>SLANJEM E-MAILA</p>
+
 <% if flash[:notice] %>
 <div class="notice"><h2><%= flash[:notice] %></h2></div>
 <% end %>
+
 <%= form_for @contact do |f| %>
 
   <% if @contact.errors.any? %>
@@ -31,25 +33,21 @@
       </ul>
     </div>
   <% end %>
-<div id="left">
-  <div class="field2">
-    <br />
-    <%= f.text_field :name, placeholder: 'Ime i Prezime' %>
+
+<br/>
+  <div class="name">
+        <%= f.text_field :name, placeholder: 'Ime i Prezime' %>
   </div>
-  <div class="field2">
-    <br />
-    <%= f.text_field :email, placeholder: 'Email' %>
+  <div class="email">
+        <%= f.text_field :email, placeholder: 'Email' %>
+
   </div>
-</div>
-  <div class="field3">
-    <br />
-    <%= f.text_field :subject, placeholder: 'Predmet' %>
+  <div class="predmet">
+        <%= f.text_field :subject, placeholder: 'Predmet' %>
   </div>
-  <div class="field4">
-    <br />
+  <div class="sadrzaj">
     <%= f.text_area :content, :rows => 5, placeholder: 'Sadržaj' %>
   </div>
-  <br/>
   <div class="actions"><%= f.submit "Pošalji" %></div>
 
 <% end %>
