@@ -1,8 +1,10 @@
 MojPrviDomV2::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/about"
-  get "static_pages/donations"
-  get "static_pages/volunteer"
+  #get "static_pages/home"
+  get   "about"       => "static_pages#about",      as: :about
+  get   "donations"   => "static_pages#donations",  as: :donations
+  get   "volunteer"   => "static_pages#volunteer",  as: :volunteer
+
+  root  "static_pages#home"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
