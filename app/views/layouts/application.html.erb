@@ -3,12 +3,27 @@
 <head>
   <title>MojPrviDomV2</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "main" %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+	<div id="container">
+		<%= yield %>
+	</div>
+
+	<div id="facebook_1200">
+		<%= image_tag("F_icon.svg.png", :alt=> "logo") %>
+	</div>
+
+	<div id="footer">  
+		<%= image_tag("footer/footer.png", :alt=> "logo") %>
+
+	  	<div id="facebook"><%= image_tag("icons/F_icon.svg.png", :alt=> "logo") %></div>
+
+	 	<p> © Copyright Moj Prvi Dom 2008-2014. All rights reserved.</p>
+	 </div>
 
 </body>
 </html>

@@ -1,0 +1,105 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+	font-size:  14px;
+	*background-color: #fff;
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 100%;
+	font-family:"Open Sans",sans-serif;
+	line-height: 21px;
+
+
+}
+
+#container {
+	width: 80%;
+	height: auto;
+	margin: 6em auto 0 auto;
+	text-align: center
+}
+
+
+/* 		FOOTER    */
+
+
+#footer {
+	background: #2c2c2c; 
+	-webkit-box-shadow: inset 0 1em 1em -0.5em rgba(0,0,0,0.5);
+	height:18.28em; 
+	background-repeat:no-repeat;
+	text-align: center;
+	box-shadow: inset 0 1em 1em -0.5em rgba(0,0,0,0.5);
+	clear: both;
+	margin-top: 3em;
+}
+
+#footer p {
+	margin-top:2.2em;
+	color: #c1c1c1;
+}
+
+#facebook {
+	height: 18.28em;
+	width: auto;
+	background-color: #3b5998;
+	right: 0;
+	position: absolute;
+	margin-top: -12.6em;
+}
+
+#facebook_1200 {
+	display: none;
+}
+
+#facebook img {
+	height: 8em;
+	width: auto;
+	margin-top: 5%;
+}
+
+#facebook:active, #facebook:hover {
+	background-color: #4264aa;
+}
+
+
+
+/*  	FOOTER RESPONSIVE  */
+
+@media screen and (max-width: 1200px ){
+	#facebook_1200 {
+		display: inline-block;
+		width: 100%;
+		height: 5em;
+		background-color: #3b5998;
+		margin-top: 8em;
+	}
+
+	#facebook_1200 img {
+		height: 4em;
+		width: auto;
+		margin-top: 0.3%;
+		float: right;
+	}
+
+	#facebook_1200:active, 	#facebook_1200:hover {
+		background-color: #4264aa;
+	}
+
+	#facebook {
+		display: none;
+	}
+
+	#footer {
+		margin-top: 0;
+	}
+}
+
+
+@media screen and (max-width: 490px ){
+	#container {
+		width: 95%;
+		
+	}
+
+}
