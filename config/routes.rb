@@ -1,10 +1,8 @@
 MojPrviDomV2::Application.routes.draw do
-  get "contacts/new"
-  get "contacts/create"
-  #get "static_pages/home"
-  get   "about"       => "static_pages#about",      as: :about
-  get   "donations"   => "static_pages#donations",  as: :donations
-  get   "volunteer"   => "static_pages#volunteer",  as: :volunteer
+  get   "contact"     =>  "contacts#new",            as: :contact
+  get   "about"       =>  "static_pages#about",      as: :about
+  get   "donations"   =>  "static_pages#donations",  as: :donations
+  get   "volunteer"   =>  "static_pages#volunteer",  as: :volunteer
 
   root  "static_pages#home"
   # The priority is based upon order of creation: first created -> highest priority.
