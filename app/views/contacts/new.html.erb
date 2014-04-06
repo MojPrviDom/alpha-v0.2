@@ -1,9 +1,29 @@
-<h1>Contact Us</h1>
+<div id="inner_kontakt">
+    <div id="logo_kontakt_outer">
+      <div id="logo_kontakt" >
+        <div id="logo_kontakt_inner">
+        <%= image_tag("icons/email_big.png", :alt=> "kontakt") %>
+       </div>
+      </div>
+    </div>
+<h1>KONTAKT</h1>
 
+<p>Sve informacije u vezi <b>Centar "Moj Prvi Dom"</b> mogu se dobiti </p><br/>
+<p>POZIVOM NA BROJ</p>
+<p class="broj">060 -30- 50- 53</p>
+<p class="poziv_donirate">Pozivom donirate<br>
+0,60 kn/min, fik. 1,78 kn/min, mob. 2,98 kn/min</p>
+<br/><br/>
+<p>ILI</p>
+<p>SLANJEM E-MAILA</p>
+<% if flash[:notice] %>
+<div class="notice"><h2><%= flash[:notice] %></h2></div>
+<% end %>
 <%= form_for @contact do |f| %>
+
   <% if @contact.errors.any? %>
     <div class="error_messages">
-      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this message from being saved:</h2>
+      <h2>oops... izgleda da nešto ne valja sa unešenim podacima</h2>
       <ul>
       <% @contact.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -11,20 +31,29 @@
       </ul>
     </div>
   <% end %>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+<div id="left">
+  <div class="field2">
+    <br />
+    <%= f.text_field :name, placeholder: 'Ime i Prezime' %>
   </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-    <div class="field">
-    <%= f.label :subject %><br />
-    <%= f.text_field :subject %>
+  <div class="field2">
+    <br />
+    <%= f.text_field :email, placeholder: 'Email' %>
   </div>
-  <div class="field">
-    <%= f.label :content, "Message" %><br />
-    <%= f.text_area :content %>
+</div>
+  <div class="field3">
+    <br />
+    <%= f.text_field :subject, placeholder: 'Predmet' %>
   </div>
-  <div class="actions"><%= f.submit "Send Message" %></div>
+  <div class="field4">
+    <br />
+    <%= f.text_area :content, :rows => 5, placeholder: 'Sadržaj' %>
+  </div>
+  <br/>
+  <div class="actions"><%= f.submit "Pošalji" %></div>
+
 <% end %>
+
+
+</div>
+

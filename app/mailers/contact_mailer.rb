@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default from: "contact@mojprvidom.hr"
+   default from: "from@example.com"
   default to: ENV["GMAIL_USERNAME"]
 
   def new_email(contact)
