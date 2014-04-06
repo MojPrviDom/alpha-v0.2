@@ -1,4 +1,6 @@
 MojPrviDomV2::Application.routes.draw do
+  get "contacts/new"
+  get "contacts/create"
   #get "static_pages/home"
   get   "about"       => "static_pages#about",      as: :about
   get   "donations"   => "static_pages#donations",  as: :donations
