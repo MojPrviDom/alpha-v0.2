@@ -9,7 +9,7 @@
 <body>
 
 	<!--<ul id="nav">-->
-	<ul id="nav">
+	<ul id="nav" style="position:fixed;">
 		<li> <%= link_to image_tag("icons/home.png",		:alt=> "home"),			root_path %>		</li>
 		<li> <%= link_to image_tag("icons/news.png",		:alt=> "news"),			root_path %>		</li>
 		<li> <%= link_to image_tag("icons/info.png",		:alt=> "about us"),		about_path %>		</li>
@@ -24,17 +24,21 @@
 		<%= yield %>
 	</div>
 
-	<div id="facebook_1200"><%= image_tag("icons/facebook.png", :alt=> "logo") %></div>
+
+
+	<br>
+	<br>
+	<div id="facebook_1200"><p>Pratite nas i na drustvenoj mreži</p><%= image_tag("icons/facebook.png", :alt=> "logo") %></div>
 
 	<div id="footer" >
 	  
-	<div id="footer_img"><%= image_tag("footer/footer.png", :alt=> "logo") %></div>
-	<div id="facebook"><%= image_tag("icons/facebook.png", :alt=> "logo") %></div>
+		<div id="footer_img"><%= image_tag("footer/footer.png", :alt=> "logo") %></div>
+		<div id="facebook"><%= image_tag("icons/facebook.png", :alt=> "logo") %></div>
 
 	  
-	  <p> © Copyright Moj Prvi Dom 2008-2014. All rights reserved.</p>
-	  <br/>
-	      
+		<p> © Copyright Moj Prvi Dom 2008-2014. All rights reserved.</p>
+		<br/>
+	      <div id="clear"></div>
 	       
 
 	</div>

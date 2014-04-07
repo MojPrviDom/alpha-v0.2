@@ -5,16 +5,14 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-
-
 body {
-	font-size:  14px;
+	font-size:  20px;
 	/*background-color: #fff;*/
 	background-repeat: repeat-x;
 	width: 100%;
 	height: 100%;
 	font-family: "Open Sans",sans-serif;
-	line-height: 21px;
+	line-height: 34.8px;
 
 
 }
@@ -23,7 +21,6 @@ body {
 #container {
 	width: 70%;
 	height: auto;
-	*background-color: blue;
 	margin: 0 auto;
 }
 
@@ -39,25 +36,34 @@ body {
 	text-align: center;
 	box-shadow: inset 0 1em 1em -0.5em rgba(0,0,0,0.5);
 	clear: both;
-	margin-top: 3em;
+	
 }
 
 #footer p {
 	margin-top:2.2em;
 	color: #c1c1c1;
+	float: left;
+	width: 92%;
 }
 
-#footer_img img {
+#footer_img {
 	min-width: 50%;
+	width: 92%;
 	height:auto;
+	float: left;
+	display: inline-block;
+	text-align: center;
+}
+
+#clear{
+	clear: both;
 }
 
 #facebook {
-	height: 18.5em;
-	width: auto;
+	height: 14em;
+	width: 8%;
 	background-color: #3b5998;
 	float: right;
-	margin-top: -12.6em;
 }
 
 #facebook_1200 {
@@ -65,8 +71,8 @@ body {
 }
 
 #facebook img {
-	height: 8em;
-	width: auto;
+	height: auto;
+	width: 100%;
 	margin-top: 5%;
 }
 
@@ -79,39 +85,58 @@ body {
 /*  	FOOTER RESPONSIVE  */
 
 @media screen and (max-width: 1200px ){
-	#facebook_1200 {
-		display: inline-block;
-		width: 100%;
-		height: 5em;
-		background-color: #3b5998;
-		margin-top: 8em;
-	}
-
-	#facebook_1200 img {
-		height: 4em;
-		width: auto;
-		margin-top: 0.3%;
-		float: right;
-	}
-
-	#facebook_1200:active, 	#facebook_1200:hover {
-		background-color: #4264aa;
-	}
-
-	#facebook {
-		display: none;
-	}
-
-	#footer {
-		margin-top: 0;
+	body {
+		font-size: 16px;
 	}
 
 	#container {
 		width: 90%;
 	}
 
-	#footer_img img {
-	width: 98%;
-	height:auto;
+	#footer {
+		margin-top: 0;
 	}
+
+	#footer_img  {
+		width: 100%;
+		height:auto;
+	}
+
+	#footer p {
+		width: 100%;
+	}
+
+	#facebook {
+		display: none;
+	}
+
+	#facebook_1200 {
+		display: inline-block;
+		width: 100%;
+		height: 5em;
+		background-color: #3b5998;
+		margin-bottom: -1em;
+	}
+
+	#facebook_1200 img {
+		width: auto;
+		height: 90%;
+		float: right;
+	}
+
+
+	#facebook_1200:active, 	#facebook_1200:hover {
+		background-color: #4264aa;
+	}
+
+	
+	#facebook_1200 p {
+		float: left;
+		color: #fff;
+		margin: 2.5% 0 0 2.5%;
+		font-size: 20px;
+	}
+	
+
+
 }
