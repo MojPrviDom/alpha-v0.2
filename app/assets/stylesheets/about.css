@@ -120,6 +120,13 @@
 
 }
 
+.bottom_quote img{
+	float: right;
+	width: 10%;
+	height: auto;
+	
+}
+
 @media screen and (max-width: 1200px ){
 	.lijevi_textbox, .desni_textbox {
 		float: none;
@@ -135,6 +142,19 @@
 	.song_lyric_box {
 		width: 100%;
 		height: auto;
-		padding: 1.5em 0.5em 1.5em 0.5em;
+		padding: 1.5em 0em 1.5em 0em;
 	}
+	.song_lyric_box img {
+	float: none;
+	width: 10%;
+}
+.song_lyric_box p{
+	color: #525252;
+	line-height: 38px;
+	text-align: justify;
+	float: none;
+	width: 84%;
+	margin-left: 6%;
+}
+
 }

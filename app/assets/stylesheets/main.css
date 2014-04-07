@@ -44,7 +44,7 @@ body {
 
 #footer p {
 	margin-top:2.2em;
-	color: #c1c1c1;
+	color: #929292;
 	float: left;
 	width: 92%;
 }
@@ -58,6 +58,9 @@ body {
 	text-align: center;
 }
 
+#footer_img img {
+	width: 60%;
+}
 #clear{
 	clear: both;
 }
@@ -100,12 +103,16 @@ body {
 		margin-top: 0;
 	}
 
-	#footer_img  {
+	#footer_img img {
 		width: 100%;
 		height:auto;
 	}
 
 	#footer p {
+		width: 100%;
+	}
+
+	#footer_img {
 		width: 100%;
 	}
 
@@ -116,14 +123,14 @@ body {
 	#facebook_1200 {
 		display: inline-block;
 		width: 100%;
-		height: 5em;
+		height: auto;
 		background-color: #3b5998;
 		margin-bottom: -1em;
 	}
 
 	#facebook_1200 img {
-		width: auto;
-		height: 90%;
+		width: 5em;
+		height:auto;
 		float: right;
 	}
 
@@ -136,7 +143,7 @@ body {
 	#facebook_1200 p {
 		float: left;
 		color: #fff;
-		margin: 2.5% 0 0 2.5%;
+		margin: 2.5% 0 0.5% 2.5%;
 		font-size: 20px;
 	}
 	
