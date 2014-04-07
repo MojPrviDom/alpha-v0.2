@@ -21,6 +21,8 @@ module MojPrviDomV2
     # config.i18n.default_locale = :de
      # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    # set encoding
+    config.encoding = "utf-8"
     # The code opens the config/local_env.yml file, reads each key/value pair, and sets environment variables.
     config.before_configuration do
         env_file = File.join(Rails.root, 'config', 'local_env.yml')
