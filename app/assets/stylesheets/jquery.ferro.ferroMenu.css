@@ -18,6 +18,7 @@
     line-height:60px;
     vertical-align:middle;
     text-decoration:none; 
+
 }
 
 .ferromenu-controller .label{
@@ -44,11 +45,12 @@
 #nav li,#nav2 li{
 	color:#f2f2f2;
 	text-align:center;
+	margin-top: -6.5em;
 	
 }
 
 #nav li a,#nav2 li a{
-	font-size:20px;
+	font-size:10px;
 	color:#f2f2f2;
 	text-decoration:none;
 	width:40px;
@@ -56,7 +58,7 @@
 	-webkit-border-radius:50%;
 	border-radius:50%;
 	background: #45484d;
-	line-height:40px;
+	line-height:50px;
 	display:block;
 }
 
