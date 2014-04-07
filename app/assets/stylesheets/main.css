@@ -16,7 +16,9 @@ body {
 
 
 }
-
+ h3 {
+ 	font-size: 28px;
+ }
 
 #container {
 	width: 70%;

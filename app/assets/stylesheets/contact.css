@@ -9,11 +9,10 @@
 }
 
 
-
 .name {
 	float: left;
 	width: auto;
-	margin-right: 2em;
+	margin-right: 1.5em;
 }
 
 .email{
@@ -22,30 +21,31 @@
 }
 
 .name input[type="text"], .email input[type="text"] {
-	width:16.855em;
+	width:16.35em;
 }
 
-.predmet {
+.subject {
 	width: 100%;
 	clear: both;
 }
 
-.predmet input[type="text"]{
-	width: 100%;
+.subject input[type="text"]{
+	width: 98.85%;
 }
 
 
-.name input[type="text"], .email input[type="text"], .predmet input[type="text"], textarea, input[type="submit"], input[placeholder], textarea[placeholder] {
+.name input[type="text"], .email input[type="text"], .subject input[type="text"], textarea, input[type="submit"], input[placeholder], textarea[placeholder] {
 	height: 2em;
 	background-color: #f5f5f5;
 	border: 1px solid #e1e1e1;
-	font-family: verdana;
+	font-family: verdana !important;
 	color:#2f3034;
-	padding-left: 4px;
 	margin-bottom: 1.5em;
+	font-size: 14px;
+	padding-left: 4px;
 }
 
-.name input[type="text"]:focus, .email input[type="text"]:focus, .predmet input[type="text"]:focus, textarea:focus, input[type="submit"]:active {
+.name input[type="text"]:focus, .email input[type="text"]:focus, .subject input[type="text"]:focus, textarea:focus, input[type="submit"]:active {
 	border:1px solid #b1b1b1;
 }
 
@@ -53,8 +53,8 @@
 textarea {
 	min-height: 10em;
 	max-height: 20em;
-	max-width: 100%;
-	min-width: 100%;
+	width: 98.85%;
+	width: 98.85%;
 }
 
 input[type="submit"] {
@@ -82,8 +82,8 @@ input[type="submit"] {
 #logo_kontakt {
 	background-color: #2c2c2c;
 	border-radius: 100em;
-	width: 7em;
-	height: 7em;
+	width: 5em;
+	height: 5em;
 	margin: 0 auto;
 	opacity: 0.3;
 }
@@ -94,8 +94,8 @@ input[type="submit"] {
 }
 
 #logo_kontakt_inner {	
-	width: 7em;
-	height: 7em;
+	width: 5em;
+	height: 5em;
 	vertical-align: middle;
 	margin: 0 auto;
 	text-align: center;
