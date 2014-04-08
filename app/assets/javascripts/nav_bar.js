@@ -4,7 +4,7 @@ var load_navbar = function(){
         delay       : 50,
         rotation    : 360,
         margin      : 20,
-        drag		: true,
+        drag		: false,
         opened		: true
     });	
 }
