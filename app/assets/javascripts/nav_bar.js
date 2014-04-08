@@ -11,3 +11,4 @@ var load_navbar = function(){
 
 $(document).ready(load_navbar);
 $(document).on('page:load', load_navbar);
+$(document).on('page:change', load_navbar);
