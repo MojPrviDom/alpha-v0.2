@@ -1,4 +1,5 @@
 /* 			O NAMA 			*/
+
 #inner_about_us {
 	margin: 6em auto 0 auto;
 }
@@ -10,15 +11,15 @@
 
 #inner_about_us h3  {
 	text-align: center;
-	font-size: 32px;
-
+	font-size: 40px;
+	
 }
 
 #inner_about_us h4 {
 	text-align: left;
 	font-size: 28px;
-	font-weight: normal;
-	color: #595959;
+	font-weight: bold;
+	color: #494949;
 }
 
 #logo_about_us {
@@ -57,7 +58,7 @@
 
 .lijevi_textbox, .desni_textbox {
 	float: left;
-	text-align:left;
+	text-align:justify;
 	width:46.143%;
 	height: auto;
 }
