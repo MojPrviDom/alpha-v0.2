@@ -4,10 +4,11 @@ var load_navbar = function(){
         delay       : 50,
         rotation    : 360,
         margin      : 20,
-        drag		: true,
+        drag		: false,
         opened		: true
     });	
 }
 
 $(document).ready(load_navbar);
 $(document).on('page:load', load_navbar);
+$(document).on('page:change', load_navbar);
