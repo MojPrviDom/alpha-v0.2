@@ -86,7 +86,7 @@
 .song_lyric_box {
 	width:32em;
 	height: auto;
-	background-color:#ececec; 
+	background-color:#fff; 
 	display: inline-block;
 	border: 2px solid #d6d6d6;
 }
@@ -127,6 +127,70 @@
 	height: auto;
 	
 }
+
+
+.donate_and_volonteer {
+	width: 100%;
+	height:auto;
+	margin: 2em 0 2em 0;
+	background-color: yellow;
+}
+
+.donate, .volonteer {
+	width: 50%;
+	height: auto;
+	float: left;
+	text-align: center;
+	  background-color: blue;
+
+
+}
+
+.donation_button, .volonteer_button {
+    float: left;
+    height: auto;
+    width: 50%;
+    margin: 0 10px 18px 0;
+    line-height: 2.5em;
+    font-weight: bold;
+    border:1px solid #b2b1b1;
+    text-align: center;
+    font-size: 26px;
+    display: inline-block;
+  
+
+
+    }
+.volonteer {
+	background-color: red;
+}
+
+.donation_button,
+.donation_button:hover,
+.donation_button:visited,
+.volonteer_button,
+.volonteer_button:hover,
+.volonteer_button:visited {
+    color: #555;
+    border-bottom: 6px solid #b2b1b1; 
+    border-radius: 0.4em;
+    text-shadow: 0px 1px 0px #fafafa;
+    background: #eee;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#e2e2e2));
+    background: -moz-linear-gradient(top,  #eee,  #e2e2e2);
+    box-shadow: inset 1px 1px 0 #f5f5f5;
+}
+ 
+
+.donation_button:hover,
+.volonteer_button:hover {
+    background: #e2e2e2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e2e2e2), to(#eee));
+    background: -moz-linear-gradient(top,  #e2e2e2,  #eee);
+}
+
+
+
 
 @media screen and (max-width: 1200px ){
 	.lijevi_textbox, .desni_textbox {

@@ -7,12 +7,30 @@
 	<meta charset="UTF-8">
   <title>MojPrviDomV2</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+ 
 </head>
 <body>
+	
+		<div class="navigation_box">
+			<div class="navigation_box_links">
+			<div class="logo"><%= link_to image_tag("logo.png",		:alt=> "logo"),			root_path %></div>
+				<ul class="nav">
+					<!---->
+					<li>Početna</li>
+					<li>Novosti</li>
+					<li>O nama</li>
+					<li>Donacije</li>
+					<li>Volontiranje</li>
+					<li>Kontakt</li>
+				</ul>
+			</div>
+		</div>
+	<div class="navigation_logo"><%= image_tag("navigation/Mojprvidom_navigacija.svg", :alt=> "navigation") %>	</div>
 
-	<!--<ul id="nav">-->
+	<!--<ul id="nav">
 
 	<ul id="nav" style="position:fixed;" >
 		<li> <%= link_to image_tag("icons/home.png",		:alt=> "home"),			root_path %>		</li>
@@ -21,8 +39,8 @@
 		<li> <%= link_to image_tag("icons/donation.png",	:alt=> "donation"),		donations_path %>	</li>
 		<li> <%= link_to image_tag("icons/volunteer.png",	:alt=> "volunteer"),	volunteer_path %>	</li>
 		<li> <%= link_to image_tag("icons/contact.png",		:alt=> "Contact Us"),	new_contact_path %>	</li>
-	</ul>
-
+	</ul>-->
+	
 
 
 <div id="container">
@@ -43,12 +61,18 @@
 
 	  
 		<p> © Copyright Moj Prvi Dom 2008-2014. All rights reserved.</p>
-		<br/>
+		
 	      <div id="clear"></div>
 	       
 
 	</div>
 
+<script>
+	$( ".navigation_logo" ).click(function() {							// Navigation bar toogle
+		$( ".navigation_box" ).slideToggle( "slow", function() {			// When clicked navigation bar slides down or up
+		});
+	});
+</script>
 
 </body>
 </html>

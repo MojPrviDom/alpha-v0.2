@@ -11,7 +11,8 @@ body {
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 34.8px;
-	background-color: #e2e2e2;
+	background-color: #F3F1EA;
+	border-top: 0.3em solid #fff;
 
 
 }
@@ -23,6 +24,59 @@ body {
 	width: 70%;
 	height: auto;
 	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* 		NAVIGATION 	*/
+
+
+
+.navigation_box {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	line-height: 5em;
+	display: none;
+}
+
+.navigation_box_links {
+	width: 80%;
+	height:5em;
+	margin: 0 auto;
+}
+
+.nav {
+	width: 100%;
+	text-align: center;
+}
+
+.nav li {
+	display: inline-block;
+	margin-right: 2em;
+}
+
+.logo img{
+	float: left;
+	width: auto;
+	height: 4.2em;
+	margin-top: 0.3em;
+	margin-right: 2em;
+}
+.navigation_logo {
+	text-align: center;
+	width: 18em;
+	height: auto;
+	float: right;
+	margin-right: 2em;
+}
+
+.navigation_logo img {
+	width: 99%;
+	height: auto;
 }
 
 
@@ -65,7 +119,8 @@ body {
 }
 
 #facebook {
-	height: 14em;
+
+	height: 100%;
 	width: 8%;
 	background-color: #3b5998;
 	float: right;
@@ -96,6 +151,14 @@ body {
 
 	#container {
 		width: 90%;
+	}
+
+	.navigation_box_links {
+		width: 100%;
+	}
+
+	.logo img {
+		margin-left: 1em;
 	}
 
 	#footer {
@@ -148,5 +211,44 @@ body {
 	}
 	
 
+
+}
+
+@media screen and (max-width:730px) {
+	.navigation_box {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	line-height: 3em;
+
+
+	}
+
+	.navigation_box_links {
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+
+	}
+
+	.nav {
+		width: 100%;
+		text-align: center;
+	}
+
+	.nav li {
+		display:block;
+
+	}
+
+
+	.logo img{
+		display: none;
+	}
+
+	.navigation_logo {
+		float: none;
+		margin: 0 auto;
+	}
 
 }
