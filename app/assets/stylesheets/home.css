@@ -1,0 +1,44 @@
+.home_shower{
+  float:left;
+  width: 90%;
+  height: 100%;
+overflow: hidden;
+}
+.arrow{
+  float: left;
+  width: 5%;
+  height: 100%;
+  text-align: center;
+  font-size: 50px;
+
+
+}
+
+.home_holder {
+  width: 300%;
+  height: 100%;
+  
+  overflow: hidden;
+}
+
+.home_slide {
+  float: left;
+  width: 33.33%;
+  height: 500px;
+  font-size: 50px;
+  font-family: "Roboto Slab", sans-serif;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+#slide-0{
+  
+}
+
+#slide-1{
+  
+}
+#slide-2{
+ 
+}
+

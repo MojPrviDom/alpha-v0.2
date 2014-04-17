@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400&subset=latin-ext);
 * {
 	margin:0;
 	padding:0;
@@ -24,6 +25,8 @@ body {
 	width: 70%;
 	height: auto;
 	margin: 0 auto;
+	margin-top: 200px;
+	
 }
 
 a {
