@@ -4,6 +4,14 @@
 #inner_about_us {
 	margin: 6em auto 0 auto;
 }
+#inner_about_us a:link, a:visited{
+	font-family: "Bitter", sans-serif;
+	font-weight: bold;
+	color:#222;
+}
+#inner_about_us a:hover{
+	background-color:yellow;
+}
 
 #inner_about_us h1 {
 	margin-top: 1em;
@@ -39,6 +47,12 @@
 	height: auto;
 }
 .about_ul li{
+	margin-bottom: 20px;
+	list-style-type: none;
+	
+}
+.biro_ul li{
+	margin-bottom: 10px;
 	list-style-type: none;
 	
 }
@@ -51,8 +65,8 @@
   font-family: "Bitter", sans-serif;
 }
 
-.about_highlight mark {
- background-color: orange;
+.about_highlight mark, .content mark {
+ background-color: white;
  color: #222;
 }
 
@@ -66,7 +80,6 @@
 	margin: 0 auto;
 }
 .textbox {
-	text-align:justify;
 	font-size: 25px;
 }
 
