@@ -19,28 +19,17 @@
 			<div class="logo"><%= link_to image_tag("logo.png",		:alt=> "logo"),			root_path %></div>
 				<ul class="nav">
 					<!---->
-					<li>Početna</li>
-					<li>Novosti</li>
-					<li>O nama</li>
-					<li>Donacije</li>
-					<li>Volontiranje</li>
-					<li>Kontakt</li>
+					<li> <%= link_to "Početna",			root_path %>		</li>
+					<li> <%= link_to "Novosti",			root_path %>		</li>
+					<li> <%= link_to "O nama",			about_path %>		</li>
+					<li> <%= link_to "Donacija",		donations_path %>	</li>
+					<li> <%= link_to "Volontiranje",	volunteer_path %>	</li>
+					<li> <%= link_to "Kontakt",			new_contact_path %>	</li>
 				</ul>
 			</div>
 		</div>
 	<div class="navigation_logo"><%= image_tag("navigation/Mojprvidom_navigacija.svg", :alt=> "navigation") %>	</div>
 
-	<!--<ul id="nav">
-
-	<ul id="nav" style="position:fixed;" >
-		<li> <%= link_to image_tag("icons/home.png",		:alt=> "home"),			root_path %>		</li>
-		<li> <%= link_to image_tag("icons/news.png",		:alt=> "news"),			root_path %>		</li>
-		<li> <%= link_to image_tag("icons/info.png",		:alt=> "about us"),		about_path %>		</li>
-		<li> <%= link_to image_tag("icons/donation.png",	:alt=> "donation"),		donations_path %>	</li>
-		<li> <%= link_to image_tag("icons/volunteer.png",	:alt=> "volunteer"),	volunteer_path %>	</li>
-		<li> <%= link_to image_tag("icons/contact.png",		:alt=> "Contact Us"),	new_contact_path %>	</li>
-	</ul>-->
-	
 
 
 <div id="container">
