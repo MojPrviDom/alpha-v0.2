@@ -11,33 +11,28 @@ body {
 	width: 100%;
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
-	*line-height: 34.8px;
+	line-height: 34.8px;
 	background-color: #F3F1EA;
 	border-top: 0.3em solid #fff;
+	background-image: url(/assets/footer/brown-bckg.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
 
 
 }
- h3 {
- 	font-size: 28px;
- }
+ h3 { font-size: 28px; }
 
 #container {
 	width: 70%;
 	height: auto;
 	margin: 0 auto;
 	margin-top: 200px;
-	
 }
 
-a {
-	text-decoration: none;
-}
+a { text-decoration: none;}
 
 
 /* 		NAVIGATION 	*/
-
-
-
 .navigation_box {
 	width: 100%;
 	height: auto;
@@ -84,99 +79,26 @@ a {
 
 
 /* 		FOOTER    */
-
-
 .footer {
  	width: 100%;
- 	height: auto;
- 	text-align: center;
-
+ 	height: 350px;
+ 	text-align: right;
+ 	background-image: url(/assets/footer/Footer.svg);
+ 	background-repeat: no-repeat;
+ 	background-position: center bottom;
 	
 }
 
-.top {
-	width: auto;
-	height: 193.56px;
-}
 
-.top img, .bottom img{
-	width: auto;
-	height: 100%;
-}
-
-.bottom {
-	width: auto;
-	height: 138.7px;
-	background-color: #756754;
-}
 /*  	FOOTER RESPONSIVE  */
-
 @media screen and (max-width: 1200px ){
-	body {
-		font-size: 16px;
-	}
+	body { font-size: 16px;	}
 
-	#container {
-		width: 90%;
-	}
+	#container { width: 90%; }
 
-	.navigation_box_links {
-		width: 100%;
-	}
+	.navigation_box_links {	width: 100%; }
 
-	.logo img {
-		margin-left: 1em;
-	}
-
-	#footer {
-		margin-top: 0;
-	}
-
-	#footer_img img {
-		width: 100%;
-		height:auto;
-	}
-
-	#footer p {
-		width: 100%;
-	}
-
-	#footer_img {
-		width: 100%;
-		margin-top: 1em;
-	}
-
-	#facebook {
-		display: none;
-	}
-
-	#facebook_1200 {
-		display: inline-block;
-		width: 100%;
-		height: auto;
-		background-color: #3b5998;
-		margin-bottom: -1em;
-	}
-
-	#facebook_1200 img {
-		width: 5em;
-		height:auto;
-		float: right;
-	}
-
-
-	#facebook_1200:active, 	#facebook_1200:hover {
-		background-color: #4264aa;
-	}
-
-	
-	#facebook_1200 p {
-		float: left;
-		color: #fff;
-		margin: 2.5% 0 0.5% 2.5%;
-		font-size: 20px;
-	}
-	
+	.logo img {	margin-left: 1em;}
 
 
 }
@@ -187,15 +109,12 @@ a {
 	height: auto;
 	background-color: #fff;
 	line-height: 3em;
-
-
 	}
 
 	.navigation_box_links {
 		width: 100%;
 		height: auto;
 		margin: 0 auto;
-
 	}
 
 	.nav {
@@ -203,15 +122,10 @@ a {
 		text-align: center;
 	}
 
-	.nav li {
-		display:block;
-
-	}
+	.nav li { display:block;}
 
 
-	.logo img{
-		display: none;
-	}
+	.logo img{	display: none; }
 
 	.navigation_logo {
 		float: none;
