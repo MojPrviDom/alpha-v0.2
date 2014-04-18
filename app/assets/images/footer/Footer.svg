@@ -4,7 +4,6 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="1246.448px" height="356px" viewBox="0 0 1246.448 356" enable-background="new 0 0 1246.448 356" xml:space="preserve">
 <g id="Layer_9">
-	<rect x="-29.489" fill="#F4F1EA" width="1400" height="356"/>
 </g>
 <g id="zemlja">
 	<rect x="-29.489" y="193.552" fill="#756755" width="1400" height="162.448"/>
@@ -1916,7 +1915,7 @@ DIQMhAxUMvD/A8stJX16TGI8AAAAAElFTkSuQmCC" transform="matrix(0.7501 0 0 0.7501 16
 		<polyline fill="#D9DBB9" points="244.752,205.831 0,205.831 206,44.779 463.115,205.831 288.025,205.831 		"/>
 	</g>
 	<g>
-		<polyline fill="#D9DBB9" points="1001.696,194.708 1246.448,194.708 1040.448,33.656 783.334,194.708 958.423,194.708 		"/>
+		<polyline fill="#D9DBB9" points="1001.696,193.562 1246.448,193.562 1040.448,32.51 783.334,193.562 958.423,193.562 		"/>
 	</g>
 	<path fill="#FFFFFF" stroke="#F1F2F2" stroke-miterlimit="10" d="M151.624,39.154c0.084,0.536,0.826,0.165,1.076,0.494
 		c0.624,0.134,1.233,0.336,1.814,0.599c1.743,0.789,3.228,2.135,4.063,3.899c1.3,2.971,0.929,6.313-1.114,8.913
