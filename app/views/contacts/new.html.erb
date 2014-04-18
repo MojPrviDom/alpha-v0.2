@@ -9,19 +9,18 @@
   <p>POZIVOM NA BROJ</p>
   <p><h3>60 -30- 50- 53</h3></p>
   <p class="poziv_donirate">Pozivom donirate 0,60 kn/min, fik. 1,78 kn/min, mob. 2,98 kn/min</p>
-  <br/>
   <p>ILI</p>
   <p>SLANJEM E-MAILA</p>
 
   <% if flash[:notice] %>
-  <div class="notice"><h3><%= flash[:notice] %></h3></div>
+  <div class="notice"><h4><%= flash[:notice] %></h4></div>
   <% end %>
 
   <%= form_for @contact do |f| %>
 
     <% if @contact.errors.any? %>
       <div class="error_messages">
-        <h3>oops... izgleda da nešto ne valja sa unešenim podacima</h3>
+        <h4><mark> oops... <br> izgleda da nešto ne valja sa unešenim podacima : <mark></h4>
         <ul>
         <% @contact.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
