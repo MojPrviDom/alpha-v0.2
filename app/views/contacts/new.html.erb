@@ -1,43 +1,36 @@
 <div id="inner_kontakt">
-    <div id="logo_kontakt_outer">
-      <div id="logo_kontakt" >
-        <div id="logo_kontakt_inner">
-        <%= image_tag("icons/email_big.png", :alt=> "kontakt") %>
-       </div>
-      </div>
-    </div>
-<br>
+  <br>
 
-<h1>KONTAKT</h1>
-<br>
+  <h1>KONTAKT</h1>
+  <br>
 
-<p>Sve informacije u vezi <b>Centra "Moj Prvi Dom"</b> mogu se dobiti </p><br/>
-<p>POZIVOM NA BROJ</p>
-<p class="broj"><h3>60 -30- 50- 53</h3></p>
-<p class="poziv_donirate">Pozivom donirate
-0,60 kn/min, fik. 1,78 kn/min, mob. 2,98 kn/min</p>
-<br/>
-<p>ILI</p>
-<p>SLANJEM E-MAILA</p>
+  <p>Sve informacije u vezi <b>Centra "Moj Prvi Dom"</b> mogu se dobiti </p><br/>
+  <p>POZIVOM NA BROJ</p>
+  <p class="broj"><h3>60 -30- 50- 53</h3></p>
+  <p class="poziv_donirate">Pozivom donirate
+  0,60 kn/min, fik. 1,78 kn/min, mob. 2,98 kn/min</p>
+  <br/>
+  <p>ILI</p>
+  <p>SLANJEM E-MAILA</p>
 
-<% if flash[:notice] %>
-<div class="notice"><h2><%= flash[:notice] %></h2></div>
-<% end %>
-
-<%= form_for @contact do |f| %>
-
-  <% if @contact.errors.any? %>
-    <div class="error_messages">
-      <h2>oops... izgleda da nešto ne valja sa unešenim podacima</h2>
-      <ul>
-      <% @contact.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
+  <% if flash[:notice] %>
+  <div class="notice"><h2><%= flash[:notice] %></h2></div>
   <% end %>
 
-<br/>
+  <%= form_for @contact do |f| %>
+
+    <% if @contact.errors.any? %>
+      <div class="error_messages">
+        <h2>oops... izgleda da nešto ne valja sa unešenim podacima</h2>
+        <ul>
+        <% @contact.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+  <br/>
   <div class="name">
         <%= f.text_field :name, placeholder: 'Ime i Prezime' %>
   </div>
@@ -53,7 +46,7 @@
   </div>
   <div class="actions"><%= f.submit "Pošalji" %></div>
 
-<% end %>
+  <% end %>
 
 
 </div>
