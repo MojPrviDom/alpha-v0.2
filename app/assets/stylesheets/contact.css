@@ -87,7 +87,9 @@
 textarea {
 	min-height: 10em;
 	max-height: 20em;
-	width: 98.85%;
+	min-width: 98.85%;
+	max-width: 98.85%;
+
 }
 
 input[type="submit"] {
