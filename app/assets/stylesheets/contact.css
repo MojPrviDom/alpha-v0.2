@@ -1,13 +1,30 @@
 /* 		CONTAC FORM  PAGE  */
-
-
-
 #inner_kontakt {
 	width: 500px;
-	margin: 6em auto 0 auto;
+	margin: 1.5em auto 0 auto;
 	text-align: center;
 }
 
+#contact_title h2  {
+  text-align: right;
+  font-size: 60px;
+  font-family: "Bitter", sans-serif;
+  line-height: 1em;
+  border-bottom: 0.25em solid black;
+	
+}
+
+#inner_kontakt p {
+	text-align: center;
+	font-size: 23px;
+}
+
+
+.poziv_donirate {
+	font-size: 9px !important;
+	font-style: italic;
+	color:#b1b1b1;
+}
 
 .name {
 	float: left;
@@ -59,24 +76,6 @@ textarea {
 
 input[type="submit"] {
 	width: 5em;
-}
-
-#inner p, #inner h1 {
-	text-align: center;
-}
-
-#inner h1 {
-	margin-top: 1em;
-}
-
-.broj {
-	font-size: 22px;
-}
-
-.poziv_donirate {
-	font-size: 9px;
-	font-style: italic;
-	color:#b1b1b1;
 }
 
 
