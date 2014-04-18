@@ -35,26 +35,18 @@
 <div id="container">
 
 		<%= yield %>
-	</div>
+</div>
 
 
 
 	<br>
 	<br>
-	<div id="facebook_1200"><p>Pratite nas i na drustvenoj mreži</p><%= image_tag("icons/facebook.png", :alt=> "logo") %></div>
 
-	<div id="footer" >
-	  
-		<div id="footer_img"><%= image_tag("footer/footer.png", :alt=> "logo") %></div>
-		<div id="facebook"><%= image_tag("icons/facebook.png", :alt=> "logo") %></div>
-
-	  
-		<p> © Copyright Moj Prvi Dom 2008-2014. All rights reserved.</p>
-		
-	      <div id="clear"></div>
-	       
-
+	<div class="footer">
+		<div class="top"><%= image_tag("footer/Footer_top-01.svg", :alt=> "navigation") %></div>
+		<div class="bottom"><%= image_tag("footer/Footer_bottom-02.svg", :alt=> "navigation") %></div>
 	</div>
+
 
 <script>
 	$( ".navigation_logo" ).click(function() {							// Navigation bar toogle
