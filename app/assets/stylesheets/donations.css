@@ -19,6 +19,8 @@
 	margin-right: 3.857%;
 }
 
+
+
 .donat_lijevi_txtbox mark {
 	font-family: "Bitter", sans-serif;
  	background-color: white;
@@ -39,8 +41,13 @@
 
 
 .donate_info{
+	padding: 1em;
 	text-align: center;
+	background-image: url(/assets/donations/single-border.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
+ 
  
 
 td  {
