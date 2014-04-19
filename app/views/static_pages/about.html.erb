@@ -22,13 +22,13 @@
 		<div class="about_content"><h3>vizija</h3>
 		
 			<ul class="about_ul">				
-				<li>Pravo svakog djeteta na sigurnost odrastanja u roditeljskom domu.</li>
+				<li>	<b>Pravo</b> svakog djeteta <b>na sigurnost</b> odrastanja u roditeljskom domu.		</li>
 				
-				<li>Suzbijanje siromaštva za jednoroditeljaske obitelji iz sustava socijalne skrbi.</li>
+				<li>	<b>Suzbijanje siromaštva</b> za jednoroditeljaske obitelji iz sustava socijalne skrbi.	</li>
 				
-				<li>Socijalno uključivanje u lokalnu zajednicu istih građana.</li>
+				<li>	Socijalno <b>uključivanje</b> <b>u</b> lokalnu <b>zajednicu</b> istih građana.				</li>
 				
-				<li>Osposobljavanju istih za rad i samozapošljavanje, potičući korištenje prirodnih resursa, ekološki uzgoj, odnosno oživljavanje sela.</li>
+				<li>	<b>Osposobljavanje</b> istih za <b>rad</b> i samozapošljavanje, potičući korištenje prirodnih resursa, ekološki uzgoj, odnosno <b>oživljavanje sela.</b>										  </li>
 				
 			</ul>
 		<br>
@@ -39,17 +39,21 @@
 	<div class="desni_textbox">
 		<div class="illustration"><%= image_tag("icons/mission.svg", align:"right") %></div>
 		<div class="about_content"><h3> misije </h3>
-		
 			<ul class="about_ul">
-				<li>Osiguravanje sigurnog prostora za odrastanje djece čiji je roditelj siromašan i socijalno izoliran.</li>
+				<li>	<b>Osiguravanje</b> sigurnog <b>prostora za odrastanje</b> djece čiji je roditelj siromašan i socijalno izoliran. 
+				</li>
 				
-				<li>Edukacije u svrhu sticanja znanja potrebnih za rad u poljoprivredi, voćarstvu i stočarstvu.</li>
+				<li>	Edukacije u svrhu sticanja znanja potrebnih za rad u <b>poljoprivredi,</b> <b>voćarstvu</b> <b>i</b> <b>stočarstvu.</b>	
+				</li>
 				
-				<li>Uključivanje lokalnog stanovništva u edukacije i seminare.</li>
+				<li>	Uključivanje lokalnog stanovništva u <b>edukacije</b> <b>i</b> <b>seminare.</b>		
+				</li>
 				
-				<li>Uključivanje Udruge u aktivnosti na lokalnoj, nacionalnoj i međunarodnoj razini u svrhu suradnje na rješavanju društvenih problema siromaštva i socijalne izolacije.</li>
+				<li>	Uključivanje Udruge u aktivnosti na lokalnoj, nacionalnoj i međunarodnoj razini u svrhu suradnje na <b>rješavanju</b> društvenih <b>problema siromaštva</b> <b>i</b> <b>socijalne izolacije.</b>
+				</li>
 				
-				<li>Jačanje suradnje sa srodnim organizacijama u Hrvatskoj i izvan nje.</li>
+				<li>	<b>Jačanje suradnje</b> sa srodnim organizacijama u Hrvatskoj i izvan nje.
+				</li>
 			</ul>
 		<br>
 		</div>
@@ -57,15 +61,20 @@
  
 	<div class="clear"></div>
 	
-
 	<div class="lijevi_textbox">
 		<div class="illustration"><%= image_tag("icons/how_to_help.svg", align:"right") %></div>
 		<div class="about_content"><h3> kako pomoći? </h3>
-		
-			Imate dobru volju i želju? <br>
-			<b>Odlično!</b> Samo uz pomoć ljudi poput Vas stvari se mogu promijeniti. <br>
-			Više informacija o tome kako Vi možete podržati rad Udruge <mark> <b> <%= link_to " pronađite ovdje. ", donations_path %> </b> </mark>
-			
+			<p>
+				Imate dobru volju i želju? &nbsp  Odlično! :) <br>
+				Samo uz pomoć ljudi <b>poput Vas</b> stvari se mogu <b> promijeniti.</b> <br>
+				Više informacija o tome kako i Vi možete podržati rad Udruge možete pronaći na slijedećim poveznicama:
+			</p>
+
+			<p class="help_links"> 
+				<mark>  &nbsp <%= link_to "volontiraj", volunteer_path %> &nbsp </mark>
+				 &nbsp  & </b> &nbsp
+				<mark> &nbsp <%= link_to "doniraj", donations_path %> &nbsp </mark>
+			</p>			
 			<br> <br>
 		</div>
 	</div>
@@ -73,13 +82,11 @@
 	<div class="desni_textbox">
 		<div class="illustration"><%= image_tag("icons/birokracija.svg", align:"right") %></div>
 		<div class="about_content"><h3>malo birokracije</h3>
-		
 			<ul class="biro_ul">
-				<li><b>OIB:</b> 53878358729 </li>
-				<li><b>Matični broj:</b> 2741423 </li>
-				<li><b>Kontakt:  <%= link_to " klik!", new_contact_path %> </b></li>
-				<li><b>Sjedište udruge: </b> Slavonski Brod, Stanka Vraza 13. </li>
-
+				<li><b>OIB:			 	&nbsp 	</b> 53878358729 	</li>
+				<li><b>Matični broj: 	&nbsp	</b> 2741423 		</li>
+				<li><b>Kontakt: 	 	&nbsp	<mark><%= link_to "klik!", new_contact_path %> </mark></b></li>
+				<li><b>Sjedište udruge: &nbsp	</b> Slavonski Brod, Stanka Vraza 13. </li>
 			</ul>
 		</div>
 	</div>

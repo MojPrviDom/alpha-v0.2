@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&subset=latin-ext);
 .song_lyric_div{
 	width: 100%;
 	height: auto;
@@ -6,13 +5,13 @@
 }
 
 .song_lyric_box {
-	
 	height: auto; 
 	border-bottom: 2px solid #222;
 }
 
 .song_lyric_box h3{	
   	font-family: "Bitter", sans-serif;
+  	font-weight: bold;
   	line-height: 1em;
  	color: #222;
   	border-bottom: 0.1em solid #222;
@@ -20,9 +19,8 @@
 }
 
 .song_lyric_box img{
-	width: 60px;
+	width: 10%;
 	height: auto;
-	
 	display: inline;
 }
 
@@ -30,7 +28,7 @@
 	font-family: 'Shadows Into Light Two', cursive;
 	width: auto;
 	height: auto;
-	padding: 2em 1.5em 1.5em 2.5em;
+	padding: 1em 1.5em 1em 2.5em;
 }
 
 .song_lyric_box p{
@@ -43,9 +41,8 @@
 }
 
 .quot img {
-
 	float: left;
-	width: 5%;
+	width: 4%;
 	height: auto;
 	display: inline;
 }
@@ -56,12 +53,11 @@
 	font-weight: bold;
 	clear: both;
 	color: #525252;
-
 }
 
 .bottom_quote img{
 	float: right;
 	width: 5%;
 	height: auto;
-	
+	display: inline;
 }

@@ -2,6 +2,7 @@
   text-align: right;
   font-size: 60px;
   font-family: "Bitter", sans-serif;
+  font-weight: bold;
   line-height: 1em;
   border-bottom: 0.25em solid black;
 	
@@ -22,13 +23,15 @@
 
 
 .donat_lijevi_txtbox mark {
-	font-family: "Bitter", sans-serif;
+	font-family: "Bitter",  sans-serif;
+	font-weight: bold;
  	background-color: white;
  }
 
 .donat_desni_txtbox h3{
 	text-align: left;
   	font-family: "Bitter", sans-serif;
+  	font-weight: bold;
   	line-height: 1em;
  	color: #222;
   	border-bottom: 0.1em solid #222;
@@ -41,7 +44,7 @@
 
 
 .donate_info{
-	padding: 1em;
+	padding: 2em;
 	text-align: center;
 	background-image: url(/assets/donations/single-border.png);
 	background-size: 100% 100%;
