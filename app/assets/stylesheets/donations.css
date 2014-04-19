@@ -99,6 +99,11 @@ td img {
         text-align:center;
         zoom:1;
     }
+
+    .hex:hover {
+    	opacity: 0.85;
+
+    }
     
     .hex img {
     	margin-top: 20px;
