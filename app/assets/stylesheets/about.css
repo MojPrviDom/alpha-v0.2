@@ -99,56 +99,6 @@
 	clear: both;
 }
 
-.song_lyric_div{
-	width: 100%;
-	height: auto;
-	text-align: center;
-}
-
-.song_lyric_box {
-	width:32em;
-	height: auto;
-	background-color:#fff; 
-	display: inline-block;
-	border: 2px solid #d6d6d6;
-}
-
-.quotes_and_song {
-
-	width: auto;
-	height: auto;
-	padding: 3em 1.5em 3em 1.5em;
-}
-
-.song_lyric_box p{
-	color: #525252;
-	line-height: 38px;
-	text-align: left;
-	float: right;
-	width: 84%;
-	margin-left: 6%;
-}
-
-.song_lyric_box img {
-	float: left;
-	width: 10%;
-}
-
-
-.iva {
-	text-align: center;
-	font-weight: bold;
-	clear: both;
-	color: #525252;
-
-}
-
-.bottom_quote img{
-	float: right;
-	width: 10%;
-	height: auto;
-	
-}
 
 
 .donate_and_volonteer {

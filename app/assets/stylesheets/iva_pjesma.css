@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&subset=latin-ext);
+.song_lyric_div{
+	width: 100%;
+	height: auto;
+	text-align: left;
+}
+
+
+.song_lyric_box {
+	width:32em;
+	height: auto; 
+	display: inline-block;
+	border-bottom: 2px solid #222;
+}
+
+.song_lyric_box h3{
+	
+  	font-family: "Bitter", sans-serif;
+  	line-height: 1em;
+ 	color: #222;
+  	border-bottom: 0.1em solid #222;
+}
+
+.quotes_and_song {
+	font-family: 'Shadows Into Light Two', cursive;
+	width: auto;
+	height: auto;
+	padding: 2em 1.5em 1.5em 2.5em;
+}
+
+.song_lyric_box p{
+	color: #525252;
+	line-height: 38px;
+	text-align: left;
+	float: right;
+	width: 84%;
+	margin-left: 6%;
+}
+
+.song_lyric_box img {
+	float: left;
+	width: 5%;
+	height: auto;
+	display: inline;
+}
+
+
+.iva {
+	text-align: center;
+	font-weight: bold;
+	clear: both;
+	color: #525252;
+
+}
+
+.bottom_quote img{
+	float: right;
+	width: 5%;
+	height: auto;
+	
+}
