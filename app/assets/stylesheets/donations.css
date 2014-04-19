@@ -49,7 +49,16 @@
 
 
 }
+ 
 
+td  {
+	width: 10px;
+	height: 100px;
+}
+
+#ekonomska img {
+	width: 200px;
+}
 
 @media screen and (max-width: 1200px ){
 	.donat_lijevi_txtbox, .donat_desni_txtbox {

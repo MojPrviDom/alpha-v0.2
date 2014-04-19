@@ -18,11 +18,10 @@ body {
 	background-image: url(/assets/footer/footer_background.svg);
 	background-repeat: repeat-x;
 	background-position: left bottom;
-
-
 }
 
 h3 { font-size: 1.4em; }
+
 
 #container {
 	width: 70%;

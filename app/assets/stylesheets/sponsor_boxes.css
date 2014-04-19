@@ -113,3 +113,12 @@
 	background-repeat: no-repeat;
     background-size: auto 100%;
 }
+
+table, td {
+	width: 5px;
+	height: 10px;
+}
+
+table {
+
+}
