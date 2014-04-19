@@ -29,7 +29,7 @@
  }
 
 .donat_desni_txtbox h3{
-	text-align: left;
+	text-align: center;
   	font-family: "Bitter", sans-serif;
   	font-weight: bold;
   	line-height: 1em;
@@ -167,3 +167,14 @@ td img {
 
    		}
 
+   		#zrnovnica img{
+   			margin-top: -10px;
+   		}
+
+   		#ekonomska img{
+   			margin-top: -15px;
+   		}
+
+   		#kras img{
+   			margin-top: 5px;
+   		}
