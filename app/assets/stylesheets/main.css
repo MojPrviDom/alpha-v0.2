@@ -120,7 +120,8 @@ a {
 /*  	FOOTER RESPONSIVE  */
 @media screen and (max-width: 1200px ){
 
-	body { font-size: 16px;	}
+	body { font-size: 16px;	
+		   background-image: url(/assets/footer/footer_background_responsive.svg);}
 
 	#container { width: 90%; }
 
