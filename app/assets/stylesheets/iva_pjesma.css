@@ -16,6 +16,7 @@
   	line-height: 1em;
  	color: #222;
   	border-bottom: 0.1em solid #222;
+  	margin-bottom: 0.5em;
 }
 
 .song_lyric_box img{
@@ -42,7 +43,7 @@
 }
 
 .quot img {
-	
+
 	float: left;
 	width: 5%;
 	height: auto;

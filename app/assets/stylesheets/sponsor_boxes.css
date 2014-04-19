@@ -6,6 +6,15 @@
     background-color: teal;
 }
 
+.box_double{
+	float:left;
+    margin:2px;
+    width:204px;
+    height:100px;
+    background-color: teal;
+
+}
+
 #box_1{
 	background:url('/assets/donations/nexe.png') ;
 	background-repeat: no-repeat;
@@ -36,6 +45,12 @@
 }
 
 
+#box_10{
+	background:url('/assets/donations/gornjoGradska.png') ;	
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
 
 #box_12{
 	background-color: orange ;
@@ -49,23 +64,6 @@
     background-size: auto 100%;
 }
 
-#box_14{
-	background:url('/assets/donations/acPrint.png') ;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
-}
-
-#box_15{
-	background:url('/assets/donations/pomorska.png') ;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
-}
-
-#box_16{
-	background:url('/assets/donations/fina.png') ;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
-}
 
 #box_17{
 	background:url('/assets/donations/euroart.png') ;
@@ -74,8 +72,44 @@
 }
 
 
-#box_19{
+#box_15{
+	background:url('/assets/donations/fina.png') ;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#box_25{
+	background:url('/assets/donations/osZrnovnic.png') ;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#box_21{
 	background:url('/assets/donations/supernova.png') ;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+#box_2324{
+	background:url('/assets/donations/double.png') ;	
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#box_2627{
+	background:url('/assets/donations/ekonomska.png') ;	
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+#box_28{
+	background:url('/assets/donations/acPrint.png') ;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+
+
+#box_29{
+	background:url('/assets/donations/vrtic.png') ;
 	background-repeat: no-repeat;
     background-size: auto 100%;
 }
