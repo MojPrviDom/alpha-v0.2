@@ -24,30 +24,22 @@
  	background-color: white;
  }
 
-.sponsors h3{
+.donat_lijevi_txtbox h3{
 	text-align: left;
   	font-family: "Bitter", sans-serif;
   	line-height: 1em;
  	color: #222;
   	border-bottom: 0.1em solid #222;
 }
-.sponsors img {
+.donat_lijevi_txtbox img {
 	width: 40px;
 	height: auto;
 	display: inline-block;
 }
 
-.sponsors{
-	text-align: center;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 600px;
-}
 
 .donate_info{
 	text-align: center;
-
-
 }
  
 
@@ -60,9 +52,7 @@ td img {
 	height: 100px;
 	width:auto;
 }
-#ekonomska img {
-	
-}
+
 
 @media screen and (max-width: 1200px ){
 	.donat_lijevi_txtbox, .donat_desni_txtbox {
