@@ -20,11 +20,19 @@
 	font-size: 23px;
 }
 
+#inner_kontakt mark {
+	 background-color: white;
+	 font-family: "Bitter", sans-serif;
+	 font-weight: bold;
+	 color: #222;
+
+}
+
 
 .poziv_donirate {
-	font-size: 9px !important;
+	font-size: 13px !important;
 	font-style: italic;
-	color:#b1b1b1;
+	color:#555;
 
 }
 

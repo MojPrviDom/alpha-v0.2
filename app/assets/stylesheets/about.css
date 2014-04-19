@@ -3,10 +3,22 @@
 #inner_about_us {
 	margin: 0 auto;
 }
+#inner_about_us b {
+font-family: "Bitter", sans-serif;
+	font-weight: normal;
+}
+	
+.help_links{
+	text-align: center;
+	font-family: "Bitter", sans-serif;
+	font-weight: bold;
+}
+
 #inner_about_us a:link, a:visited{
 	font-family: "Bitter", sans-serif;
 	font-weight: bold;
 	color:#222;
+	border-bottom: 0.2em solid #222 ;
 }
 #inner_about_us a:hover{
 	background-color:yellow;
@@ -68,7 +80,6 @@
 }
 
 
-
 .about_highlight{
   font-size: 1.25em;
   font-family: "Bitter", sans-serif;
@@ -78,9 +89,10 @@
 
 .about_highlight mark, .about_content mark {
  background-color: white;
+ font-family: "Bitter", sans-serif;
+ font-weight: bold;
  color: #222;
 }
-
 
 
 .lijevi_textbox, .desni_textbox{
@@ -98,7 +110,6 @@
 .lijevi_textbox {
 	margin-right: 3.857%;
 }
-
 
 .clear{
 	clear: both;
