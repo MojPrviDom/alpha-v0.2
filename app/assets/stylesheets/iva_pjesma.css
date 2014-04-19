@@ -5,20 +5,24 @@
 	text-align: left;
 }
 
-
 .song_lyric_box {
-	width:32em;
+	
 	height: auto; 
-	display: inline-block;
 	border-bottom: 2px solid #222;
 }
 
-.song_lyric_box h3{
-	
+.song_lyric_box h3{	
   	font-family: "Bitter", sans-serif;
   	line-height: 1em;
  	color: #222;
   	border-bottom: 0.1em solid #222;
+}
+
+.song_lyric_box img{
+	width: 60px;
+	height: auto;
+	
+	display: inline;
 }
 
 .quotes_and_song {
@@ -37,7 +41,8 @@
 	margin-left: 6%;
 }
 
-.song_lyric_box img {
+.quot img {
+	
 	float: left;
 	width: 5%;
 	height: auto;

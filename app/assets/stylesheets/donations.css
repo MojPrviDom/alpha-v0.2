@@ -24,14 +24,14 @@
  	background-color: white;
  }
 
-.donations_content h3{
+.sponsors h3{
 	text-align: left;
   	font-family: "Bitter", sans-serif;
   	line-height: 1em;
  	color: #222;
   	border-bottom: 0.1em solid #222;
 }
-.donations_content img {
+.sponsors img {
 	width: 40px;
 	height: auto;
 	display: inline-block;
@@ -40,85 +40,24 @@
 .sponsors{
 	text-align: center;
 	margin: 0 auto;
-	padding:2px 60px;
+	width: 100%;
+	max-width: 600px;
 }
 
-.box {
-    float:left;
-    margin:2px;
-    width:100px;
-    height:100px;
-    background-color: teal;
-}
+.donate_info{
+	text-align: center;
 
-#box_1{
-	background:url('/assets/donations/nexe.png') ;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
-}
 
-#box_2{
-	background-color: gray;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
-}
-
-#box_4{
-	background:url('/assets/donations/dentalCM.png') ;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
-}
-
-#box_5{
-	background:url('/assets/donations/obrtnicka.png') ;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
-}
-#box_7{
-	background:url('/assets/donations/joker.png') ;	
-	background-repeat: no-repeat;
-    background-size: auto 100%;
-}
-
-#box_16{
-	background:url('/assets/donations/fina.png') ;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
-}
-
-#box_11{
-	background-color: orange ;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
 }
 
 
-#box_14{
-	background:url('/assets/donations/pomorska.png') ;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
-}
+@media screen and (max-width: 1200px ){
+	.donat_lijevi_txtbox, .donat_desni_txtbox {
+		float: none;
+		text-align: left;
+		width:100%;
+		margin-bottom: 1em;
+		
+	}
 
-
-#box_13{
-	background:url('/assets/donations/acPrint.png') ;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
-}
-#box_17{
-	background:url('/assets/donations/euroart.png') ;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
-}
-
-#box_12{
-	background:url('/assets/donations/kras.png') ;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
-}
-
-#box_19{
-	background:url('/assets/donations/supernova.png') ;
-	background-repeat: no-repeat;
-    background-size: auto 100%;
 }

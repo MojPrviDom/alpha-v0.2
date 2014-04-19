@@ -1,0 +1,81 @@
+.box {
+    float:left;
+    margin:2px;
+    width:100px;
+    height:100px;
+    background-color: teal;
+}
+
+#box_1{
+	background:url('/assets/donations/nexe.png') ;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#box_2{
+	background-color: gray;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#box_4{
+	background:url('/assets/donations/dentalCM.png') ;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#box_5{
+	background:url('/assets/donations/obrtnicka.png') ;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+#box_7{
+	background:url('/assets/donations/joker.png') ;	
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+
+
+#box_12{
+	background-color: orange ;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#box_13{
+	background:url('/assets/donations/kras.png') ;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#box_14{
+	background:url('/assets/donations/acPrint.png') ;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#box_15{
+	background:url('/assets/donations/pomorska.png') ;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#box_16{
+	background:url('/assets/donations/fina.png') ;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#box_17{
+	background:url('/assets/donations/euroart.png') ;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+
+#box_19{
+	background:url('/assets/donations/supernova.png') ;
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+}
