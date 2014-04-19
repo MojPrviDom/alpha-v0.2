@@ -24,14 +24,14 @@
  	background-color: white;
  }
 
-.donat_lijevi_txtbox h3{
+.donat_desni_txtbox h3{
 	text-align: left;
   	font-family: "Bitter", sans-serif;
   	line-height: 1em;
  	color: #222;
   	border-bottom: 0.1em solid #222;
 }
-.donat_lijevi_txtbox img {
+.donat_desni_txtbox h3 img {
 	width: 40px;
 	height: auto;
 	display: inline-block;
