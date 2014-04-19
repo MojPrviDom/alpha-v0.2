@@ -13,6 +13,7 @@
 
 .song_lyric_box h3{	
   	font-family: "Bitter", sans-serif;
+  	font-weight: bold;
   	line-height: 1em;
  	color: #222;
   	border-bottom: 0.1em solid #222;

@@ -21,6 +21,8 @@
   text-align: right;
   font-size: 3em;
   font-family: "Bitter", sans-serif;
+  font-weight: bold;
+
   line-height: 1em;
   border-bottom: 0.25em solid black;
 	
@@ -29,6 +31,7 @@
 #inner_about_us h3 {
   text-align: left;
   font-family: "Bitter", sans-serif;
+  font-weight: bold;
   line-height: 1em;
   color: #222;
   border-bottom: 0.1em solid #222;
@@ -70,6 +73,7 @@
   font-size: 1.25em;
   font-weight: bold;
   font-family: "Bitter", sans-serif;
+  font-weight: bold;
   text-align: center;
 }
 
