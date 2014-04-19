@@ -6,12 +6,12 @@
 }
 
 body {
-	font-size:  20px;
+	font-size:  20px; 				/* Font size [px] x  [em] size = real size [px] */
 	background-repeat: repeat-x;
 	width: 100%;
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
-	line-height: 34.8px;
+	line-height: 1.74em;
 	background-color: #F3F1EA;
 	border-top: 0.3em solid #fff;
 	background-image: url(/assets/footer/footer_background.svg);
@@ -20,16 +20,19 @@ body {
 
 
 }
- h3 { font-size: 28px; }
+
+h3 { font-size: 1.4em; }
 
 #container {
 	width: 70%;
 	height: auto;
 	margin: 0 auto;
-	margin-top: 200px;
+	margin-top: 2.5em;
 }
 
-a { text-decoration: none;}
+a { 
+	text-decoration: none;
+}
 
 
 /* 		NAVIGATION 	*/
@@ -43,7 +46,7 @@ a { text-decoration: none;}
 
 .navigation_box_links {
 	width: 80%;
-	height:5em;
+	height: 5em;
 	margin: 0 auto;
 }
 
@@ -77,11 +80,15 @@ a { text-decoration: none;}
 	height: auto;
 }
 
+.navigation_box a:hover {
+	color: orange;
+}
+
 
 /* 		FOOTER    */
 .footer {
  	width: 100%;
- 	min-height: 356px;
+ 	min-height: 17.8em;
  	height: 100%;
  	text-align: right;
  	background-image: url(/assets/footer/Footer.svg);
@@ -90,7 +97,9 @@ a { text-decoration: none;}
  	background-size: auto 100%;
 }
 
-.footer_navigation  {	padding-top: 260px;}
+.footer_navigation  { 
+	padding-top: 13em;
+}
 
 .footer_navigation li{
 	display: inline-block;
@@ -104,12 +113,13 @@ a { text-decoration: none;}
 
 .footer p {
 	color: #CCCCCC;
-	font-size: 10px;
+	font-size: 0.5em;
 	margin-right: 4em;
 }
 
 /*  	FOOTER RESPONSIVE  */
 @media screen and (max-width: 1200px ){
+
 	body { font-size: 16px;	}
 
 	#container { width: 90%; }
@@ -122,32 +132,25 @@ a { text-decoration: none;}
 }
 
 @media screen and (max-width:730px) {
-	.navigation_box {
-	width: 100%;
-	height: auto;
-	background-color: #fff;
-	line-height: 3em;
-	}
 
-	.navigation_box_links {
-		width: 100%;
-		height: auto;
-		margin: 0 auto;
-	}
+	.navigation_box { width: 100%;
+					  height: auto;
+					  background-color: #fff;
+					  line-height: 3em;	}
 
-	.nav {
-		width: 100%;
-		text-align: center;
-	}
+	.navigation_box_links { width: 100%;
+							height: auto;
+							margin: 0 auto; }
+
+	.nav { width: 100%;
+		   text-align: center; }
 
 	.nav li { display:block;}
 
 
-	.logo img{	display: none; }
+	.logo img{ display: none; }
 
-	.navigation_logo {
-		float: none;
-		margin: 0 auto;
-	}
+	.navigation_logo { float: none;
+					   margin: 0 auto; }
 
 }
