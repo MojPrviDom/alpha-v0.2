@@ -98,10 +98,12 @@ td img {
         margin:0 5px;
         text-align:center;
         zoom:1;
+        opacity: 0.65;
+
     }
 
     .hex:hover {
-    	opacity: 0.85;
+    	opacity: 1;
 
     }
     
@@ -181,5 +183,38 @@ td img {
    		}
 
    		#kras img{
-   			margin-top: 5px;
+   			margin-top: 0px;
+   		}
+
+   		#pomorska img {
+   			margin-top: -10px;
+   		}
+
+   		.hex p {
+   			text-transform: uppercase;
+   			font-size:16px;
+   			text-align: left;
+   			line-height: 20px;
+ 			padding: 15px;
+   			font-weight: bold;
+   			font-family: "Bitter", sans-serif;
+   			color: #2d2d2d;
+   		}
+
+   		#dashed {
+   			margin: -10px 0 0 160px;
+   			background-color: transparent;
+   			border-style: dashed;
+   			border-width: medium;
+   			border-color: #000;
+   			border-top-style: none;
+   			border-bottom-style: none;
+   		}
+
+   		#dashed2 {
+   			border-style: dashed;
+   			border-width: medium;
+   			border-color: #000;
+   			border-top-style: none;
+   			border-bottom-style: none;
    		}
