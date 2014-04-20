@@ -1,0 +1,86 @@
+.song_lyric_div{
+	width: 100%;
+	height: auto;
+	text-align: left;
+}
+
+.song_lyric_box {
+	height: auto; 
+	border-bottom: 2px solid #222;
+	text-align: center;
+	*background-color: blue;
+}
+
+.song_lyric_box h3{	
+  	font-family: "Bitter", sans-serif;
+  	font-weight: bold;
+  	line-height: 1em;
+ 	color: #222;
+  	border-bottom: 0.1em solid #222;
+  	margin-bottom: 0.5em;
+}
+
+.song_lyric_box img{
+	width: 10%;
+	height: auto;
+	display: inline;
+}
+
+.quotes_and_song {
+	font-family: 'Shadows Into Light Two', cursive;
+	width: 70%;
+	height: auto;
+	margin:0 auto;
+	padding: 1em 1.5em 1em 2.5em;
+	text-align: left;
+	*background-color: red;
+
+}
+
+.song_lyric_box p{
+	color: #525252;
+	line-height: 38px;
+	text-align: left;
+	float: right;
+	width: 84%;
+	margin-left: 6%;
+}
+
+.quot img {
+	float: left;
+	width: 2em;
+	height: auto;
+	display: inline;
+	margin-left: -40px;
+}
+
+
+.iva {
+	text-align: center;
+	font-weight: bold;
+	clear: both;
+	color: #525252;
+}
+
+.bottom_quote img{
+	float: right;
+	width: 2em;
+	height: auto;
+	display: inline;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+	.quotes_and_song{
+		width: 30em;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.quotes_and_song{
+		width: 85%;
+		}
+}

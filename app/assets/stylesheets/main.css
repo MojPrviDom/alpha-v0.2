@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400&subset=latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Bitter:700,400&subset=latin-ext,latin);
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&subset=latin-ext);
 * {
 	margin:0;
 	padding:0;
@@ -17,11 +19,10 @@ body {
 	background-image: url(/assets/footer/footer_background.svg);
 	background-repeat: repeat-x;
 	background-position: left bottom;
-
-
 }
 
 h3 { font-size: 1.4em; }
+
 
 #container {
 	width: 70%;
@@ -153,5 +154,4 @@ a {
 
 	.navigation_logo { float: none;
 					   margin: 0 auto; }
-
 }

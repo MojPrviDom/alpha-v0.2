@@ -1,0 +1,315 @@
+#donations_title h2  {
+	text-align: right;
+	font-size: 60px;
+	font-family: "Bitter", sans-serif;
+	font-weight: bold;
+	line-height: 1em;
+	border-bottom: 0.25em solid black;
+	
+}
+
+.donat_lijevi_txtbox, .donat_desni_txtbox{
+	float: left;
+	text-align:justify;
+	width:46.143%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.donat_lijevi_txtbox {
+	margin-right: 3.857%;
+}
+
+
+
+.donat_lijevi_txtbox mark {
+	font-family: "Bitter",  sans-serif;
+	font-weight: bold;
+	background-color: white;
+}
+
+.donat_desni_txtbox h3{
+	text-align: center;
+	font-family: "Bitter", sans-serif;
+	font-weight: bold;
+	line-height: 1em;
+	color: #222;
+	border-bottom: 0.1em solid #222;
+}
+.donat_desni_txtbox h3 img {
+	width: 40px;
+	height: auto;
+	display: inline-block;
+}
+
+
+.donate_info{
+	padding: 2em;
+	text-align: center;
+    width: auto;
+    height: auto;
+	background-image:url(donations/single-border.svg);
+	background-size: 100% 100%;
+}
+
+#clear{
+	clear: both;
+	margin-bottom: 185px;
+}
+#clear2{
+	clear: both;
+	margin-bottom: 50px;
+}
+
+.hex {
+    width:150px;
+    height:86px;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;            
+    background-size: auto 90px;                            
+    position: relative;
+    float:left;
+    margin:0 5px;
+    text-align:center;
+    zoom:1;
+    opacity: 0.65;
+
+}
+
+.hex:hover {
+	opacity: 1;
+
+}
+
+.hex img {
+	margin-top: 20px;
+}  
+.hex.hex-gap {
+	margin-left: 86px;
+}
+
+.hex .corner-1, .hex .corner-2 {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: inherit;                                
+	z-index:-2;                        
+	overflow:hidden;        
+	backface-visibility: hidden;            
+}
+
+.hex .corner-1 {
+	z-index:-1;
+	transform: rotate(60deg);
+}
+
+.hex .corner-2 {
+	transform: rotate(-60deg);
+}
+
+.hex .corner-1:before, .hex .corner-2:before {
+	width: 173px;
+	height:    173px;
+	content: '';
+	position: absolute;
+	background: inherit;
+	top:0;
+	left: 0;
+	z-index: 1;
+	background: inherit;
+	background-repeat:no-repeat;
+	backface-visibility: hidden;                
+}            
+
+.hex .corner-1:before {
+	transform: rotate(-60deg) translate(-87px, 0px);    
+	transform-origin: 0 0;
+}            
+
+.hex .corner-2:before {
+	transform: rotate(60deg) translate(-48px, -11px);    
+	bottom:0;
+}        
+
+
+#top_hex {
+	margin-top: -135px;
+	margin-left: -75px;
+}
+
+.sve {
+	width:640px;
+	height: auto;
+	margin: 150px auto;
+
+}
+
+#zrnovnica img{
+	margin-top: -10px;
+}
+
+#ekonomska img{
+	margin-top: -15px;
+}
+
+#kras img{
+	margin-top: 0px;
+}
+
+#pomorska img {
+	margin-top: -10px;
+}
+
+.hex p {
+	text-transform: uppercase;
+	font-size:16px;
+	text-align: left;
+	line-height: 20px;
+	padding: 15px;
+	font-weight: bold;
+	font-family: "Bitter", sans-serif;
+	color: #2d2d2d;
+}
+
+#dashed {
+	margin: 55px 0 0 160px;
+	background-color: transparent;
+	border-style: dashed;
+	border-width: medium;
+	border-color: #000;
+	border-top-style: none;
+	border-bottom-style: none;
+}
+
+#dashed2 {
+	border-style: dashed;
+	border-width: medium;
+	border-color: #000;
+	border-top-style: none;
+	border-bottom-style: none;
+}
+
+.donate_responsive_box {
+	display: none;
+}
+
+
+
+@media screen and (max-width: 1300px ){
+	.donat_lijevi_txtbox, .donat_desni_txtbox {
+		float: none;
+		text-align: left;
+		width:100%;
+		margin-bottom: 1em;
+		}
+
+	.donate_info {
+		width: 30em;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.donate_info {
+		width: 80%;
+	}
+
+	.donat_desni_txtbox {
+		display: none;
+	}
+	.donate_responsive_box{
+		width: auto;
+		height: auto;
+		margin: 0 auto;
+		display: inline-block;
+
+	}
+
+	.donate_responsive {
+		width: auto;
+		height: auto;
+		margin: 0 auto;
+		text-align: center;	
+	}
+
+
+
+	.donate_responsive li {
+		list-style: none;
+		background-color: #ccc;
+		display: inline-block;
+		width: 7em;
+		height: 7em;
+		vertical-align: middle;
+		text-align: center;
+		margin: 0.1em 0;
+		opacity: 0.65;
+	}
+
+	.donate_responsive li:hover  {
+		opacity: 1;
+	}
+
+	.donate_responsive img {
+		width:80%;
+		height: auto;
+		padding-top: 2.4em;
+
+	}
+
+
+	.donate_responsive p {
+		text-transform: uppercase;
+		font-size:16px;
+		text-align: left;
+		line-height: 20px;
+		padding: 10px;
+		font-weight: bold;
+		font-family: "Bitter", sans-serif;
+		color: #2d2d2d;
+	}
+
+	#dashed_responsive {
+		background-color: transparent;
+		border-style: dashed;
+		border-width: medium;
+		border-color: #000;
+
+	}
+
+	.donate_responsive_box h3{
+		text-align: center;
+		font-family: "Bitter", sans-serif;
+		font-weight: bold;
+		line-height: 1em;
+		color: #222;
+		border-bottom: 0.1em solid #222;
+	}
+	.donate_responsive_boxh3 img {
+		width: 40px;
+		height: auto;
+		display: inline-block;
+	}
+
+	#pomorska img, #kras img{
+		padding-top: 1.2em;
+	}
+
+	#zrnovnica img {
+		padding-top:1em;
+	}
+
+}
+
+@media screen and (max-width: 450px) {
+	.donate_info {
+		border-width: 2px;
+		border-style: solid;
+		border-color: #000000;
+		background-image: none;
+
+	}
+}
