@@ -37,19 +37,19 @@
 	border-bottom: 0.1em solid #222;
 }
 .donat_desni_txtbox h3 img {
-width: 40px;
-height: auto;
-display: inline-block;
+	width: 40px;
+	height: auto;
+	display: inline-block;
 }
 
 
 .donate_info{
 	padding: 2em;
 	text-align: center;
-	background-image: url(/assets/donations/single-border.svg);
+    width: auto;
+    height: auto;
+	background-image:url(donations/single-border.svg);
 	background-size: 100% 100%;
-	background-repeat: no-repeat;
-
 }
 
 #clear{
@@ -302,4 +302,11 @@ display: inline-block;
 		padding-top:1em;
 	}
 
+}
+
+@media screen and (max-width: 450px) {
+	.donate_info {
+		background-size: 100% 150%;
+
+	}
 }
