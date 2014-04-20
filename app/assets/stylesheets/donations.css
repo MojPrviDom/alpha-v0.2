@@ -306,7 +306,10 @@
 
 @media screen and (max-width: 450px) {
 	.donate_info {
-		background-size: 100% 150%;
+		border-width: 2px;
+		border-style: solid;
+		border-color: #000000;
+		background-image: none;
 
 	}
 }
