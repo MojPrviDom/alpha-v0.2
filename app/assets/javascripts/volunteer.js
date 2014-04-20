@@ -5,8 +5,11 @@ function changePath(path, startElem, endElem) {
     var navOffset  =  $(".navigation_box").css("display") == "none"?
                          0 : $(".navigation_box").height();
 
+    // may need to remove completely//
     var logoOffset =  $(".logo img").css("display") == "none"? 
-                        0 : $(".logo img").height() - ($("#container").offset().top );
+                        0 : $(".logo img").height() - ($("#container").offset().top );  
+    var logoOffset=0;
+    // may need to remove completely//
 
 
     var paddingVertical = startElem.innerHeight() - startElem.height();
@@ -21,7 +24,7 @@ function changePath(path, startElem, endElem) {
     startY = startCoord.top + paddingVertical - navOffset + logoOffset;
 
     endX = endCoord.left + endPaddingHorizontal- svgLeft + endElem.width()/2;
-    endY = endCoord.top  ;
+    endY = endCoord.top  - navOffset;
 
     drawPath(svg, path, startX, startY, endX, endY);
  }
