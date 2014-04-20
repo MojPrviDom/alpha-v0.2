@@ -1,21 +1,23 @@
-function changePath(path) {
+function changePath(path, startElem, endElem) {
     var path = path ;
     var svgContainer= $("#svgContainer");
     var svg   = $("#svg1");
     var navOffset  =  $(".navigation_box").css("display") == "none"?
                          0 : $(".navigation_box").height();
+
     var logoOffset =  $(".logo img").css("display") == "none"? 
                         0 : $(".logo img").height() - ($("#container").offset().top );
 
 
-    startCoord = $("#div1").offset();
-    endCoord   = $("#div2").offset();
+    startCoord = startElem.offset();
+    console.log( startCoord.top)
+    endCoord   = endElem.offset();
     svgLeft = svgContainer.offset().left;
     
-    startX = startCoord.left - svgLeft + $("#div1").width()/2;
+    startX = startCoord.left - svgLeft + startElem.width()/2;
     startY = startCoord.top - navOffset + logoOffset;
 
-    endX = endCoord.left - svgLeft + $("#div2").width()/2;
+    endX = endCoord.left - svgLeft + endElem.width()/2;
     endY = endCoord.top  ;
 
     drawPath(svg, path, startX, startY, endX, endY);
@@ -47,14 +49,20 @@ function changePath(path) {
 
 $(document).on('page:change',function() {
   $("#svgContainer").css("display", "block");
-   changePath($("#path1"));
+   changePath($("#path1"), $("#div1"), $("#div2") );
+   changePath($("#path2"), $("#div3"), $("#div2") );
+
 });
 
 $(window).bind('resizeEnd', function() {
-     changePath($("#path1"));       
+   changePath($("#path1"), $("#div1"), $("#div2") );
+   changePath($("#path2"), $("#div3"), $("#div2") );
+        
     //do something, window hasn't changed size in 500ms
 });
 
 $(window).resize(function () {
-    changePath($("#path1"));    //run on every window resize
+   changePath($("#path1"), $("#div1"), $("#div2") );
+   changePath($("#path2"), $("#div3"), $("#div2") );
+   
 });
