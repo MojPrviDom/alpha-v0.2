@@ -7,6 +7,8 @@
 .song_lyric_box {
 	height: auto; 
 	border-bottom: 2px solid #222;
+	text-align: center;
+	*background-color: blue;
 }
 
 .song_lyric_box h3{	
@@ -26,9 +28,13 @@
 
 .quotes_and_song {
 	font-family: 'Shadows Into Light Two', cursive;
-	width: auto;
+	width: 70%;
 	height: auto;
+	margin:0 auto;
 	padding: 1em 1.5em 1em 2.5em;
+	text-align: left;
+	*background-color: red;
+
 }
 
 .song_lyric_box p{
@@ -42,9 +48,10 @@
 
 .quot img {
 	float: left;
-	width: 4%;
+	width: 2em;
 	height: auto;
 	display: inline;
+	margin-left: -40px;
 }
 
 
@@ -57,7 +64,23 @@
 
 .bottom_quote img{
 	float: right;
-	width: 5%;
+	width: 2em;
 	height: auto;
 	display: inline;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+	.quotes_and_song{
+		width: 30em;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.quotes_and_song{
+		width: 85%;
+		}
 }

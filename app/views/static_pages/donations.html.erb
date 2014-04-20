@@ -27,9 +27,11 @@
 		<div class="song_lyric_div">
 		<div class="song_lyric_box">
 			<h3>baš svaki doprinos je bitan 
-				<%= image_tag("donations/sun.png", :class => "sun_iva" )%></h3>
-			<span class ="quot"> <%= image_tag("icons/quotes.svg") %> </span>
+				<%= image_tag("donations/sun.svg", :class => "sun_iva" )%></h3>
+			
 			<div class="quotes_and_song">
+			<span class ="quot"> <%= image_tag("icons/quotes.svg") %> </span><br>
+
 				    Svaka kap je važna.<br>
 					Poput kapi kiše što na zemlju pada bila ona suha ili vlažna.<br>
 					Suha vapi za kapi a vlažna brže se blati.<br>
@@ -48,7 +50,7 @@
 
 	<div class="donat_desni_txtbox">
 		<br> <br>
-				<h3> naši dragi sponzori <%= image_tag("donations/heart.png",) %></h3> 
+				<h3> naši dragi sponzori <%= image_tag("donations/heart.svg",) %></h3> 
 				<br> <br>
 				<div class="sve">
     <div class="hex" style="background-color: #B0D7E8;" >
@@ -145,17 +147,17 @@
         <div class="corner-1"></div>
         <div class="corner-2"></div>        
     </div>
-</div>
+
 <div class="clear"></div>
 <div class="hex" id="dashed"  >  
-        <p style="padding:0px 45px;">je li <br> ovo <br>vaše <br>mjesto?</p>  
+        <p style="padding:0px 45px; text-align:center;">je li <br> ovo <br>vaše <br>mjesto?</p>  
         <div class="corner-1" id="dashed2"></div>
         <div class="corner-2" id="dashed2"></div>        
     </div>
 		
 		
 	</div>
-
+</div>
 <div class="clear"></div>
 <br><br><br>
 
@@ -204,4 +206,28 @@
 				</tr>
 
 			</table>-->
+<div class="donate_responsive_box">
+<h3> naši dragi sponzori <%= image_tag("donations/heart.svg",) %></h3> 
+				<br> <br>
+	<ul class="donate_responsive">
+		<li style="background-color: #B0D7E8;"><%= image_tag("donations/fina.png") %></li>
+		<li style="background-color: #F4D793;"><p style="font-size:12px; padding-top:25px;">ekonomsko- birotehnička škola, split</p></li>
+		<li style="background-color: #84BA74;"><%= image_tag("donations/dental.png") %></li>
+		<li style="background-color: #B4A77D;"><%= image_tag("donations/euroart93.png") %> </li>
+		<li style="background-color: #944250;"><p>Gornjo- gradska  Gimnazija, Zagreb</p></li>
+		<li><%= image_tag("donations/logo_bankabrod.png") %>  </li>
+		<li style="background-color: #B0D7E8;" id="pomorska"><%= image_tag("donations/pomorska.png") %></li>
+		<li style="background-color: #EAB43B;"><p>x. gimnazija zagreb</p></li>
+		<li style="background-color: #B4D6BC;"><%= image_tag("donations/nexe.png") %> </li>
+		<li><%= image_tag("donations/slisko.png") %></li>
+		<li style="background-color:#FFFFFF;"><%= image_tag("donations/joker.png") %></li>
+		<li style="background-color: #AA4956;" id="kras"> <%= image_tag("donations/kras.png") %> </li>
+		<li style="background-color:#F4D793;"> <%= image_tag("donations/obrtnicka.png") %>    </li>
+		<li style="background-color: #D9DBB9;"> <%= image_tag("donations/supernova.png") %> </li>
+		<li style="background-color: #756755;"> <%= image_tag("donations/act_printlab.png") %></li>
+		<li style="background-color: #B0D7E8" id="zrnovnica"><%= image_tag("donations/znak-škole.png") %> </li>
+		<li style="background-color: #87AD94"><p >dječji vrtić tatjane marinić</p></li>
+		<li id="dashed_responsive"><p style="padding:1.17em;">je li  ovo vaše mjesto?</p> </li>
+	</ul>
+</div>
 </div>
