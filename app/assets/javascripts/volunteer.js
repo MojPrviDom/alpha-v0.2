@@ -1,90 +1,87 @@
-function changePath(path, startElem, endElem) {
+function connectElements(path, startElem, endElem) {
+    //only one svgContainer for this demo
     var svgContainer= $("#svgContainer");
     var svg   = $("#svg1");
-    var navOffset  =  $(".navigation_box").css("display") == "none"?
-                         0 : $(".navigation_box").height();
 
-    // may need to remove completely//
-    var logoOffset =  $(".logo img").css("display") == "none"? 
-                        0 : $(".logo img").height() - ($("#container").offset().top );  
-    var logoOffset=0;
-    // may need to remove completely//
+    // if first element is lower than the second, swap!
+    if(startElem.offset().top > endElem.offset().top){
+        var temp = startElem;
+        startElem = endElem;
+        endElem = temp;
+    }
 
+    // get (top, left) corner coordinates of the svg container   
+    svgTop  = svgContainer.offset().top;
+    svgLeft = svgContainer.offset().left
 
-    var paddingVertical = startElem.innerHeight() - startElem.height();
-    var startPaddingHorizontal = 0.5*(startElem.innerWidth() - startElem.width());
-    var endPaddingHorizontal = 0.5*(endElem.innerWidth() - endElem.width());
-    
+    // get (top, left) coordinates for the two elements
     startCoord = startElem.offset();
     endCoord   = endElem.offset();
-    svgLeft = svgContainer.offset().left;
-    
-    startX = startCoord.left + startPaddingHorizontal- svgLeft + startElem.width()/2;
-    startY = startCoord.top + paddingVertical - navOffset + logoOffset;
 
-    endX = endCoord.left + endPaddingHorizontal- svgLeft + endElem.width()/2;
-    endY = endCoord.top  - navOffset;
+    // calculate path's start (x,y)  coords
+    // we want the x coordinate to visually result in the element's mid point
+    startX = startCoord.left + 0.5*startElem.outerWidth() - svgLeft;    // x = left offset + 0.5*width - svg's left offset
+    startY = startCoord.top  + startElem.outerHeight() - svgTop;        // y = top offset + height - svg's top offset
 
+    // calculate path's end (x,y) coords
+    endX = endCoord.left + 0.5*endElem.outerWidth() - svgLeft;
+    endY = endCoord.top  - svgTop;
+
+    // call function for drawing the path
     drawPath(svg, path, startX, startY, endX, endY);
  }
 
  function drawPath(svg, path, startX, startY, endX, endY){
 
-    //console.log("delta x: " + (startX-endX));
-    // console.log("delta y: " + (startY-endY));
-    // console.log("70/delta x " + (70.0/(startX-endX)));
-    // console.log("70/delta y " + (70.0/(startY-endY)));
-    // console.log((startY +100) + "  " + (startY+ Math.abs(endY-startY)*0.15));
-    
-    var deltaY= Math.abs(endY-startY)*0.15;
-    var deltaX= (endX-startX)*0.15;
-    var delta = deltaY < Math.abs(deltaX) ? deltaY : Math.abs(deltaX)
+    // get the path's stroke width (if one wanted to be  really precize, one could use half the stroke size)
+    var stroke =  parseFloat(path.attr("stroke-width"));
+    // check if the svg is big enough to draw the path, if not, set heigh/width
+    if (svg.attr("height") <  endY)                  svg.attr("height", endY);
+    if (svg.attr("width" ) < (startX + stroke) )    svg.attr("width", (startX + stroke));
+    if (svg.attr("width" ) < (endX   + stroke) )    svg.attr("width", (endX   + stroke));
     
 
+    var deltaY = (endY - startY) * 0.15;
+    var deltaX = (endX - startX) * 0.15;
+    // for further calculations which ever is the shortest distance  (arbitrary choice, could have been the other way around)
+    var delta  =  deltaY < Math.abs(deltaX) ? deltaY : Math.abs(deltaX)
 
-    if (svg.attr("height") < endY)              svg.attr("height", endY);
-    if (svg.attr("width" ) < (endX + deltaX))    svg.attr("width", (endX + deltaX));
     
-    //change arc orientation according to where the divs are positioned
-    if (startX >endX) {
-        arc1 = 1
-        arc2 = 0
-    }else {
-        arc1 = 0
-        arc2 = 1
+    // set sweep-flag (counter/clock-wise)
+    // if start element is closer to the left edge,
+    // draw the first arc counter-clockwise, and the second one clock-wise
+    var arc1 = 0;
+    var arc2 = 1;
+    if (startX > endX) {
+        arc1 = 1;
+        arc2 = 0;
     }
 
+    // draw tha pipe-like path
+    // 1. move a bit down, 2. arch,  3. move a bit to the right, 4.arch, 5. move down to the end 
     path.attr("d",  "M"  + startX + " " + startY +
                     " V" + (startY + delta) +
                     " A" + delta + " " +  delta + " 0 0 " + arc1 + " " + (startX+delta * Math.sign(deltaX)) + " " + (startY+delta*2) +
                     " H" + (endX-delta* Math.sign(deltaX)) + 
                     " A" + delta + " " +  delta + " 0 0 " + arc2 + " " + endX + " " + (startY+delta*3) +
                     " V" + endY );
-     }
-   
+}
+
 
 $(document).on('page:change',function() {
+    // display the svg
     $("#svgContainer").css("display", "block");
-    changePath($("#path1"), $("#div1"), $("#div2") );
-    changePath($("#path2"), $("#div3"), $("#div2") );
-    changePath($("#path3"), $("#div1"), $("#div4") );
-    changePath($("#path4"), $("#div3"), $("#div4") );
+    // connect all the paths you want!
+    connectElements($("#path1"), $("#teal"), $("#orange"));
+    connectElements($("#path2"), $("#red"),  $("#orange"));
+    connectElements($("#path3"), $("#teal"), $("#green") );
+    connectElements($("#path4"), $("#red"),  $("#green") );
 
-});
-
-$(window).bind('resizeEnd', function() {
-   changePath($("#path1"), $("#div1"), $("#div2") );
-   changePath($("#path2"), $("#div3"), $("#div2") );
-   changePath($("#path3"), $("#div1"), $("#div4") );
-   changePath($("#path4"), $("#div3"), $("#div4") );
-
-        
-    //do something, window hasn't changed size in 500ms
 });
 
 $(window).resize(function () {
-   changePath($("#path1"), $("#div1"), $("#div2") );
-   changePath($("#path2"), $("#div3"), $("#div2") );
-   changePath($("#path3"), $("#div1"), $("#div4") );
-   changePath($("#path4"), $("#div3"), $("#div4") );  
+    connectElements($("#path1"), $("#teal"), $("#orange"));
+    connectElements($("#path2"), $("#red"),  $("#orange"));
+    connectElements($("#path3"), $("#teal"), $("#green") );
+    connectElements($("#path4"), $("#red"),  $("#green") ); 
 });
