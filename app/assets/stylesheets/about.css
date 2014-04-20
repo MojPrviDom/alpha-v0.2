@@ -87,12 +87,6 @@ font-family: "Bitter", sans-serif;
   text-align: center;
 }
 
-.about_highlight mark, .about_content mark {
- background-color: white;
- font-family: "Bitter", sans-serif;
- font-weight: bold;
- color: #222;
-}
 
 
 .lijevi_textbox, .desni_textbox{

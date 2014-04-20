@@ -1,5 +1,4 @@
 function changePath(path, startElem, endElem) {
-    var path = path ;
     var svgContainer= $("#svgContainer");
     var svg   = $("#svg1");
     var navOffset  =  $(".navigation_box").css("display") == "none"?

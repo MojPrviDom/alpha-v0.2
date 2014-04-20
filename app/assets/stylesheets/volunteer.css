@@ -1,0 +1,40 @@
+#svgContainer { 
+	display: none;
+	position:absolute;
+	z-index: -10;
+	background-color:  gray;
+	opacity: 0.5;
+}
+
+
+#volunteer_title h2  {
+	text-align: right;
+	font-size: 60px;
+	font-family: "Bitter", sans-serif;
+	font-weight: bold;
+	line-height: 1em;
+	border-bottom: 0.25em solid black;	
+}
+
+.volont_info_outer{
+	margin-top: 3em;
+
+}
+
+.volont_info_inner{
+	margin: 0 auto;
+	width:25%;
+	padding: 1.5em;
+	background-color: #B4A77D;
+	opacity: 0.65;
+}
+
+.volont_info_inner a:link, a:visited{
+	font-family: "Bitter", sans-serif;
+	font-weight: bold;
+	color:#222;
+	border-bottom: 0.2em solid #222 ;
+}
+.volont_info_inner a:hover{
+	background-color:yellow;
+}

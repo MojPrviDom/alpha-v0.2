@@ -23,6 +23,12 @@ body {
 
 h3 { font-size: 1.4em; }
 
+mark{
+ background-color: white;
+ font-family: "Bitter", sans-serif;
+ font-weight: bold;
+ color: #222;
+}
 
 #container {
 	width: 70%;

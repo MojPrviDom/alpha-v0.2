@@ -20,13 +20,6 @@
 	font-size: 23px;
 }
 
-#inner_kontakt mark {
-	 background-color: white;
-	 font-family: "Bitter", sans-serif;
-	 font-weight: bold;
-	 color: #222;
-
-}
 
 
 .poziv_donirate {
@@ -40,8 +33,6 @@
 	margin-top: 20px;
 	text-align: left;
 }
-.error_messages mark{background-color: white;}
-
 .error_messages ul{
 	list-style: circle;
 	list-style-position: inside;
