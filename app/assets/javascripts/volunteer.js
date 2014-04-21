@@ -91,11 +91,15 @@ function connectAll(){
 // });
 
 $(document).on('page:change',function() {
-    $("#svgContainer").css("display", "block"); // display the svg
+    // reset svg each time 
+    $("#svg1").attr("height", "0");
+    $("#svg1").attr("width", "0");
     connectAll();      // drawAll paths
 });
 
 
 $(window).resize(function () {
+    $("#svg1").attr("height", "0");
+    $("#svg1").attr("width", "0");
    connectAll();      // drawAll paths
 });
