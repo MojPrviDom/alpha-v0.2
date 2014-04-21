@@ -36,7 +36,11 @@ var slide_home = function(btn){
  }
 
 // get the weel's in motion for the home slider
-$( document ).ready(function() {
+// $( document ).ready(function() {
+//   $('.home_back, .home_fwd').click(function(event){ slide_home(this); } );
+// });
+
+$(document).on('page:change',function()  {
   $('.home_back, .home_fwd').click(function(event){ slide_home(this); } );
 });
 
