@@ -1,23 +1,51 @@
 <div id="svgContainer">
     <svg id="svg1" width="500" height="400" >
-        <path
+       <path
             id="path1"
+            d="M0 0"             
+            stroke-width="0.5em"
+            stroke-dasharray="25,25"
+            style="stroke:#000; fill:none;  "/>
+        <path
+            id="path2"
+            d="M0 0"             
+            stroke-width="0.5em"
+            style="stroke:#000; fill:none;  "/>
+        <path
+            id="path3"
+            d="M0 0"             
+            stroke-width="0.5em"
+            style="stroke:#000; fill:none;  "/>
+        <path
+            id="path4"
+            d="M0 0"             
+            stroke-width="0.5em"
+            stroke-dasharray="25,25"
+            stroke-linecap="round"
+            style="stroke:#000; fill:none;  "/>
+        <path
+            id="path5"
+            d="M0 0"             
+            stroke-width="0.5em"
+            style="stroke:#000; fill:none;  "/>
+        <path
+            id="try1"
             d="M0 0"             
             stroke-width="12px"
             style="stroke:#000; fill:none;  "/>
 
          <path
-            id="path2"
+            id="try2"
             d="M0 0"             
             stroke-width="12px"
             style="stroke:#000; fill:none;  "/>
          <path
-            id="path3"
+            id="try3"
             d="M0 0"             
             stroke-width="12px"
             style="stroke:#000; fill:none;  "/>
            <path
-            id="path4"
+            id="try4"
             d="M0 0"             
             stroke-width="12px"
             style="stroke:#000; fill:none;  "/>
@@ -30,12 +58,31 @@
 </div>
 
 <div class="volont_info_outer">
-	<div class= "volont_info_inner">
-		<p>Imate volju i želju da nekome uljepšate život? :)</p><br>
+	<div id= "volont_info">
+		<p>Imate volju i želju nekome uljepšati život? :)</p>
 		<p>U tom slučaju, pogledajte naše <br>
 			<mark>&nbsp <%= link_to "projekte & novosti", root_path %> &nbsp</mark> za više informacija o našim trenutnim  aktivnostima  </p>
-
 	</div>
+
+  <div id= "volont_uvjeren">
+    <p>Svidjeli su vam se naši projekti i jedva čekate pomoći? :)</p>
+  </div>
+
+  <div id= "volont_nebas">
+    <p>Kao super su nam projekti, ali ne vidiš kako se ti ukapaš u cijelu priču i što zapravo možeš učiniti?</p>
+  </div>
+
+  <div id= "volont_nebrini">
+    <p>Ne brini, dobri i topli ljudi uvijek su dobrodošli, dapače poželjni. Slobodno se javi, sigurni smo da ćemo nešto smisliti
+    </p>
+  </div>
+
+  <div id= "volont_javi">
+    <p> <b> ala text text lala </b></p>
+     <p><mark>&nbsp <%= link_to "javite nam se", new_contact_path %> &nbsp</mark> 
+    <br> <b>hvala! <b></p>
+  </div>
+
 </div>
 
 

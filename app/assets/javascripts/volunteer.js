@@ -33,8 +33,7 @@ function connectElements(path, startElem, endElem) {
 
  function drawPath(svg, path, startX, startY, endX, endY){
 
-    // get the path's stroke width (if one wanted to be  really precize, one could use half the stroke size)
-    var stroke =  parseFloat(path.attr("stroke-width"));
+    var stroke =  parseFloat(path.attr("stroke-width")) + 10;
     // check if the svg is big enough to draw the path, if not, set heigh/width
     if (svg.attr("height") <  endY)                  svg.attr("height", endY);
     if (svg.attr("width" ) < (startX + stroke) )    svg.attr("width", (startX + stroke));
@@ -72,16 +71,35 @@ $(document).on('page:change',function() {
     // display the svg
     $("#svgContainer").css("display", "block");
     // connect all the paths you want!
-    connectElements($("#path1"), $("#teal"), $("#orange"));
-    connectElements($("#path2"), $("#red"),  $("#orange"));
-    connectElements($("#path3"), $("#teal"), $("#green") );
-    connectElements($("#path4"), $("#red"),  $("#green") );
+
+    connectElements($("#path1"), $("#volont_info"),     $("#volont_uvjeren"));
+    connectElements($("#path2"), $("#volont_info"),     $("#volont_nebas")  );
+    connectElements($("#path3"), $("#volont_nebas"),    $("#volont_nebrini"));
+    connectElements($("#path4"), $("#volont_uvjeren"),  $("#volont_javi")   );
+    connectElements($("#path5"), $("#volont_nebrini"),  $("#volont_javi")   );
+
+
+
+
+
+    //test
+    connectElements($("#try1"), $("#teal"), $("#orange"));
+    connectElements($("#try2"), $("#red"),  $("#orange"));
+    connectElements($("#try3"), $("#teal"), $("#green") );
+    connectElements($("#try4"), $("#red"),  $("#green") );
 
 });
 
 $(window).resize(function () {
-    connectElements($("#path1"), $("#teal"), $("#orange"));
-    connectElements($("#path2"), $("#red"),  $("#orange"));
-    connectElements($("#path3"), $("#teal"), $("#green") );
-    connectElements($("#path4"), $("#red"),  $("#green") ); 
+    connectElements($("#path1"), $("#volont_info"),     $("#volont_uvjeren"));
+    connectElements($("#path2"), $("#volont_info"),     $("#volont_nebas")  );
+    connectElements($("#path3"), $("#volont_nebas"),    $("#volont_nebrini"));
+    connectElements($("#path4"), $("#volont_uvjeren"),  $("#volont_javi")   );
+    connectElements($("#path5"), $("#volont_nebrini"),  $("#volont_javi")   );
+
+
+    connectElements($("#try1"), $("#teal"), $("#orange"));
+    connectElements($("#try2"), $("#red"),  $("#orange"));
+    connectElements($("#try3"), $("#teal"), $("#green") );
+    connectElements($("#try4"), $("#red"),  $("#green") ); 
 });
