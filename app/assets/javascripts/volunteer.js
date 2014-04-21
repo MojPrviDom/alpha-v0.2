@@ -66,26 +66,30 @@ function connectElements(path, startElem, endElem) {
                     " V" + endY );
 }
 
+function drawAll(){
+    // connect all the paths you want!
+    connectElements($("#path1"), $("#volont_info"),     $("#volont_uvjeren"));
+    connectElements($("#path2"), $("#volont_info"),     $("#volont_nebas")  );
+    connectElements($("#path3"), $("#volont_nebas"),    $("#volont_nebrini"));
+    connectElements($("#path4"), $("#volont_uvjeren"),  $("#volont_javi")   );
+    connectElements($("#path5"), $("#volont_nebrini"),  $("#volont_javi")   );
+
+
+}
+
 
 $(document).on('page:change',function() {
-    // display the svg
-    $("#svgContainer").css("display", "block");
-    // connect all the paths you want!
-
-    connectElements($("#path1"), $("#volont_info"),     $("#volont_uvjeren"));
-    connectElements($("#path2"), $("#volont_info"),     $("#volont_nebas")  );
-    connectElements($("#path3"), $("#volont_nebas"),    $("#volont_nebrini"));
-    connectElements($("#path4"), $("#volont_uvjeren"),  $("#volont_javi")   );
-    connectElements($("#path5"), $("#volont_nebrini"),  $("#volont_javi")   );
-
-
+    $("#svgContainer").css("display", "block"); // display the svg
+    drawAll();      // drawAll paths
 });
 
+$( document ).ready(function() {
+    $("#svgContainer").css("display", "block"); // display the svg
+    drawAll();      // drawAll paths
+});
+
+
 $(window).resize(function () {
-    connectElements($("#path1"), $("#volont_info"),     $("#volont_uvjeren"));
-    connectElements($("#path2"), $("#volont_info"),     $("#volont_nebas")  );
-    connectElements($("#path3"), $("#volont_nebas"),    $("#volont_nebrini"));
-    connectElements($("#path4"), $("#volont_uvjeren"),  $("#volont_javi")   );
-    connectElements($("#path5"), $("#volont_nebrini"),  $("#volont_javi")   );
+    drawAll();      // drawAll paths
 
 });
