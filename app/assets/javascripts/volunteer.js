@@ -79,15 +79,6 @@ $(document).on('page:change',function() {
     connectElements($("#path5"), $("#volont_nebrini"),  $("#volont_javi")   );
 
 
-
-
-
-    //test
-    connectElements($("#try1"), $("#teal"), $("#orange"));
-    connectElements($("#try2"), $("#red"),  $("#orange"));
-    connectElements($("#try3"), $("#teal"), $("#green") );
-    connectElements($("#try4"), $("#red"),  $("#green") );
-
 });
 
 $(window).resize(function () {
@@ -97,9 +88,4 @@ $(window).resize(function () {
     connectElements($("#path4"), $("#volont_uvjeren"),  $("#volont_javi")   );
     connectElements($("#path5"), $("#volont_nebrini"),  $("#volont_javi")   );
 
-
-    connectElements($("#try1"), $("#teal"), $("#orange"));
-    connectElements($("#try2"), $("#red"),  $("#orange"));
-    connectElements($("#try3"), $("#teal"), $("#green") );
-    connectElements($("#try4"), $("#red"),  $("#green") ); 
 });

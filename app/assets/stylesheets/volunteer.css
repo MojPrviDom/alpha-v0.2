@@ -2,8 +2,7 @@
 	display: none;
 	position:absolute;
 	z-index: -10;
-	background-color:  gray;
-	opacity: 0.5;
+	
 }
 
 
@@ -18,6 +17,7 @@
 
 .volont_info_outer{
 	margin-top: 3em;
+	color: #333;
 }
 
 .volont_info_outer b{
@@ -40,8 +40,7 @@
 	margin: 0 auto;
 	width:25%;
 	padding: 1.5em;
-	background-color: #B4A77D;
-	opacity: 0.5;
+	background-color: #D4CCB3;
 }
 
 
@@ -50,30 +49,28 @@
 	width:25%;
 	float: left;
 	padding: 1.5em;
-	background-color: #944250;
-	opacity: 0.5;
+	background-color: #C49A9D;
 }
 
 #volont_nebas{
 	margin: 5em 70%;
 	width:25%;
 	padding: 1.5em;
-	background-color: teal;
-	opacity: 0.5;
+	background-color: #7AB9B5;
 }
 
 #volont_nebrini{
 	margin: 5em 70%;
 	width:25%;
 	padding: 1.5em;
-	background-color: orange;
-	opacity: 0.5;
+	background-color: #F9CB75;
 }
 
 #volont_javi{
 	margin: 5em auto;
-	width:20%;
+	text-align: center;
+	width:15%;
 	padding: 1.5em;
-	background-color: seagreen;
-	opacity: 0.5;
+	background-color: #91BEA0;
+
 }
