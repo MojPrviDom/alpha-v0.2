@@ -46,6 +46,12 @@
 	padding: 1.5em;
 	background-color: #D4CCB3;
 }
+#volont_info img{
+	display: inline;
+	width: 7em;
+	height: auto;
+
+}
 
 
 #volont_uvjeren{
@@ -55,7 +61,12 @@
 	padding: 1.5em;
 	background-color: #C49A9D;
 }
+#volont_uvjeren img{
+	display: inline;
+	width: 3.5em;
+	height: auto;
 
+}
 #volont_nebas{
 	margin: 5em 70%;
 	width:25%;
