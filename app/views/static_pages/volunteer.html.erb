@@ -1,33 +1,33 @@
 <div id="svgContainer">
-    <svg id="svg1" width="500" height="400" >
+    <svg id="svg1" width="0" height="0" >
        <path
             id="path1"
             d="M0 0"             
             stroke-width="0.5em"
             stroke-dasharray="25,25"
-            style="stroke:#000; fill:none;  "/>
+            style="stroke:#555; fill:none;  "/>
         <path
             id="path2"
             d="M0 0"             
             stroke-width="0.5em"
-            style="stroke:#000; fill:none;  "/>
+            style="stroke:#222; fill:none;  "/>
         <path
             id="path3"
             d="M0 0"             
             stroke-width="0.5em"
-            style="stroke:#000; fill:none;  "/>
+            style="stroke:#222; fill:none;  "/>
         <path
             id="path4"
             d="M0 0"             
             stroke-width="0.5em"
             stroke-dasharray="25,25"
             stroke-linecap="round"
-            style="stroke:#000; fill:none;  "/>
+            style="stroke:#555; fill:none;  "/>
         <path
             id="path5"
             d="M0 0"             
             stroke-width="0.5em"
-            style="stroke:#000; fill:none;  "/>
+            style="stroke:#222; fill:none;  "/>
     </svg>
 </div>
 
@@ -37,30 +37,37 @@
 </div>
 
 <div class="volont_info_outer">
-	<div id= "volont_info">
-		<p>Imate volju i želju nekome uljepšati život? :)</p>
-		<p>U tom slučaju, pogledajte naše <br>
-			<mark>&nbsp <%= link_to "projekte & novosti", root_path %> &nbsp</mark> za više informacija o našim trenutnim  aktivnostima  </p>
-	</div>
-
-  <div id= "volont_uvjeren">
-    <p>Svidjeli su vam se naši projekti i jedva čekate pomoći? :)</p>
-  </div>
-
-  <div id= "volont_nebas">
-    <p>Kao super su nam projekti, ali ne vidiš kako se ti ukapaš u cijelu priču i što zapravo možeš učiniti?</p>
-  </div>
-
-  <div id= "volont_nebrini">
-    <p>Ne brini, dobri i topli ljudi uvijek su dobrodošli, dapače poželjni. Slobodno se javi, sigurni smo da ćemo nešto smisliti
+  <div class="volont_description">
+     <p id="volont_qoute"> "Ako ti se svijet doima hladnim, rasplamsaj vartu da ga ugriješ." — Lucy Larcom </p> 
+    <p>
+      Ako ovo čitate, vjerojatno ste zainteresirani pružiti pomoć, hvala Vam na iskazanom interesu, i  <mark>hvala Vam</mark> na tome što ste osoba s dobrim namjerama. <mark>Svijet treba više ljudi poput Vas, a trebamo i mi. &nbsp; :) &nbsp; </mark> &nbsp;U nastavku smo za Vas pripremili mali dijagram kako bi lakše saznali više o volontiraju u udruzi "Moj prvi Dom".
     </p>
+   
   </div>
+  	<div id= "volont_info">
+      <p><b><%= image_tag("volunteer/search.png")%>[TEST]</b></p>
+  		<p>Imate volju i želju nekome uljepšati život? :)</p>
+  		<p>U tom slučaju, pogledajte naše <br>
+  			<mark>&nbsp; <%= link_to "projekte & novosti", root_path %> &nbsp;</mark> za više informacija o našim trenutnim  aktivnostima  </p>
+  	</div>
 
-  <div id= "volont_javi">
-    <p> <b> ala text text lala </b></p>
-     <p><mark>&nbsp <%= link_to "javite nam se", new_contact_path %> &nbsp</mark> 
-    <br> <b>hvala! <b></p>
-  </div>
+    <div id= "volont_uvjeren">
+      <p><%= image_tag("volunteer/idea.png")%>Svidjeli su vam se naši projekti i jedva čekate pomoći? :)</p>
+    </div>
 
+    <div id= "volont_nebas"> 
+      <p><%= image_tag("volunteer/shoulder_shrug.png")%> <%= image_tag("volunteer/hmm.png")%>   Kao super su nam projekti, ali ne vidiš kako se ti ukapaš u cijelu priču i što zapravo možeš učiniti?</p>
+    </div>
+
+    <div id= "volont_nebrini">
+      <p>Ne brini, dobri i topli ljudi uvijek su dobrodošli, dapače poželjni. Slobodno se javi, sigurni smo da ćemo nešto smisliti
+      </p>
+    </div>
+
+    <div id= "volont_javi">
+      <p>  Tekst tekst tekst </p>
+       <p><mark>&nbsp; <%= link_to "javite nam se", new_contact_path %> &nbsp;</mark> 
+      <br> <b>hvala! </b></p>
+    </div>
 
 </div>

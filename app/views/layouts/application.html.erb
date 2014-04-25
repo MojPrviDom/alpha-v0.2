@@ -48,7 +48,7 @@
 						<li> <%= link_to "Početna",			root_path %>		</li>
 						<li> <%= link_to "Novosti",			root_path %>		</li>
 						<li> <%= link_to "O nama",			about_path %>		</li>
-						<li> <%= link_to "Donacija",		donations_path %>	</li>
+						<li> <%= link_to "Doniranje",		donations_path %>	</li>
 						<li> <%= link_to "Volontiranje",	volunteer_path %>	</li>
 						<li> <%= link_to "Kontakt",			new_contact_path %>	</li>
 		</ul>
@@ -56,7 +56,12 @@
 		
 	</div>
 
-
+<div class="preload" style="display:none">
+	<%= image_tag("volunteer/search.png")%>
+	<%= image_tag("volunteer/idea.png")%>
+	<%= image_tag("volunteer/shoulder_shrug.png")%> 
+	<%= image_tag("volunteer/hmm.png")%> 
+</div>
 <script>
 	$( ".navigation_logo" ).click(function() {							// Navigation bar toogle
 		$( ".navigation_box" ).slideToggle( "slow", function() {			// When clicked navigation bar slides down or up

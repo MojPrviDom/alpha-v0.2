@@ -70,8 +70,8 @@
 
 .name input[type="text"], .email input[type="text"], .subject input[type="text"], textarea, input[type="submit"], input[placeholder], textarea[placeholder] {
 	height: 2em;
-	background-color: #f5f5f5;
-	border: 1px solid #e1e1e1;
+	background-color: #fff;
+	border: 0.1em solid #bebebe;
 	font-family: verdana !important;
 	color:#2f3034;
 	margin-bottom: 1.5em;

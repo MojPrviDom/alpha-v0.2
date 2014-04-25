@@ -1,8 +1,6 @@
 #svgContainer { 
-	display: none;
 	position:absolute;
-	z-index: -10;
-	opacity: 0.5;
+	z-index: -10;	
 }
 
 
@@ -17,14 +15,21 @@
 
 .volont_info_outer{
 	margin-top: 3em;
+	color: #333;
 }
 
 .volont_info_outer b{
 	font-family: "Bitter", sans-serif;
 	font-weight: bold;
 }
+.volont_info_outer mark{
+ background-color: white;
+ font-family: "Bitter", sans-serif;
+ font-weight: bold;
+ color: #222;
+}
 
-.volont_info_outer a:link, a:visited{
+.volont_info_outer a{
 	font-family: "Bitter", sans-serif;
 	font-weight: bold;
 	color:#222;
@@ -34,13 +39,28 @@
 .volont_info_outer a:hover{
 	background-color:yellow;
 }
+.volont_description{
+	margin-bottom: 2em;
+	text-align: justify;
+}
+
+#volont_qoute { 
+	font-style: italic;
+	font-size: 0.8em;
+	font-family:  Georgia, serif;}
+
 
 #volont_info{
 	margin: 0 auto;
 	width:25%;
 	padding: 1.5em;
-	background-color: #B4A77D;
-	opacity: 0.5;
+	background-color: #D4CCB3;
+}
+#volont_info img{
+	display: inline;
+	width: 7em;
+	height: auto;
+
 }
 
 
@@ -49,30 +69,39 @@
 	width:25%;
 	float: left;
 	padding: 1.5em;
-	background-color: #944250;
-	opacity: 0.5;
+	background-color: #C49A9D;
 }
+#volont_uvjeren img{
+	display: inline;
+	width: 3.5em;
+	height: auto;
 
+}
 #volont_nebas{
 	margin: 5em 70%;
 	width:25%;
 	padding: 1.5em;
-	background-color: teal;
-	opacity: 0.5;
+	background-color: #7AB9B5;
+}
+#volont_nebas img{
+	display: inline;
+	width: 2.5em;
+	height: auto;
+
 }
 
 #volont_nebrini{
 	margin: 5em 70%;
 	width:25%;
 	padding: 1.5em;
-	background-color: orange;
-	opacity: 0.5;
+	background-color: #F9CB75;
 }
 
 #volont_javi{
 	margin: 5em auto;
-	width:20%;
+	text-align: center;
+	width:15%;
 	padding: 1.5em;
-	background-color: seagreen;
-	opacity: 0.5;
+	background-color: #91BEA0;
+
 }
