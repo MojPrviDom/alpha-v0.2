@@ -41,9 +41,9 @@
 }
 
 #volont_info{
+	width: 45%;
+	height: 15em;
 	margin: 0 auto;
-	width:25%;
-	padding: 1.5em;
 	background-color: #D4CCB3;
 }
 #volont_info img{
@@ -52,7 +52,6 @@
 	height: auto;
 
 }
-
 
 #volont_uvjeren{
 	margin: 5em 0;
@@ -71,14 +70,26 @@
 	margin: 5em 70%;
 	width:25%;
 	padding: 1.5em;
+	height: 10em;
 	background-color: #7AB9B5;
 }
-#volont_nebas img{
+#volont_nebas img {
 	display: inline;
 	width: 2.5em;
 	height: auto;
+	float: left;
 
 }
+.clear {
+	clear: both;
+}
+
+
+#volont_nebas p {
+	float: right;
+	width: 80%;
+}
+
 
 #volont_nebrini{
 	margin: 5em 70%;
@@ -94,4 +105,21 @@
 	padding: 1.5em;
 	background-color: #91BEA0;
 
+}
+
+.volont_img{
+	float: right;
+	width: auto;
+	height: auto;
+	background-color: red;
+}
+
+.volont_img img {
+	width: 2em;
+	height: 1em;
+}
+
+.volont_text{
+	float: right;
+	width: 80%;
 }
