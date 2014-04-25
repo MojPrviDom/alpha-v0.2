@@ -23,10 +23,10 @@
 	font-weight: bold;
 }
 .volont_info_outer mark{
- background-color: white;
- font-family: "Bitter", sans-serif;
- font-weight: bold;
- color: #222;
+	background-color: white;
+	font-family: "Bitter", sans-serif;
+	font-weight: bold;
+	color: #222;
 }
 
 .volont_info_outer a{
@@ -50,33 +50,6 @@
 	font-family:  Georgia, serif;
 	text-align: center;
 }
-
-
-
-
-
-
-
-#volont_nebas{
-
-}
-
-
-}
-.clear {
-	clear: both;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 .volont_box{
@@ -108,17 +81,11 @@
 	height: auto;
 	float: left;
 	margin-left: 0.5em;
-	*background-color: red;
 	font-size: 0.8em;
 	vertical-align: middle;
 	display: table-cell;
 }
 
-
-#volont_uvjeren p {
-	*background-color: blue;
-
-}
 
 #volont_nebas {
 	width: 30%;
@@ -133,9 +100,6 @@
 	background-color: #F2D3A0;
 }
 
-#volont_uvjeren img {
-	*background-color: red;
-}
 
 #volont_nebrini{
 	margin: 5em 62%;
@@ -198,10 +162,6 @@
 		width:320px;
 
 	}
-
-
-
-
 }
 
 @media screen and (max-width: 440px) {
@@ -229,7 +189,5 @@
 		height: 8.2em;
 
 	}
-
-
 
 }
