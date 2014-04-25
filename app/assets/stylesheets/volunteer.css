@@ -39,6 +39,16 @@
 .volont_info_outer a:hover{
 	background-color:yellow;
 }
+.volont_description{
+	margin-bottom: 2em;
+	text-align: justify;
+}
+
+#volont_qoute { 
+	font-style: italic;
+	font-size: 0.8em;
+	font-family:  Georgia, serif;}
+
 
 #volont_info{
 	margin: 0 auto;
