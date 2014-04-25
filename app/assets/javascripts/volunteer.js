@@ -84,18 +84,8 @@ function connectAll(){
     connectElements($("#path3"), $("#volont_nebas"),    $("#volont_nebrini"));
     connectElements($("#path4"), $("#volont_uvjeren"),  $("#volont_javi")   );
     connectElements($("#path5"), $("#volont_nebrini"),  $("#volont_javi")   );
-
-
 }
 
-//add here any images if in need of preloading
-function preloadImages(){
-    if (document.images) {
-        new Image().src = "assets/volunteer/search.png";
-        new Image().src = "assets/volunteer/shoulder_shrug.png";
-        new Image().src = "assets/volunteer/hmm.png";   
-    }
-}
 
 //this will draw the svg path if we navigate to the volunteer page from another page within our site
 $(document).on('page:change',function() {
@@ -105,7 +95,6 @@ $(document).on('page:change',function() {
 
 //this will draw the svg path if we navigate directly to the volunteer page from somewhere else other than our site
 $(window).load(function() {
-    preloadImages();
     connectAll();      // drawAll paths
 });
 
