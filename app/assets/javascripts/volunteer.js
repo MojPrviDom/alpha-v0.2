@@ -75,31 +75,31 @@ function connectElements(path, startElem, endElem) {
 
 
 function connectAll(){
+    // reset svg each time 
+    $("#svg1").attr("height", "0");
+    $("#svg1").attr("width", "0");
     // connect all the paths you want!
     connectElements($("#path1"), $("#volont_info"),     $("#volont_uvjeren"));
     connectElements($("#path2"), $("#volont_info"),     $("#volont_nebas")  );
     connectElements($("#path3"), $("#volont_nebas"),    $("#volont_nebrini"));
     connectElements($("#path4"), $("#volont_uvjeren"),  $("#volont_javi")   );
     connectElements($("#path5"), $("#volont_nebrini"),  $("#volont_javi")   );
-
-
 }
 
-// $( document ).ready(function(){
-//     $("#svgContainer").css("display", "block"); // display the svg
-//     connectAll();      // drawAll paths
-// });
 
+//this will draw the svg path if we navigate to the volunteer page from another page within our site
 $(document).on('page:change',function() {
-    // reset svg each time 
-    $("#svg1").attr("height", "0");
-    $("#svg1").attr("width", "0");
     connectAll();      // drawAll paths
 });
 
 
+//this will draw the svg path if we navigate directly to the volunteer page from somewhere else other than our site
+$(window).load(function() {
+    connectAll();      // drawAll paths
+});
+
+
+//pretty self-explanatory, re-draws paths each time window is resized
 $(window).resize(function () {
-    $("#svg1").attr("height", "0");
-    $("#svg1").attr("width", "0");
-   connectAll();      // drawAll paths
+   connectAll();      // drawAll paths  
 });

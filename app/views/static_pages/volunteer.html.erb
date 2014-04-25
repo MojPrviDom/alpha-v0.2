@@ -37,34 +37,51 @@
 </div>
 
 <div class="volont_info_outer">
-  	<div class="volunteer_box" id= "volont_info">
+  <div class="volont_description">
+     <p id="volont_qoute"> "Ako ti se svijet doima hladnim, rasplamsaj vartu da ga ugriješ." — Lucy Larcom </p> <br>
+    <p>
+      Ako ovo čitate, vjerojatno ste zainteresirani pružiti pomoć, hvala Vam na iskazanom interesu, i  hvala Vam na tome što ste osoba s dobrim namjerama. <mark>Svijet treba više ljudi poput Vas, a trebamo i mi. &nbsp; :) &nbsp; </mark> &nbsp;U nastavku smo za Vas pripremili mali dijagram kako bi lakše saznali više o volontiraju u udruzi "Moj prvi Dom".
+    </p>
+   <div class="clear"></div>
+  </div>
+
+
+  	<div class="volont_box" id="volont_info">
   		<div class="volont_img"><%= image_tag("volunteer/big_heart.svg")%></div>
-      	<div class="volont_text">
-	  		<p>Imate volju i želju nekome uljepšati život? :)</p>
+    	<div class="volont_text"><p>Imate volju i želju nekome uljepšati život? </p>
 	  		<p>U tom slučaju, pogledajte naše <br>
   			<mark>&nbsp; <%= link_to "projekte & novosti", root_path %> &nbsp;</mark> za više informacija o našim trenutnim  aktivnostima  </p>
   		</div>
   	</div>
 
-    <div class="volunteer_box" id= "volont_uvjeren">
-      <p><%= image_tag("volunteer/idea.png")%>Svidjeli su vam se naši projekti i jedva čekate pomoći? :)</p>
+    <div class="volont_box" id= "volont_uvjeren">
+      <div class="volont_img"><%= image_tag("volunteer/happy.svg")%></div>
+      <div class="volont_text"><p>Svidjeli su vam se naši projekti i jedva čekate pomoći? :)</p></div>
     </div>
 
-    <div class="volunteer_box" id= "volont_nebas"> 
-      <%= image_tag("volunteer/shoulder_shrug.svg")%><p>    Kao super su nam projekti, ali ne vidiš kako se ti ukapaš u cijelu priču i što zapravo možeš učiniti?</p>
+    <div class="volont_box" id="volont_nebas"> 
+      <div class="volont_img"><%= image_tag("volunteer/shoulder_shrug.svg")%></div>
+      <div class="volont_text"><p>Kao super su nam projekti, ali ne vidiš kako se ti ukapaš u cijelu priču i što zapravo možeš učiniti?</p></div>
     </div>
 
-    <div class="volunteer_box" id= "volont_nebrini">
-      <p>Ne brini, dobri i topli ljudi uvijek su dobrodošli, dapače poželjni. Slobodno se javi, sigurni smo da ćemo nešto smisliti
-      </p>
+    <div class="volont_box" id= "volont_nebrini">
+      <div class="volont_img"><%= image_tag("volunteer/love.svg")%></div>
+      <div class="volont_text"><p>Ne brini, dobri i topli ljudi uvijek su dobrodošli, dapače poželjni. Slobodno se javi, sigurni smo da ćemo nešto smisliti
+      </p></div>
     </div>
     <div class="clear"></div>
 
-    <div class="volunteer_box" id= "volont_javi">
-      <p>  Tekst tekst tekst </p>
-       <p><mark>&nbsp; <%= link_to "javite nam se", new_contact_path %> &nbsp;</mark> 
-      <br> <b>hvala! </b></p>
+    <div class="volont_box" id= "volont_javi">
+     	<div class="volont_img"><%= image_tag("volunteer/bird.svg")%></div>
+	    <div class="volont_text">
+		    <p>  Imaš želju sudjelovati u našim projektima? </p>
+		    <p>  Ili imaš želju na bilo koji način pomoći? </p>
+		    <p><mark>&nbsp; <%= link_to "javite nam se", new_contact_path %> &nbsp;</mark> 
+		    <br> <b>hvala! </b></p>
+		</div>
     </div>
+
+
 
 </div>
 
