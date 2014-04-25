@@ -3,7 +3,6 @@
 	z-index: -10;	
 }
 
-
 #volunteer_title h2  {
 	text-align: right;
 	font-size: 60px;
@@ -23,10 +22,10 @@
 	font-weight: bold;
 }
 .volont_info_outer mark{
-	background-color: white;
-	font-family: "Bitter", sans-serif;
-	font-weight: bold;
-	color: #222;
+	 background-color: white;
+	 font-family: "Bitter", sans-serif;
+	 font-weight: bold;
+	 color: #222;
 }
 
 .volont_info_outer a{
@@ -51,7 +50,6 @@
 	text-align: center;
 }
 
-
 .volont_box{
 	background-color: #D9DBB9;
 	width: 42%;
@@ -66,6 +64,7 @@
 	float: left;
 	text-align: center;
 
+
 }
 
 .volont_img img {
@@ -76,14 +75,14 @@
 	max-width: 100%;
 }
 
-.volont_text{
+.volont_text {
 	width: 80%;
-	height: auto;
+	height: 100%;
 	float: left;
 	margin-left: 0.5em;
 	font-size: 0.8em;
-	vertical-align: middle;
 	display: table-cell;
+    vertical-align:middle;
 }
 
 
@@ -115,7 +114,9 @@
 	background-color: #91BEA0;
 
 }
-
+ #volont_javi img{
+ 	margin-left:0.6em;
+ }
 
 
 @media screen and (max-width: 1300px) {
