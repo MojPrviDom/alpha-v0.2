@@ -46,62 +46,190 @@
 
 #volont_qoute { 
 	font-style: italic;
-	font-size: 0.8em;
-	font-family:  Georgia, serif;}
+	font-size: 0.9em;
+	font-family:  Georgia, serif;
+	text-align: center;
+}
 
 
-#volont_info{
+
+
+
+
+
+#volont_nebas{
+
+}
+
+
+}
+.clear {
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.volont_box{
+	background-color: #D9DBB9;
+	width: 42%;
+	height: 7em;
+	padding: 0.5em;
 	margin: 0 auto;
-	width:25%;
-	padding: 1.5em;
-	background-color: #D4CCB3;
 }
-#volont_info img{
-	display: inline;
-	width: 7em;
+
+.volont_img {
+	width: 15%;
+	height: 100%;
+	float: left;
+	text-align: center;
+
+}
+
+.volont_img img {
+	width:  auto;
+	height:100%;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 100%;
+}
+
+.volont_text{
+	width: 80%;
 	height: auto;
+	float: left;
+	margin-left: 0.5em;
+	*background-color: red;
+	font-size: 0.8em;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+
+#volont_uvjeren p {
+	*background-color: blue;
 
 }
 
+#volont_nebas {
+	width: 30%;
+	margin: 5em 60%;
+	background-color: #9DBFBB;
+}
 
 #volont_uvjeren{
 	margin: 5em 0;
-	width:25%;
-	float: left;
-	padding: 1.5em;
-	background-color: #C49A9D;
+	width: 35%;
+	height: 5em;
+	background-color: #F2D3A0;
 }
-#volont_uvjeren img{
-	display: inline;
-	width: 3.5em;
-	height: auto;
 
-}
-#volont_nebas{
-	margin: 5em 70%;
-	width:25%;
-	padding: 1.5em;
-	background-color: #7AB9B5;
-}
-#volont_nebas img{
-	display: inline;
-	width: 2.5em;
-	height: auto;
-
+#volont_uvjeren img {
+	*background-color: red;
 }
 
 #volont_nebrini{
-	margin: 5em 70%;
-	width:25%;
-	padding: 1.5em;
-	background-color: #F9CB75;
+	margin: 5em 62%;
+	background-color: #E2E2CA;
+	width: 40%;
+	height: 6.5em;
 }
 
 #volont_javi{
 	margin: 5em auto;
 	text-align: center;
-	width:15%;
-	padding: 1.5em;
+	width:40%;
 	background-color: #91BEA0;
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+	.volont_box {
+		height: 10em;
+	}
+} 
+
+@media screen and (max-width: 1200px) {
+	.volont_box {
+		height: 7em;
+	}
+} 
+
+
+@media screen and (max-width: 850px) {
+	.volont_box {
+		width: 16.85em;
+	}
+
+	.volont_text p {
+		font-size: 0.9em;
+		line-height: 2em;
+	}
+
+	#volont_nebas {
+		width: 43%;
+		margin: 5em 55%;
+
+	}
+
+	#volont_uvjeren{
+		margin: 5em 0;
+		height: 5em;
+	}
+
+	#volont_nebrini{
+		margin: 5em 55%;
+		width: 45%;
+		height: 6.6em;
+	}
+
+	#volont_javi{
+		width:320px;
+
+	}
+
+
+
+
+}
+
+@media screen and (max-width: 440px) {
+	#volont_nebas {
+		width: 60%;
+		margin: 5em 35%;
+		line-height: 5px;
+
+	}
+
+	#volont_uvjeren{
+		margin: 5em 0;
+		width: 180px;
+		height: 5em;
+	}
+
+	#volont_nebrini{
+		width: 62%;
+		height:8.5em;
+		margin: 5em 35%;
+	}
+
+	#volont_javi{
+		width:90%;
+		height: 8.2em;
+
+	}
+
+
 
 }
