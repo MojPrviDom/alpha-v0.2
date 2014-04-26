@@ -30,16 +30,16 @@ function drawPath(svg, path, startX, startY, endX, endY){
     }
 
     // hardcoded, mediaquery-like rendering of path4 when screen <440px;
-    if( $(window).width() <=440 && path.attr("id") == "path4"){
+    if( $(window).width() <=780 && path.attr("id") == "path4"){
          path.attr("d",  "M"  + startX + " " + startY +
                         " V" + (startY + delta) +
                         " A" + delta + " " +  delta + " 0 0 " + arc2 + " " + (startX - delta*signum(deltaX)) + " " + (startY + 2*delta) +
                         " H" + (startX - 2*delta*signum(deltaX)) + 
                         " A" + delta + " " +  delta + " 0 0 " + arc1 + " " + (startX - 3*delta*signum(deltaX)) + " " + (startY + 3*delta) +
-                        " V" + (endY-4*delta) +
-                        " A" + delta + " " +  delta + " 0 0 " + arc1 + " " + (startX - 2*delta*signum(deltaX)) + " " + (endY- 3*delta) +
+                        " V" + (endY-3*delta) +
+                        " A" + delta + " " +  delta + " 0 0 " + arc1 + " " + (startX - 2*delta*signum(deltaX)) + " " + (endY- 2*delta) +
                         " H" + (endX-delta*signum(deltaX))+ 
-                        " A" + delta + " " +  delta + " 0 0 " + arc2 + " " + (endX) + " " + (endY- 2*delta) +
+                        " A" + delta + " " +  delta + " 0 0 " + arc2 + " " + (endX) + " " + (endY- delta) +
                         " V" + endY );
     }else{
         // draw tha pipe-like path
