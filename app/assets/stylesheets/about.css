@@ -22,7 +22,7 @@ font-family: "Bitter", sans-serif;
 	border-bottom: 0.2em solid #222 ;
 }
 #inner_about_us a:hover{
-	background-color:yellow;
+	background-color:rgba(200,200,150, .5);
 }
 
 #inner_about_us h1 {
