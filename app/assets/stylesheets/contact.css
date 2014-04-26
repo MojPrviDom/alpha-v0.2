@@ -5,22 +5,10 @@
 	text-align: center;
 }
 
-#contact_title h1  {
-  text-align: right;
-  font-size: 60px;
-  font-family: "Bitter", sans-serif;
-  font-weight: bold;
-  line-height: 1em;
-  border-bottom: 0.25em solid black;
-	
-}
-
 #inner_kontakt p {
 	text-align: center;
 	font-size: 23px;
 }
-
-
 
 .poziv_donirate {
 	font-size: 13px !important;

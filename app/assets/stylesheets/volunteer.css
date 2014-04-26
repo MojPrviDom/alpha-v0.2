@@ -3,15 +3,6 @@
 	z-index: -10;	
 }
 
-#volunteer_title h1  {
-	text-align: right;
-	font-size: 60px;
-	font-family: "Bitter", sans-serif;
-	font-weight: bold;
-	line-height: 1em;
-	border-bottom: 0.25em solid black;	
-}
-
 .volont_info_outer{
 	margin-top: 3em;
 	color: #333;

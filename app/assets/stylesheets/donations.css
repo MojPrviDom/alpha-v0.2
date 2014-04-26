@@ -1,12 +1,4 @@
-#donations_title h1  {
-	text-align: right;
-	font-size: 60px;
-	font-family: "Bitter", sans-serif;
-	font-weight: bold;
-	line-height: 1em;
-	border-bottom: 0.25em solid black;
-	
-}
+
 
 .donat_lijevi_txtbox, .donat_desni_txtbox{
 	float: left;

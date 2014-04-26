@@ -21,18 +21,27 @@ body {
 	background-position: left bottom;
 }
 
+h1  {
+  text-align: right;
+  font-size: 60px;
+  font-family: "Bitter", sans-serif;
+  font-weight: bold;
+  line-height: 1em;
+  border-bottom: 0.25em solid black;
+}
+
 
 h3 { font-size: 1.4em; }
 
 mark{
- background-color: white;
- font-family: "Bitter", sans-serif;
- font-weight: bold;
- color: #222;
+	 background-color: white;
+	 font-family: "Bitter", sans-serif;
+	 font-weight: bold;
+	 color: #222;
 }
 
 b {
-font-family: "Bitter", sans-serif;
+	font-family: "Bitter", sans-serif;
 	font-weight: normal;
 }
 
@@ -166,4 +175,6 @@ a {
 
 	.navigation_logo { float: none;
 					   margin: 0 auto; }
+
+	h1 {font-size: 38px;}
 }
