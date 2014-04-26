@@ -80,7 +80,7 @@
 }
 
 .name input[type="text"]:focus, .email input[type="text"]:focus, .subject input[type="text"]:focus, textarea:focus, input[type="submit"]:active {
-	border:1px solid #b1b1b1;
+	border:1px solid #848484;
 }
 
 
