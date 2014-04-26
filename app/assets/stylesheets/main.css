@@ -31,6 +31,11 @@ mark{
  color: #222;
 }
 
+b {
+font-family: "Bitter", sans-serif;
+	font-weight: normal;
+}
+
 #container {
 	width: 70%;
 	height: auto;
