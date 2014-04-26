@@ -3,6 +3,7 @@
 #inner_about_us {
 	margin: 0 auto;
 }
+
 #inner_about_us b {
 font-family: "Bitter", sans-serif;
 	font-weight: normal;
@@ -26,7 +27,7 @@ font-family: "Bitter", sans-serif;
 
 #inner_about_us h1 {
 	margin-top: 1em;
-	text-align: center;
+	text-align: right;
 }
 
 #inner_about_us h3 {
