@@ -50,61 +50,29 @@
 	text-align: center;
 }
 
-.volont_box{
+
+#volont_info {
 	background-color: #D9DBB9;
 	width: 42%;
-	height: 7em;
-	padding: 0.5em;
 	margin: 0 auto;
-}
-
-.volont_img {
-	width: 15%;
-	height: 100%;
-	float: left;
-	text-align: center;
-
-
-}
-
-.volont_img img {
-	width:  auto;
-	height:100%;
-	margin: 0 auto;
-	text-align: center;
-	max-width: 100%;
-}
-
-.volont_text {
-	width: 80%;
-	height: 100%;
-	float: left;
-	margin-left: 0.5em;
-	font-size: 0.8em;
-	display: table-cell;
-    vertical-align:middle;
-}
-
-
-#volont_nebas {
-	width: 30%;
-	margin: 5em 60%;
-	background-color: #9DBFBB;
 }
 
 #volont_uvjeren{
 	margin: 5em 0;
 	width: 35%;
-	height: 5em;
 	background-color: #F2D3A0;
 }
 
+#volont_nebas {
+	width: 35%;
+	margin: 5em 60%;
+	background-color: #9DBFBB;
+}
 
 #volont_nebrini{
 	margin: 5em 62%;
 	background-color: #E2E2CA;
-	width: 40%;
-	height: 6.5em;
+	width: 35%;
 }
 
 #volont_javi{
@@ -114,81 +82,65 @@
 	background-color: #91BEA0;
 
 }
- #volont_javi img{
- 	margin-left:0.6em;
- }
 
+.novo_outer {
+	background-color: red;
+}
 
-@media screen and (max-width: 1300px) {
-	.volont_box {
-		height: 10em;
-	}
-} 
+.novo_slika {
+	width:15%;
+	float: left;
+	text-align: center;
+	padding: 2.5%;	
+}
 
-@media screen and (max-width: 1200px) {
-	.volont_box {
-		height: 7em;
-	}
-} 
+.novo_slika img{
+	width:  100%;
+}
 
+.novo_text {
+	width: 80%;
+	float: right;	
+}
 
-@media screen and (max-width: 850px) {
-	.volont_box {
-		width: 16.85em;
-	}
+.novo_text p{
+	margin: 0.5em;
 
-	.volont_text p {
-		font-size: 0.9em;
-		line-height: 2em;
-	}
+}
 
-	#volont_nebas {
-		width: 43%;
-		margin: 5em 55%;
+.clear {
+	clear: both;
+}
+
+@media screen and (max-width: 780px) {
+	#volont_info {
+		width: 65%;
 
 	}
 
 	#volont_uvjeren{
-		margin: 5em 0;
-		height: 5em;
+		width: 50%;
 	}
 
-	#volont_nebrini{
-		margin: 5em 55%;
-		width: 45%;
-		height: 6.6em;
-	}
-
-	#volont_javi{
-		width:320px;
-
-	}
-}
-
-@media screen and (max-width: 440px) {
 	#volont_nebas {
 		width: 60%;
 		margin: 5em 35%;
-		line-height: 5px;
-
-	}
-
-	#volont_uvjeren{
-		margin: 5em 0;
-		width: 180px;
-		height: 5em;
 	}
 
 	#volont_nebrini{
-		width: 62%;
-		height:8.5em;
 		margin: 5em 35%;
+		width: 60%;
 	}
 
 	#volont_javi{
-		width:90%;
-		height: 8.2em;
-
+		width:75%;
 	}
 
+}
+
+@media screen and (max-width: 480px) {
+	.novo_text {
+		font-size: 0.75em;
+		line-height: 1.5em;
+	}	
 }
