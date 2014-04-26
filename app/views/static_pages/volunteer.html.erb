@@ -53,7 +53,7 @@
     	<div class="novo_text">
           <p>Imate volju i želju nekome uljepšati život? </p>
   	  		<p>U tom slučaju, pogledajte naše <br>
-    			<b>&nbsp; <%= link_to "projekte & novosti", root_path %> &nbsp;</b> za više informacija o našim trenutnim  aktivnostima.  </p>
+    			<b> <%= link_to "projekte & novosti", root_path %> </b> za više informacija o našim trenutnim  aktivnostima.  </p>
   		</div>
       <div class="clear"></div>
   	</div>
@@ -75,7 +75,7 @@
     <div class="novo_outer" id= "volont_nebrini">
       <div class="novo_slika"><%= image_tag("volunteer/love.svg")%></div>
       <div class="novo_text">
-        <p>Ne brini, dobri i topli ljudi uvijek su dobrodošli, dapače poželjni. Slobodno se javite, sigurni smo da ćemo nešto smisliti zajedno.
+        <p>Ne brinite, dobri i topli ljudi uvijek su dobrodošli, dapače poželjni. Slobodno se javite, sigurni smo da ćemo nešto smisliti zajedno.
         </p>
       </div>
       <div class="clear"></div>
@@ -86,9 +86,8 @@
      	<div class="novo_slika"><%= image_tag("volunteer/mail.svg")%></div>
 	    <div class="novo_text">
 		    <p>  Bez obriza osijećate li se potpuno spremani volontirati ili možda imate još pitanja... </p>
-		    <p><mark>&nbsp; <%= link_to "javite nam se", new_contact_path %> &nbsp;</mark> 
-
-		    <br> <b>hvala! </b></p>
+		    <p> <%= link_to "javite nam se", new_contact_path %></p> 
+		    <p> <b> hvala! </b></p>
 		</div>
     <div class="clear"></div>
     </div>
