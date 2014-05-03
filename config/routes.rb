@@ -1,5 +1,7 @@
 MojPrviDomV2::Application.routes.draw do
   
+  resources :posts
+
   #get "home_page/home"
   get   "about"       =>  "static_pages#about",      as: :about
   get   "donations"   =>  "static_pages#donations",  as: :donations
