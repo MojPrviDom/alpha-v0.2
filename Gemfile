@@ -43,6 +43,9 @@ end
 # Read more:https://github.com/cgriego/active_attr
 gem 'active_attr' 
 
+#Read more: https://github.com/gregbell/active_admin
+gem 'activeadmin', github: 'gregbell/active_admin'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
