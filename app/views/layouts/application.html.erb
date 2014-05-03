@@ -23,7 +23,7 @@
 				<ul class="nav">
 					<!---->
 					<li> <%= link_to "Početna",			root_path %>		</li>
-					<li> <%= link_to "Novosti",			root_path %>		</li>
+					<li> <%= link_to "Novosti",			posts_path %>		</li>
 					<li> <%= link_to "O nama",			about_path %>		</li>
 					<li> <%= link_to "Doniranje",		donations_path %>	</li>
 					<li> <%= link_to "Volontiranje",	volunteer_path %>	</li>
@@ -50,7 +50,7 @@
 	<div class="footer">
 		<ul class="footer_navigation">
 						<li> <%= link_to "Početna",			root_path %>		</li>
-						<li> <%= link_to "Novosti",			root_path %>		</li>
+						<li> <%= link_to "Novosti",			posts_path %>		</li>
 						<li> <%= link_to "O nama",			about_path %>		</li>
 						<li> <%= link_to "Doniranje",		donations_path %>	</li>
 						<li> <%= link_to "Volontiranje",	volunteer_path %>	</li>
@@ -66,6 +66,9 @@
 	<%= image_tag("volunteer/shoulder_shrug.svg")%>
 	<%= image_tag("volunteer/love.svg")%>
 	<%= image_tag("volunteer/mail.svg")%>
+	<%= image_tag("footer/footer_background.svg")%>
+
+	
 </div>
 <script>
 	$( ".navigation_logo" ).click(function() {							// Navigation bar toogle
