@@ -1,0 +1,37 @@
+/* 		FOOTER    */
+
+body {
+	background-image: url(/assets/footer/footer_background.svg);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+.footer {
+ 	width: 100%;
+ 	min-height: 17.8em;
+ 	height: 100%;
+ 	text-align: right;
+ 	background-image: url(/assets/footer/Footer.svg);
+ 	background-repeat: no-repeat;
+ 	background-position: center bottom;
+ 	background-size: auto 100%;
+}
+
+.footer_navigation  { 
+	padding-top: 13em;
+}
+
+.footer_navigation li{
+	display: inline-block;
+	margin-right: 2em;
+	font-variant: small-caps;
+}
+
+.footer_navigation a {
+	color: #fff;
+}
+
+.footer p {
+	color: #CCCCCC;
+	font-size: 0.5em;
+	margin-right: 4em;
+}

@@ -1,0 +1,136 @@
+#svgContainer { 
+	position:absolute;
+	z-index: -10;	
+}
+
+.volont_info_outer{
+	margin-top: 3em;
+	color: #333;
+}
+
+.volont_info_outer b{
+	font-family: "Bitter", sans-serif;
+	font-weight: bold;
+}
+.volont_info_outer mark{
+	 background-color: white;
+	 font-family: "Bitter", sans-serif;
+	 font-weight: bold;
+	 color: #222;
+}
+
+.volont_info_outer a{
+	font-family: "Bitter", sans-serif;
+	font-weight: bold;
+	color:#222;
+	border-bottom: 0.2em solid #222 ;
+}
+
+.volont_info_outer a:hover{
+	background-color:rgba(200,200,200, .5)
+}
+.volont_description{
+	margin-bottom: 2em;
+	text-align: justify;
+}
+
+#volont_qoute { 
+	font-style: italic;
+	font-size: 0.9em;
+	font-family:  Georgia, serif;
+	text-align: center;
+}
+
+
+#volont_info {
+	background-color: #D9DBB9;
+	width: 42%;
+	margin: 0 auto;
+}
+
+#volont_uvjeren{
+	margin-top: 5em;
+	width: 35%;
+	background-color: #F2D3A0;
+}
+
+#volont_nebas {
+	width: 35%;
+	margin: 1em 60% ;
+	background-color: #9DBFBB;
+}
+
+#volont_nebrini{
+	margin: 5em 62%;
+	background-color: #E2E2CA;
+	width: 35%;
+}
+
+#volont_javi{
+	margin: 5em auto;
+	text-align: center;
+	width:40%;
+	background-color: #91BEA0;
+}
+
+.novo_outer {
+	background-color: red;
+}
+
+.novo_slika {
+	width:15%;
+	float: left;
+	text-align: center;
+	padding: 2.5%;	
+}
+
+.novo_slika img{
+	width:  100%;
+}
+
+.novo_text {
+	width: 80%;
+	float: right;	
+}
+
+.novo_text p{
+	margin: 0.5em;
+
+}
+
+.clear {
+	clear: both;
+}
+
+@media screen and (max-width: 780px) {
+	#volont_info {
+		width: 65%;
+
+	}
+
+	#volont_uvjeren{
+		width: 50%;
+	}
+
+	#volont_nebas {
+		width: 60%;
+		margin: 5em 35%;
+	}
+
+	#volont_nebrini{
+		margin: 5em 35%;
+		width: 60%;
+	}
+
+	#volont_javi{
+		width:75%;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	.novo_text {
+		font-size: 0.75em;
+		line-height: 1.5em;
+	}	
+}
