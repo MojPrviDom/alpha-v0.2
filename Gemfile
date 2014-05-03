@@ -46,6 +46,9 @@ gem 'active_attr'
 #Read more: https://github.com/gregbell/active_admin
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+# Read more: https://github.com/mislav/will_paginate
+gem 'will_paginate', '~> 3.0.5'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
