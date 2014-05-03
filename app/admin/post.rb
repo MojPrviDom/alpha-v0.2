@@ -1,5 +1,5 @@
 ActiveAdmin.register Post do
-  permit_params :title, :body
+  permit_params :title, :body, :photo
   
   index do
     column :title
@@ -11,6 +11,32 @@ ActiveAdmin.register Post do
     end
     default_actions
   end
+
+  form do |f|
+    f.inputs "NewPost" do
+      f.input :title
+      f.input :body
+      f.input :photo, :as => :file
+    end
+    f.actions
+  end
+
+  show do |post|
+      attributes_table do
+        row :id
+        row :title
+        row :body
+        row :created_at
+        row :updated_at
+        row :photo_file_name
+        row :photo_content_type
+        row :photo_file_size
+        row :photo_updated_at
+        row :photo do
+          image_tag(post.photo.url)
+        end
+      end
+    end
   
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

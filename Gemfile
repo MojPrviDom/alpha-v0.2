@@ -49,6 +49,9 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 # Read more: https://github.com/mislav/will_paginate
 gem 'will_paginate', '~> 3.0.5'
 
+# Image upload. Read more https://github.com/thoughtbot/paperclip
+gem "paperclip", "~> 3.0"
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
