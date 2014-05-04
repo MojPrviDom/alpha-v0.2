@@ -11,7 +11,7 @@ ActiveAdmin.register_page "Dashboard" do
           column :body do |post|
             truncate(post.body)
           end
-          column "update Date", :updated_at do |post|
+          column "Updated At", :updated_at do |post|
             post.updated_at.strftime('%m.%d.%Y.   %k:%M')
           end      
         end

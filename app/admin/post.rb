@@ -9,7 +9,10 @@ ActiveAdmin.register Post do
     column :body do |post|
       truncate(post.body)
     end
-    column "update Date", :updated_at do |post|
+    column :created_at do |post|
+      post.created_at.strftime('%m.%d.%Y.   %k:%M')
+    end
+    column "Updated At", :updated_at do |post|
       post.updated_at.strftime('%m.%d.%Y.   %k:%M')
     end
     default_actions
@@ -40,6 +43,11 @@ ActiveAdmin.register Post do
         end
       end
     end
+
+  filter :title
+  filter :body
+  filter :created_at
+  filter :updated_at
   
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
