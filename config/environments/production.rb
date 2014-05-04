@@ -31,6 +31,7 @@ MojPrviDomV2::Application.configure do
 
   config.initialize_on_precompile = true
   
+
   # Generate digests for assets URLs.
   config.assets.digest = true
 
