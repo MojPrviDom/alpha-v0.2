@@ -2,6 +2,9 @@ ActiveAdmin.register Post do
   permit_params :title, :body, :photo
   
   index do
+    column :photo do |post|
+      image_tag(post.photo.url)
+    end
     column :title
     column :body do |post|
       truncate(post.body)
