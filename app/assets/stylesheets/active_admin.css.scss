@@ -10,11 +10,12 @@
 // Active Admin's got SASS!
 @import "active_admin/mixins";
 @import "active_admin/base";
+@import "active_admin/editor/wysiwyg";
 
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:
 //
 //   .status_tag { background: #6090DB; }
-.col-photo img{ height: 8em;}
-.row-photo img{ max-height: 16em;}
-.custom img{ max-height: 16em;}
+.col-photo img{ height: 8em; }
+.row-photo img{ max-height: 16em; }
+.custom img{ max-height: 16em; } 

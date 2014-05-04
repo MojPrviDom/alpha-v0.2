@@ -28,6 +28,10 @@ GEM
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
+    active_admin_editor (1.1.0)
+      activeadmin (>= 0.4.0)
+      ejs
+      rails (>= 3.0.0)
     active_attr (0.8.3)
       activemodel (>= 3.0.2, < 4.2)
       activesupport (>= 3.0.2, < 4.2)
@@ -71,6 +75,7 @@ GEM
       railties (>= 3.2.6, < 5)
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    ejs (1.1.1)
     erubis (2.7.0)
     execjs (2.0.2)
     formtastic (2.3.0.rc3)
@@ -182,6 +187,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  active_admin_editor
   active_attr
   activeadmin!
   coffee-rails (~> 4.0.0)

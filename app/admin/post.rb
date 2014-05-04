@@ -24,7 +24,9 @@ ActiveAdmin.register Post do
       attributes_table do
         row :id
         row :title
-        row :body
+        row :body do 
+          raw(post.body)
+        end
         row :created_at
         row :updated_at
         row :photo_file_name
