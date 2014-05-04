@@ -1,0 +1,16 @@
+  <%= semantic_form_for [:admin, @post] do |f| %>
+  	
+    <%= f.inputs do %>   
+	    <%= f.input :title %>
+	    <%= f.input :body %>
+	    <%= f.input  :photo, :as => :file %>
+
+	    <li class="input custom"> 
+	    	<%= f.label :Current_photo %>
+	    	<%= image_tag @post.photo.url %>
+	    </li>
+  	<% end %>
+    <%= f.actions %>
+  <% end %>
+
+

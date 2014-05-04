@@ -17,15 +17,8 @@ ActiveAdmin.register Post do
     end
     default_actions
   end
+  form :partial => "form"
 
-  form do |f|
-    f.inputs "NewPost" do
-      f.input :title
-      f.input :body
-      f.input :photo, :as => :file
-    end
-    f.actions
-  end
 
   show do |post|
       attributes_table do
