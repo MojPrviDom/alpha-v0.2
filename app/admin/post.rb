@@ -7,7 +7,7 @@ ActiveAdmin.register Post do
     end
     column :title
     column :body do |post|
-      truncate(post.body)
+      truncate(strip_tags(post.body))
     end
     column :created_at do |post|
       post.created_at.strftime('%m.%d.%Y.   %k:%M')

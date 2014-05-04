@@ -17,7 +17,8 @@
       <tr>
         <td><%= image_tag post.photo.url %></td>
         <td><%= post.title %></td>
-        <td><%= truncate(post.body) %></td>
+        <td><%= truncate(strip_tags(post.body), length: 100)  %> <br>
+          <%= link_to 'Pročitaj cijelu obavijest.', post %></td>
         <td><%= link_to 'Show', post %></td>
       </tr>
     <% end %>
