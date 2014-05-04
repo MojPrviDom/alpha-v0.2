@@ -20,7 +20,7 @@
 
     <% if @contact.errors.any? %>
       <div class="error_messages">
-        <h4><mark> oops... <br> izgleda da nešto ne valja sa unešenim podacima : <mark></h4>
+        <h4> oops... <br> izgleda da nešto ne valja sa unešenim podacima : </h4>
         <ul>
         <% @contact.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
