@@ -8,8 +8,8 @@ var slide_home = function(btn){
     var btn_bck = false;
     var btn_fwd = false;
     // check if passed as arg the back button of the forward button, else do return;
-    if (btn.className =="arrow home_back")      btn_bck = true;
-    else if (btn.className =="arrow home_fwd")  btn_fwd = true;
+    if (btn.className =="arrow home_back" || btn >0)      btn_bck = true;
+    else if (btn.className =="arrow home_fwd" || btn <0)  btn_fwd = true;
     else return;
 
     //do not animate forward if end is reached
@@ -42,6 +42,9 @@ var slide_home = function(btn){
 
 $(document).on('page:change',function()  {
   $('.home_back, .home_fwd').click(function(event){ slide_home(this); } );
+  $('.home_holder').on('mousewheel', function(event) {
+    slide_home(event.deltaY);
+    }); 
 });
 
 //on resize, recalibrate margin to point to desired (current) slide

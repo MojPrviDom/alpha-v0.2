@@ -1,17 +1,15 @@
-.home_shower{
-  float:left;
-  width: 90%;
-  height: 100%;
-overflow: hidden;
-}
 .arrow{
   float: left;
   width: 5%;
   height: 100%;
   text-align: center;
   font-size: 50px;
-
-
+}
+.home_shower{
+  float:left;
+  width: 90%;
+  height: 100%;
+overflow: hidden;
 }
 
 .home_holder {
@@ -24,11 +22,15 @@ overflow: hidden;
 .home_slide {
   float: left;
   width: 33.33%;
-  height: 350px;
   font-size: 50px;
   font-family: "Roboto Slab", sans-serif;
   line-height: 1em;
   font-weight: bold;
+}
+.home_slide img{
+  display: inline-block;
+  max-height: 100vh;
+
 }
 
 .home_spacer{margin-top: 11em;}
@@ -44,3 +46,33 @@ overflow: hidden;
  
 }
 
+.home_bckg_shower{
+  float:left;
+  width: 100%;
+  
+  overflow: hidden;
+  z-index: -20;
+  position: absolute;
+}
+
+.home_bckg_holder {
+  width: 300%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home_bckg_slide {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  font-size: 50px;
+  font-family: "Roboto Slab", sans-serif;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+#slide-bckg0{
+  background:url("/assets/home/city_bckg.svg") no-repeat;
+  background-size: 100% 100%;
+
+}
