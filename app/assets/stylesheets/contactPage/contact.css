@@ -44,6 +44,8 @@
 
 .name input[type="text"], .email input[type="text"] {
 	width:16.35em;
+
+
 }
 
 .subject {
@@ -85,6 +87,17 @@ input[type="submit"] {
 }
 
 
+@media screen  and (max-width:1200px) {
+	.name {
+		margin-right: 3.5em;
+	}
+
+	.name input[type="text"], .email input[type="text"] {
+	width:116%;
+	}
+
+}
+
 @media screen  and (max-width:575px) {
 	#inner_kontakt {
 		width: 100%;
@@ -92,11 +105,11 @@ input[type="submit"] {
 
 
 	.name input[type="text"], .name{
-	width: 100%;
+		width: 99.4%;
 	}	
 
 	.email input[type="text"], .email{
-	width:100%;
+		width:99.4%;
 	}
 }
 

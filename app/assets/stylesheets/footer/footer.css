@@ -1,7 +1,7 @@
 /* 		FOOTER    */
 
 body {
-	background-image: url(/assets/footer/footer_background.svg);
+	background-image: url(/assets/footer/footer_background.png);
 	background-repeat: repeat-x;
 	background-position: left bottom;
 }
@@ -10,7 +10,7 @@ body {
  	min-height: 17.8em;
  	height: 100%;
  	text-align: right;
- 	background-image: url(/assets/footer/Footer.svg);
+ 	background-image: url(/assets/footer/Footer.png);
  	background-repeat: no-repeat;
  	background-position: center bottom;
  	background-size: auto 100%;
@@ -26,8 +26,8 @@ body {
 	font-variant: small-caps;
 }
 
-.footer_navigation a {
-	color: #fff;
+.footer a {
+	color: #ffffff !important;
 }
 
 .footer p {

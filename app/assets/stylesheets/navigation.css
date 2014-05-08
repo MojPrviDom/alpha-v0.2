@@ -36,7 +36,19 @@
 	height: auto;
 }
 
+.navigation_box a:link {
+	color: black;
+}
+
+.navigation_box a:visited {
+	color: black;
+}
+
 .navigation_box a:hover {
+	color: orange;
+}
+
+.navigation_box a:active {
 	color: orange;
 }
 
