@@ -1,29 +1,64 @@
+<style type="text/css">
+  .outer {
+    background-color: red;
+    margin-top: 2em;
+  }
+
+  .inner{
+    background-color: green;
+    margin-bottom: 4em;
+  }
+
+  .image  {
+    width: 30%;
+    background-color: blue;
+    float: left;
+
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .post_title {
+    font-weight: bold;
+  }
+
+  .post_title, .post_content { 
+    width: 100%;
+    text-align: left;
+  }
+
+  .title_content {
+    float: left;
+    width: 70%;
+    background-color: blue;
+  }
+  .clear {
+    clear: both;
+  }
+</style>
+
+
 <h1>Listing posts</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th>Title</th>
-      <th>Body</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
+  <div class="outer">
     <% @posts.each do |post| %>
-      <tr>
-        <td><%= image_tag post.photo.url %></td>
-        <td><%= post.title %></td>
-        <td><%= truncate(strip_tags(post.body), length: 100)  %> <br>
-          <%= link_to 'Pročitaj cijelu obavijest.', post %></td>
-        <td><%= link_to 'Show', post %></td>
-      </tr>
+      <div class="inner">
+        <div class="image"><%= image_tag post.photo.url %></div>
+        <div class="title_content">
+          <div class="post_title"><%= post.title %></div>
+          <div class="post_content"><%= truncate(strip_tags(post.body), length: 100)  %> <br>
+            <%= link_to 'Pročitaj cijelu obavijest.', post %></div>
+        </div>
+        <div class="clear"> </div>
+        <div><%= link_to 'Show', post %></div>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
+
 
 <br>
 <div class="apple_pagination">
