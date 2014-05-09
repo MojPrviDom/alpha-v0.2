@@ -7,15 +7,16 @@
         <div class="post_image"><%= image_tag post.photo.url %></div>
         <div class="post_title_content">
           <div class="post_title"><%= post.title %></div>
-          <div class="post_content"><%= simple_format truncate(post.body, length: 400, escape: false) %> <br>
-            <!--<%= link_to 'Pročitaj cijelu obavijest.', post %>--></div>
+          <div class="post_content">
+            <%= simple_format truncate(post.body, length: 400, escape: false) %> <br>
+          </div>
         </div>
 
         <div class="clear"> </div>
-        <div class="show_more"><%= link_to '... Pročitaj cijelu obavijest', post %></div>
-        <div class="clear"> </div>
-        
+        <div class="show_more"><%= link_to '... Pročitaj cijelu obavijest', post %></div>        
       </div>
+      <div class="clear"> </div>
+         
     <% end %>
   </div>
 
