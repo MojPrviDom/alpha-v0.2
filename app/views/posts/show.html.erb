@@ -1,16 +1,92 @@
-        <h1>post</h1>
+<style type="text/css">
+	
+.show_outer {
+	width: 100%;
+	margin-top: 2.5em;
+}
+
+.show_title h1{
+	font-size: 2em !important; 
+}
+
+.show_image {
+	width: 30%;
+	float: left;
+}
+
+.show_image img {
+	width: 100%;
+}
+
+.show_content {
+	float: right;
+	width: 65%;
+	margin-bottom: 2.5em;
+}
+
+.show_content b {
+font-family: "Bitter", sans-serif;
+font-weight: bold;
+color:#2E2E2E; 
+}
+
+.clear {
+	clear: both;
+}
+
+.show_vratise {
+	float: right;
+}
+
+.show_content img {
+	max-width:auto;
+	max-height: 60%;
+}
+.show_vratise a:link {
+color: black;
+}
+
+.show_vratise a:visited {
+color: black;
+}
+
+.show_vratise a:hover {
+color: orange;
+}
+
+@media screen and (max-width: 700px) {
+	.show_image, .show_content {
+		float: none;
+	}
+
+	.show_image {
+		width: 80%;
+		margin: 0 auto 2em auto;
+
+	}
+
+	.show_content {
+		width: 100%;
+	}
+}
+
+</style>
+
+
+<div class="show_title"><h1><%= @post.title %></h1></div>
 
 
 <p id="notice"><%= notice %></p>
-<p><%= image_tag @post.photo.url %></p>
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
 
-<p>
-  <strong>Body:</strong>
-  <%= simple_format(@post.body,  { class: 'description' },  wrapper_tag: "div")%>
-</p>
+<div class="show_outer">
+	<div class="show_image"><%= image_tag @post.photo.url %></div>
 
-<%= link_to 'Back', posts_path %>
+	<div class="show_content"><p><%= simple_format(@post.body,  { class: 'description' },  wrapper_tag: "div")%></p></div>
+
+</div>
+<div class="clear"></div>
+
+<div class="show_vratise"><%= link_to '... Vrati se na pregled novosti', posts_path %></div>
+<div class="clear"></div>
+
+
