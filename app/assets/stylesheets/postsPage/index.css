@@ -34,6 +34,11 @@ font-family: "Bitter", sans-serif;
 font-weight: bold;
 color:#2E2E2E; 
 }
+
+.post_content img{
+  max-width: 60%;
+  height:auto ;
+}
 .post_title { 
 width: 100%;
 text-align: left;
