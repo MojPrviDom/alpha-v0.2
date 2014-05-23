@@ -61,32 +61,131 @@
 	margin-right: 2em;
 }
 
+.small_menu {
+	display: none;
+}
 @media screen and (max-width: 1200px ){
 
 	.navigation_box_links {	width: 100%; }
 	.logo img {	margin-left: 1em;}
 }
 
-@media screen and (max-width:730px) {
 
-	.navigation_box { width: 100%;
-					  height: auto;
-					  background-color: #fff;
-					  line-height: 3em;	}
+/*Styles for screen 795px and lower*/
+@media screen and (max-width: 795px) {
+	.big_navigation {
+		display: none;
+	}
 
-	.navigation_box_links { width: 100%;
-							height: auto;
-							margin: 0 auto; }
+	.small_menu {
+		display: block;
+		margin-top: -5px;
+	}
 
-	.nav { width: 100%;
-		   text-align: center; }
+	.small_menu:before,
+	.small_menu:after {
+	    content: " ";
+	    display: table;
+	}
+	.small_menu:after {
+	    clear: both;
+	}
 
-	.nav li { display:block;}
+		
+	nav { 
+  		height: auto;
+  		border-bottom: 0;
+		width: 100%;
+		background: #FFFEFD;
+		position: fixed;
+		margin-bottom: 2em;
+  	}
 
+  	.small_menu ul {
+  		width: 100%;
+  		display: none;
+  		height: auto;
+  	}
 
-	.logo img{ display: none; }
+  	.small_menu li {
+  		width: 50%;
+  		float: left;
+  		position: relative;
+  		display: inline;
+  	}
 
-	.navigation_logo { float: none;
-					   margin: 0 auto; }
+  	.small_menu li a {
+		border-bottom: 1px solid #EDEAE4;
+		border-right: 1px solid #EDEAE4;
+	}
 
+	#contact {
+		width: 100%;
+		text-align: center;
+	}
+
+	#contact a {
+		text-align: center;
+		text-indent: 0;
+	}
+
+  	.small_menu a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 15px;
+	  	color: #6B6B6B;
+		display: inline-block;
+		text-decoration: none;
+		line-height: 40px;
+  	}
+	
+	.small_menu a#pull {
+		display: block;
+		background-color: #fff;
+		width: 100%;
+		position: relative;
+		box-shadow:1px 1px 4px #D3D3D3;
+	}
+
+	.small_menu a#pull:after {
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+
+	.small_menu a:hover, .small_menu a:active {
+		background-color: #FFEACC;
+		color: #fff;
+	}
+
+	#pull:hover, #pull:active {
+		color: #6B6B6B;
+	}
+
+	#pull img {
+		width: auto;
+		height: 100%;
+		float: right;
+		margin-right: 15px;
+	}
+
+}
+
+@media only screen and (max-width : 320px) {
+	#contact a {
+		text-align: left;
+		text-indent: 15px;
+	}
+	.small_menu li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+
+	.small_menu li a {
+		border-bottom: 1px solid #EDEAE4;
+	}
 }
