@@ -76,32 +76,7 @@
 
 	
 </div>
-<script>
 
-		$( ".navigation_logo" ).click(function() {							// Navigation bar toogle
-			$( ".navigation_box" ).slideToggle( "fast", function() {			// When clicked navigation bar slides down or up
-			});
-		});
-
-		$(function() {									//Navigation bar toggle
-			var pull 		= $('#pull');					// When clicked navigation bar slides down
-				menu 		= $('nav ul');
-				menuHeight	= menu.height();
-
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle('fast');
-			});
-
-			$(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
-		});
-
-</script>
 
 </body>
 </html>
