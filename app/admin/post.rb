@@ -15,7 +15,7 @@ ActiveAdmin.register Post do
     column "Updated At", :updated_at do |post|
       post.updated_at.strftime('%m.%d.%Y.   %k:%M')
     end
-    default_actions
+    actions
   end
   form :partial => "form"
 
