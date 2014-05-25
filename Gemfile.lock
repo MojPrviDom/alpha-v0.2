@@ -191,6 +191,7 @@ DEPENDENCIES
   active_attr
   activeadmin!
   coffee-rails (~> 4.0.0)
+  devise
   jbuilder (~> 1.2)
   jquery-rails
   paperclip (~> 3.0)

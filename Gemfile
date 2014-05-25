@@ -55,6 +55,8 @@ gem "paperclip", "~> 3.0"
 # Wysiwyg editor for active_admin. Read more: https://github.com/ejholmes/active_admin_editor
 gem 'active_admin_editor'
 
+# Read more https://github.com/plataformatec/devise
+gem 'devise'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
