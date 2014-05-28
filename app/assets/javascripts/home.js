@@ -1,6 +1,6 @@
-var activeSlideNo = 0;      // keep track of the current slide nb
+var activeSlideNo = 0;    // keep track of the current slide nb
 var lastSlideNo = 0;      // number of slides
-var fg_slides = ["steve", "ppl", "job", "kitchen", "none"];
+var fg_slides = ["steve", "ppl", "job", "kitchen", "none", "hart"];
 
 function slide(direction){
     if ($('.holder').is(':animated'))  return;            //do not animate it an animation is already in motion
@@ -14,10 +14,11 @@ function slide(direction){
 
 function slide_left(){
     activeSlideNo -= 1;                         //keep track of the current slide nb
-    $('#fg_holder').stop().animate(                //animate!
+    $('#fg_holder').stop().animate(             //animate!
                 {'margin-left': "+=" + $('.slide').width()}, 1000);
+    
     if (fg_slides[activeSlideNo] == "kitchen"){
-        $('#bckg_holder').stop().animate(                //animate!
+        $('#bckg_holder').stop().animate(       //animate!
                 {'margin-left': "+=" + $('.slide').width()}, 1000);
     }
 
@@ -26,10 +27,11 @@ function slide_left(){
 
 function slide_right(){
     activeSlideNo += 1;                         //keep track of the current slide nb
-    $('#fg_holder').stop().animate(                //animate!
+    $('#fg_holder').stop().animate(             //animate!
                 {'margin-left': "-=" + $('.slide').width()}, 1000);
+
    if (fg_slides[activeSlideNo] == "none"){
-        $('#bckg_holder').stop().animate(                //animate!
+        $('#bckg_holder').stop().animate(       //animate!
                 {'margin-left': "-=" + $('.slide').width()}, 1000);
     }
 }

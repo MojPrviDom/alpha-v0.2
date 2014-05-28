@@ -25,11 +25,13 @@
   background-position:     center center;
 }
 
+
 #bckg_shower{ z-index: -30; }
 #bckg_holder{ width:  200%; }
 #bckg_holder .slide{ width: 50%;   background-color: #F3F1EA;}
 #bckg_city{    background-image: url(/assets/home/background/city_background.png); }
 #bckg_country{ background-image: url(/assets/home/background/selo_background.png); }
+
 
 #middle_shower{ z-index: -20; }
 #middle_holder{ width:  100%; }
@@ -38,10 +40,11 @@
 
 
 #fg_shower{ z-index: -10; }
-#fg_holder{ width:  500%; }
-#fg_holder .slide{ width: 20%; }
+#fg_holder{ width:  600%; }
+#fg_holder .slide{ width: 16.6667%; }
 #fg_ppl{     background-image: url(/assets/home/foreground/people.png); }
 #fg_job{     background-image: url(/assets/home/foreground/posao.png);  }
+#fg_hart{    background-image: url(/assets/home/foreground/pola.png);   }
 #fg_steve{   background-image: url(/assets/home/foreground/steve.png);  }
 #fg_kitchen{ background-image: url(/assets/home/foreground/kuhinja.png);}
 
