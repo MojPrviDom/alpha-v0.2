@@ -57,9 +57,12 @@
 #txt_txt.slide{ opacity: 1; }
 
 #txt_holder .slide p{
+  color: #292421;
   font-size: 3em;
-  color: #ffffff;
+  font-weight: bold;
+  font-family: "Bitter", sans-serif;
   line-height: 1.6em;
   text-indent: 2em;
-  text-shadow: 1px 1px 5px #2d2d2d, -1px -1px 5px #2d2d2d;
-  }
+  *text-shadow: 1px 1px 5px #2d2d2d, -1px -1px 5px #2d2d2d;
+  /*zvjezdicaaa !!*/
+}
