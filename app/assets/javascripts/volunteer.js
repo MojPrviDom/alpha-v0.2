@@ -103,17 +103,20 @@ function connectAll(){
 
 //this will draw the svg path if we navigate to the volunteer page from another page within our site
 $(document).on('page:change',function() {
-    connectAll();      // drawAll paths
+    if ($('#svg1').length > 0)  // if #svg1 exists, then we're on the volunteer page
+        connectAll();           // drawAll paths
 });
 
 
 //this will draw the svg path if we navigate directly to the volunteer page from somewhere else other than our site
 $(window).load(function() {
-    connectAll();      // drawAll paths
+    if ($('#svg1').length > 0) 
+        connectAll();      // drawAll paths
 });
 
 
 //pretty self-explanatory, re-draws paths each time window is resized
 $(window).resize(function () {
-   connectAll();      // drawAll paths  
+    if ($('#svg1').length > 0) 
+       connectAll();      // drawAll paths  
 });
