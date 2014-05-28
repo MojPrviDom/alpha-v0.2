@@ -61,3 +61,13 @@
   font-size: 20px;
 }
 #txt_steve.slide{  visibility: visible; }
+
+
+
+.shower p {
+  font-size: 3em;
+  color: #ffffff;
+  line-height: 1.6em;
+  text-indent: 2em;
+  text-shadow: 1px 1px 5px #2d2d2d, -1px -1px 5px #2d2d2d;
+  }
