@@ -1,53 +1,51 @@
- var activeSlideNo=0;
+var activeSlideNo = 0;      // keep track of the current slide nb
+var lastSlideNo = 0;      // number of slides
+var fg_slides = ["steve", "ppl", "job", "kitchen", "none"];
 
-var slide_home = function(btn){
-    //do not animate it an animation is already in motion
-    if ($('.home_holder').is(':animated'))  return;
+function slide(direction){
+    if ($('.holder').is(':animated'))  return;            //do not animate it an animation is already in motion
 
-
-    var btn_bck = false;
-    var btn_fwd = false;
-    // check if passed as arg the back button of the forward button, else do return;
-    if (btn.className =="arrow home_back" || btn >0)      btn_bck = true;
-    else if (btn.className =="arrow home_fwd" || btn <0)  btn_fwd = true;
-    else return;
-
-    //do not animate forward if end is reached
-    //if the number of slides ever changes, CHANGE it here also!, current number of slides = 3;
-    if ( activeSlideNo == 2 && btn_fwd)      return;
-    //do not animate backwards if at beginning
-    else if ( activeSlideNo == 0 && btn_bck) return;
+    if ( direction > 0 && activeSlideNo == 0 ) return;    //do not animate backwards if at beginning
+    if ( direction < 0 && activeSlideNo == lastSlideNo) return;    //do not animate forward if at the end     
     
-    //if fwd clicked, slide to the left, hence the "-=" margin, also keep track of slide nbr.
-    if(btn_fwd){
-        var operation = "-=";
-        activeSlideNo +=1;
+    (direction > 0) ? slide_left(): slide_right();
+}
+
+
+function slide_left(){
+    activeSlideNo -= 1;                         //keep track of the current slide nb
+    $('#fg_holder').stop().animate(                //animate!
+                {'margin-left': "+=" + $('.slide').width()}, 1000);
+    if (fg_slides[activeSlideNo] == "kitchen"){
+        $('#bckg_holder').stop().animate(                //animate!
+                {'margin-left': "+=" + $('.slide').width()}, 1000);
     }
-    //if bckwrd clicked, slide to the right, hence the "+=" margin, also keep track of slide nbr.
-    else if (btn_bck){
-        var operation = "+=";
-        activeSlideNo -=1;
-    }    
 
-    //animate!
-    $('.home_holder').stop().animate(
-                {'margin-left':operation+$('.home_slide').width()}, 1000);
+}
 
- }
 
-// get the weel's in motion for the home slider
-// $( document ).ready(function() {
-//   $('.home_back, .home_fwd').click(function(event){ slide_home(this); } );
-// });
+function slide_right(){
+    activeSlideNo += 1;                         //keep track of the current slide nb
+    $('#fg_holder').stop().animate(                //animate!
+                {'margin-left': "-=" + $('.slide').width()}, 1000);
+   if (fg_slides[activeSlideNo] == "none"){
+        $('#bckg_holder').stop().animate(                //animate!
+                {'margin-left': "-=" + $('.slide').width()}, 1000);
+    }
+}
+
+
+
 
 $(document).on('page:change',function()  {
-  $('.home_back, .home_fwd').click(function(event){ slide_home(this); } );
-  $('.home_holder').on('mousewheel', function(event) {
-    slide_home(event.deltaY);
+  lastSlideNo = $('#fg_holder').children().length - 1;
+   $('#fg_shower').on('mousewheel', function(event) {
+    slide(event.deltaY);
     }); 
 });
 
 //on resize, recalibrate margin to point to desired (current) slide
 $(window).resize(function() {
-    $('.home_holder').css({ marginLeft : -1 * activeSlideNo * $('.home_slide').width()});             
+    $('.holder').css({ marginLeft : -1 * activeSlideNo * $('.slide').width()});    
+    $('.holder_demonstr').css({ marginLeft : -1 * activeSlideNo * $('.slide').width() -3});             
 });
