@@ -27,8 +27,22 @@ function slide_left(){
 
 function slide_right(){
     activeSlideNo += 1;                         //keep track of the current slide nb
-    $('#fg_holder').stop().animate(             //animate!
+
+    if (fg_slides[activeSlideNo] == "kitchen"){
+        $('#fg_kitchen').css('visibility', 'hidden');
+        $('#fg_holder').stop().animate(             //animate!
+                {'margin-left': "-=" +1.5*  $('.slide').width()}, 1000, function(){
+                  $('#fg_kitchen').css('visibility', 'visible');
+                
+                 $('#fg_holder').stop().animate(
+                     { marginLeft : -1 * activeSlideNo * $('.slide').width() +"px"},1000);  
+        });
+        
+    }else {
+        $('#fg_holder').stop().animate(             //animate!
                 {'margin-left': "-=" + $('.slide').width()}, 2000);
+    }
+
 
     if (fg_slides[activeSlideNo] == "none"){
         $('#bckg_holder').stop().animate(       //animate!
