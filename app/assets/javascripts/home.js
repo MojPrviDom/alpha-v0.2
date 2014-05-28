@@ -30,7 +30,7 @@ function slide_right(){
     $('#fg_holder').stop().animate(             //animate!
                 {'margin-left': "-=" + $('.slide').width()}, 2000);
 
-   if (fg_slides[activeSlideNo] == "none"){
+    if (fg_slides[activeSlideNo] == "none"){
         $('#bckg_holder').stop().animate(       //animate!
                 {'margin-left': "-=" + $('.slide').width()}, 2000);
     }
@@ -38,18 +38,31 @@ function slide_right(){
 
 
 
+function recalibrate_margins(){
+    $('.shower').animate({
+            height: $(window).height() - $('.shower').offset().top +"px"
+        }, function() { // When clicked navigation bar slides down or up
+            // Animation complete. 
+            $('#fg_holder').css({ marginLeft : -1 * activeSlideNo * $('.slide').width()});  
+
+            if (activeSlideNo >=4) //fg_slides[4:] =  ["none", "hart"];
+                $('#bckg_holder').css({ marginLeft : -1 * $('.slide').width()});    
+        });
+
+   
+}
 
 $(document).on('page:change',function()  {
+
   lastSlideNo = $('#fg_holder').children().length - 1;
    $('#fg_shower').on('mousewheel', function(event) {
     slide(event.deltaY);
     }); 
+
 });
 
 //on resize, recalibrate margin to point to desired (current) slide
 $(window).resize(function() {
-    $('#fg_holder').css({ marginLeft : -1 * activeSlideNo * $('.slide').width()});  
-
-    if (activeSlideNo >=4) //fg_slides[4:] =  ["none", "hart"];
-        $('#bckg_holder').css({ marginLeft : -1 * $('.slide').width()});       
+    recalibrate_margins();
+   
 });

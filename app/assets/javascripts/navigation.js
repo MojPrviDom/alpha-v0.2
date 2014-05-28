@@ -1,6 +1,9 @@
-$(document).on('page:change',function() {
+$(document).on('page:change',function() {	
 	$(".navigation_logo").on('click', function() {	// Big screen navigation bar toogle
-		$(".navigation_box").slideToggle( "fast");	// When clicked navigation bar slides down or up
+		$(".navigation_box").slideToggle( "fast", function() { // When clicked navigation bar slides down or up
+			// Animation complete. 
+			recalibrate_margins();
+		});
 	});
 
 	var menu = $('nav ul');						// Small screen navigation bar toogle
