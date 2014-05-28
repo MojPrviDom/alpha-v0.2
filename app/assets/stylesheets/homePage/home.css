@@ -34,14 +34,14 @@
 
 
 #middle_shower{ z-index: -20; }
-#middle_holder{ width:  100%; }
-#middle_holder .slide{ width: 100%; }
+#middle_holder{ width:  200%; }
+#middle_holder .slide{ width: 50%; }
 #middle_ita{ background-image: url(/assets/home/middleground/ita_mirjam.png); }
 
 
 #fg_shower{ z-index: -10; }
-#fg_holder{ width:  600%; }
-#fg_holder .slide{ width: 16.6667%; }
+#fg_holder{ width:  700%; }
+#fg_holder .slide{ width:  calc(100% / 7); }
 #fg_ppl{     background-image: url(/assets/home/foreground/people.png); }
 #fg_job{     background-image: url(/assets/home/foreground/posao.png);  }
 #fg_hart{    background-image: url(/assets/home/foreground/pola.png);   }
@@ -52,19 +52,11 @@
 
 
 #txt_shower{ z-index: -5; }
-#txt_holder{ width:  600%; }
-#txt_holder .slide{ 
-  width: 16.6667%; 
-  visibility: hidden;
-  font-family: "Bitter", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-}
-#txt_steve.slide{  visibility: visible; }
+#txt_holder{ width: 700%; }
+#txt_holder .slide { width: calc(100% / 7); opacity: 0; }
+#txt_txt.slide{ opacity: 1; }
 
-
-
-.shower p {
+#txt_holder .slide p{
   font-size: 3em;
   color: #ffffff;
   line-height: 1.6em;
