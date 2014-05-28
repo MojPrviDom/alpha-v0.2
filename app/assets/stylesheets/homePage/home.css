@@ -50,3 +50,14 @@
 
 
 
+
+#txt_shower{ z-index: -5; }
+#txt_holder{ width:  600%; }
+#txt_holder .slide{ 
+  width: 16.6667%; 
+  visibility: hidden;
+  font-family: "Bitter", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+#txt_steve.slide{  visibility: visible; }

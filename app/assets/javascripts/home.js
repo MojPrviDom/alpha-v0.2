@@ -30,17 +30,21 @@ function slide_right(){
 
     if (fg_slides[activeSlideNo] == "kitchen"){
         $('#fg_kitchen').css('visibility', 'hidden');
-        $('#fg_holder').stop().animate(             //animate!
+        $('#fg_holder, #txt_holder').stop().animate(             //animate!
                 {'margin-left': "-=" +1.5*  $('.slide').width()}, 1000, function(){
                   $('#fg_kitchen').css('visibility', 'visible');
                 
-                 $('#fg_holder').stop().animate(
-                     { marginLeft : -1 * activeSlideNo * $('.slide').width() +"px"},1000);  
+                 $('#fg_holder, #txt_holder').stop().animate(
+                     { marginLeft : -1 * activeSlideNo * $('.slide').width() +"px"},1000, function(){
+                  $('#txt_'+fg_slides[activeSlideNo]).css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}, 1000);
+                });
         });
         
     }else {
-        $('#fg_holder').stop().animate(             //animate!
-                {'margin-left': "-=" + $('.slide').width()}, 2000);
+        $("#fg_holder, #txt_holder").stop().animate(             //animate!
+                {'margin-left': "-=" + $('.slide').width()}, 2000, function(){
+                  $('#txt_'+fg_slides[activeSlideNo]).css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}, 1000);
+                });
     }
 
 
@@ -69,7 +73,7 @@ function recalibrate_margins(){
 $(document).on('page:change',function()  {
 
   lastSlideNo = $('#fg_holder').children().length - 1;
-   $('#fg_shower').on('mousewheel', function(event) {
+   $('.shower').on('mousewheel', function(event) {
     slide(event.deltaY);
     }); 
 
