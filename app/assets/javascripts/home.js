@@ -1,6 +1,6 @@
 var activeSlideNo = 0;    // keep track of the current slide nb
 var lastSlideNo = 0;      // number of slides
-var fg_slides = ["steve", "ppl", "job", "kitchen", "none", "hart"];
+var fg_slides = ["txt", "steve", "ppl", "job", "kitchen", "none", "hart"];
 
 function slide(direction){
     if ($('.holder').is(':animated'))  return;            //do not animate it an animation is already in motion
@@ -14,46 +14,68 @@ function slide(direction){
 
 function slide_left(){
     activeSlideNo -= 1;                         //keep track of the current slide nb
-    $('#fg_holder').stop().animate(             //animate!
-                {'margin-left': "+=" + $('.slide').width()}, 2000);
+    animateLeft( $("#fg_holder, #txt_holder" ), null );
     
-    if (fg_slides[activeSlideNo] == "kitchen"){
-        $('#bckg_holder').stop().animate(       //animate!
-                {'margin-left': "+=" + $('.slide').width()}, 2000);
+    if (fg_slides[activeSlideNo] == "txt"){
+        animateLeft( $("#middle_holder" ), null);
+        animateLeft( $("#fg_holder, #txt_holder" ), showText);
     }
-
+    else if (fg_slides[activeSlideNo] == "kitchen"){
+        animateLeft(  $("#bckg_holder" ), null );
+    }
 }
-
 
 function slide_right(){
     activeSlideNo += 1;                         //keep track of the current slide nb
-
-    if (fg_slides[activeSlideNo] == "kitchen"){
-        $('#fg_kitchen').css('visibility', 'hidden');
-        $('#fg_holder, #txt_holder').stop().animate(             //animate!
-                {'margin-left': "-=" +1.5*  $('.slide').width()}, 1000, function(){
-                  $('#fg_kitchen').css('visibility', 'visible');
-                
-                 $('#fg_holder, #txt_holder').stop().animate(
-                     { marginLeft : -1 * activeSlideNo * $('.slide').width() +"px"},1000, function(){
-                  $('#txt_'+fg_slides[activeSlideNo]).css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}, 1000);
-                });
-        });
-        
-    }else {
-        $("#fg_holder, #txt_holder").stop().animate(             //animate!
-                {'margin-left': "-=" + $('.slide').width()}, 2000, function(){
-                  $('#txt_'+fg_slides[activeSlideNo]).css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}, 1000);
-                });
+    if (fg_slides[activeSlideNo] == "steve"){
+        animateRight( $("#middle_holder" ), null);
+        animateRight( $("#fg_holder, #txt_holder" ), showText);
     }
-
-
-    if (fg_slides[activeSlideNo] == "none"){
-        $('#bckg_holder').stop().animate(       //animate!
-                {'margin-left': "-=" + $('.slide').width()}, 2000);
+    else if (fg_slides[activeSlideNo] == "kitchen"){
+        $('#fg_kitchen').css('visibility', 'hidden');
+        animateRight( $("#fg_holder, #txt_holder" ), animateKitchenCustom);
+    }
+    else if (fg_slides[activeSlideNo] == "none"){
+        animateRight( $("#bckg_holder" ), null);
+        animateRight( $("#fg_holder, #txt_holder" ), showText);
+    }
+    else {
+        animateRight( $("#fg_holder, #txt_holder" ), showText);
     }
 }
 
+
+function animateLeft(holders, callbackFun){
+  holders.stop().animate(             //animate!
+            {'margin-left': "+=" + $('.slide').width()}, 2000, function(){
+                if (typeof callbackFun == 'function')
+                    callbackFun();
+    });
+}
+
+function animateRight(holders, callbackFun){
+  holders.stop().animate(             //animate!
+            {'margin-left': "-=" + $('.slide').width()}, 2000, function(){
+                if (typeof callbackFun == 'function')
+                    callbackFun();
+    });
+}
+
+function showText(){
+     $('#txt_'+fg_slides[activeSlideNo]).animate({opacity: 1.0}, 1000);
+}
+
+function animateKitchenCustom(holders, callbackFun){
+    $('#fg_holder, #txt_holder').stop().animate(             //animate!
+        {'margin-left': "-=" + 0.3*  $('.slide').width()}, 10, function(){
+         $('#fg_kitchen').css('visibility', 'visible');
+        
+         $('#fg_holder, #txt_holder').stop().animate(
+             { marginLeft : -1 * activeSlideNo * $('.slide').width() +"px"},1000, function(){
+                showText();
+        });
+    });
+}
 
 
 function recalibrate_margins(){
@@ -63,12 +85,11 @@ function recalibrate_margins(){
             // Animation complete. 
             $('#fg_holder').css({ marginLeft : -1 * activeSlideNo * $('.slide').width()});  
 
-            if (activeSlideNo >=4) //fg_slides[4:] =  ["none", "hart"];
+            if (activeSlideNo >=5) //fg_slides[4:] =  ["none", "hart"];
                 $('#bckg_holder').css({ marginLeft : -1 * $('.slide').width()});    
-        });
-
-   
+        }); 
 }
+
 
 $(document).on('page:change',function()  {
 
@@ -82,5 +103,4 @@ $(document).on('page:change',function()  {
 //on resize, recalibrate margin to point to desired (current) slide
 $(window).resize(function() {
     recalibrate_margins();
-   
 });
