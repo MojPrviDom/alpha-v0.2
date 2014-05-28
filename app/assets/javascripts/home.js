@@ -15,11 +15,11 @@ function slide(direction){
 function slide_left(){
     activeSlideNo -= 1;                         //keep track of the current slide nb
     $('#fg_holder').stop().animate(             //animate!
-                {'margin-left': "+=" + $('.slide').width()}, 1000);
+                {'margin-left': "+=" + $('.slide').width()}, 2000);
     
     if (fg_slides[activeSlideNo] == "kitchen"){
         $('#bckg_holder').stop().animate(       //animate!
-                {'margin-left': "+=" + $('.slide').width()}, 1000);
+                {'margin-left': "+=" + $('.slide').width()}, 2000);
     }
 
 }
@@ -28,11 +28,11 @@ function slide_left(){
 function slide_right(){
     activeSlideNo += 1;                         //keep track of the current slide nb
     $('#fg_holder').stop().animate(             //animate!
-                {'margin-left': "-=" + $('.slide').width()}, 1000);
+                {'margin-left': "-=" + $('.slide').width()}, 2000);
 
    if (fg_slides[activeSlideNo] == "none"){
         $('#bckg_holder').stop().animate(       //animate!
-                {'margin-left': "-=" + $('.slide').width()}, 1000);
+                {'margin-left': "-=" + $('.slide').width()}, 2000);
     }
 }
 
@@ -48,6 +48,8 @@ $(document).on('page:change',function()  {
 
 //on resize, recalibrate margin to point to desired (current) slide
 $(window).resize(function() {
-    $('.holder').css({ marginLeft : -1 * activeSlideNo * $('.slide').width()});    
-    $('.holder_demonstr').css({ marginLeft : -1 * activeSlideNo * $('.slide').width() -3});             
+    $('#fg_holder').css({ marginLeft : -1 * activeSlideNo * $('.slide').width()});  
+
+    if (activeSlideNo >=4) //fg_slides[4:] =  ["none", "hart"];
+        $('#bckg_holder').css({ marginLeft : -1 * $('.slide').width()});       
 });
