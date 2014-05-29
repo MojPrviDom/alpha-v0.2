@@ -34,7 +34,7 @@
 #bckg_holder{ width:  200%; }
 #bckg_holder .slide{ width: 50%;   background-color: #F3F1EA;}
 #bckg_city{    background-image: url(/assets/home/background/city_background.png); }
-#bckg_country{ background-image: url(/assets/home/background/selo_background.png); }
+#bckg_country{ background-image: url(/assets/home/background/city_background.png); }
 
 
 #middle_shower{ z-index: -20; }
@@ -110,7 +110,7 @@
 }
 
 
-.selo_txt_bckg {
+.city_txt_bckg {
     background: rgba(0, 0, 0, 0.24);
 }
 
@@ -118,28 +118,28 @@
   clear: both;
 }
 
-.selo_txt_left {
+.city_txt_left {
   float:left;
   width:45%;
   padding-left: 1em;  
 }
 
-.selo_txt_right {
+.city_txt_right {
   float:right;
   width: 45%;
   padding-right: 1em;
 }
 
-.selo_txt_center {
-  margin:8.5em 0 0 2.5em;
+.city_txt_center {
+  margin:6em 0 0 2.5em;
   clear: both;
   width: 47%;
   text-align: left;
   font-size: 1.2em !important;
   line-height: 1.5em;
   background: none !important;
-
- 
 }
 
-
+.moj_prvi_dom_txt {}
+.pomoc_gradana_txt {}
+.doniraj_volontiraj {}
