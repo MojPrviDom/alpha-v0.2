@@ -88,17 +88,22 @@ function animateKitchenCustom(holders, callbackFun){
 
 
 function recalibrate_margins(){
-    $('.shower').animate({
-            height: $(window).height() - $('.shower').offset().top +"px"
-        }, function() { // When clicked navigation bar slides down or up
-            // Animation complete. 
-            $('#fg_holder').css({ marginLeft : -1 * activeSlideNo * $('.slide').width()});  
-
-            if (activeSlideNo >=6) //fg_slides[6:] =  [ "hart"];
-                $('#bckg_holder').css({ marginLeft : -1 * $('.slide').width()});  
-            if (activeSlideNo >0) 
-                $('#middle_holder').css({ marginLeft : -1 * $('.slide').width()});    
+    $('.shower').stop().animate({
+            height: $(window).height() - $('.shower').offset().top +"px"},
+            function() { // Animation complete. 
         }); 
+
+    $('#fg_holder').css({ marginLeft : -1 * activeSlideNo * $('.slide').width()});  
+
+    if (activeSlideNo >= 6) //fg_slides[6:] =  [ "hart"];
+        $('#bckg_holder').css({ marginLeft : -1 * $('.slide').width()});  
+    else
+        $('#bckg_holder').css({ marginLeft : 0}); 
+
+    if (activeSlideNo > 0) 
+        $('#middle_holder').css({ marginLeft : -1 * $('.slide').width()}); 
+    else 
+        $('#middle_holder').css({ marginLeft : 0});    
 }
 
 
