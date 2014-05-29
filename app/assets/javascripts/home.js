@@ -93,7 +93,7 @@ function recalibrate_margins(){
             function() { // Animation complete. 
         }); 
 
-    $('#fg_holder').css({ marginLeft : -1 * activeSlideNo * $('.slide').width()});  
+    $('#fg_holder, #txt_holder').css({ marginLeft : -1 * activeSlideNo * $('.slide').width()});  
 
     if (activeSlideNo >= 6) //fg_slides[6:] =  [ "hart"];
         $('#bckg_holder').css({ marginLeft : -1 * $('.slide').width()});  
