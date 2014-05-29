@@ -33,14 +33,14 @@ function slide_right(){
     }
     else if (fg_slides[activeSlideNo] == "kitchen"){
         $('#fg_kitchen').css('visibility', 'hidden');
-        animateRight( $("#fg_holder, #txt_holder" ), animateKitchenCustom);
+        animateRight( $("#fg_holder, #txt_holder"), animateKitchenCustom);
     }
     else if (fg_slides[activeSlideNo] == "hart"){
         animateRight( $("#bckg_holder" ), null);
-        animateRight( $("#fg_holder, #txt_holder" ), showText);
+        animateRight( $("#fg_holder, #txt_holder"), showText);
     }
     else {
-        animateRight( $("#fg_holder, #txt_holder" ), showText);
+        animateRight( $("#fg_holder, #txt_holder"), showText);
     }
 }
 
@@ -70,6 +70,7 @@ function showText(){
 function hidePreviousText(){
     $('#txt_'+fg_slides[activeSlideNo-1]).stop().animate({opacity: 0.0}, 500);
 }
+
 function hideNextText(){
     $('#txt_'+fg_slides[activeSlideNo+1]).stop().animate({opacity: 0.0}, 500);
 }
@@ -87,23 +88,36 @@ function animateKitchenCustom(holders, callbackFun){
 }
 
 
-function recalibrate_margins(){
-    $('.shower').stop().animate({
-            height: $(window).height() - $('.shower').offset().top +"px"},
-            function() { // Animation complete. 
-        }); 
+function adjustLeftMargin(holders, factor){
+    holders.animate({ marginLeft : -1 * factor * $('.slide').width()});  
+}
 
-    $("#fg_holder, #txt_holder").css({ marginLeft : -1 * activeSlideNo * $('.slide').width()});  
+function adjustAllLeftMargins(){
+    adjustLeftMargin($("#fg_holder, #txt_holder"), activeSlideNo)
 
     if (activeSlideNo >= 6) //fg_slides[6:] =  [ "hart"];
-        $('#bckg_holder').css({ marginLeft : -1 * $('.slide').width()});  
+        adjustLeftMargin( $('#bckg_holder') , 1);
     else
-        $('#bckg_holder').css({ marginLeft : 0}); 
+        adjustLeftMargin( $('#bckg_holder') , 0);
 
     if (activeSlideNo > 0) 
-        $('#middle_holder').css({ marginLeft : -1 * $('.slide').width()}); 
+        adjustLeftMargin($('#middle_holder'), 1);
     else 
-        $('#middle_holder').css({ marginLeft : 0});    
+        adjustLeftMargin($('#middle_holder'), 0);      
+}
+
+function adjustHeight(holders, callbackFun){
+    $('.shower').stop().animate({
+            height: $(window).height() - $('.shower').offset().top +"px"}, function() { 
+            // Animation complete. 
+            if (typeof callbackFun == 'function')
+                callbackFun();
+    }); 
+}
+
+function recalibrate_margins(){
+    //first adjust height and then adjust left margins
+    adjustHeight( $("#fg_holder, #txt_holder" ), adjustAllLeftMargins);
 }
 
 
