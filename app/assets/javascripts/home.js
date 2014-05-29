@@ -20,7 +20,7 @@ function slide_left(){
         animateLeft( $("#middle_holder" ), null);
         animateLeft( $("#fg_holder, #txt_holder" ), showText);
     }
-    else if (fg_slides[activeSlideNo] == "kitchen"){
+    else if (fg_slides[activeSlideNo] == "none"){
         animateLeft(  $("#bckg_holder" ), null );
     }
 }
@@ -35,7 +35,7 @@ function slide_right(){
         $('#fg_kitchen').css('visibility', 'hidden');
         animateRight( $("#fg_holder, #txt_holder" ), animateKitchenCustom);
     }
-    else if (fg_slides[activeSlideNo] == "none"){
+    else if (fg_slides[activeSlideNo] == "hart"){
         animateRight( $("#bckg_holder" ), null);
         animateRight( $("#fg_holder, #txt_holder" ), showText);
     }
