@@ -108,6 +108,11 @@ function recalibrate_margins(){
 
 
 $(document).on('page:change',function()  {
+    $.event.special.swipe.scrollSupressionThreshold = '100';   // More than this horizontal displacement, and we will suppress scrolling.
+    $.event.special.swipe.durationThreshold = '400';           // More time than this, and it isn't a swipe.
+    $.event.special.swipe.horizontalDistanceThreshold ='10';   // Swipe horizontal displacement must be more than this.
+    $.event.special.swipe.verticalDistanceThreshold = '200';   //Swipe vertical displacement must be less than this.
+ 
     if ($('.shower').length > 0) {  // if .shower exists, then we're on the home page
         lastSlideNo = $('#fg_holder').children().length - 1;
         
