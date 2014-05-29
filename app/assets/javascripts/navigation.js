@@ -2,7 +2,8 @@ $(document).on('page:change',function() {
 	$(".navigation_logo").on('click', function() {	// Big screen navigation bar toogle
 		$(".navigation_box").slideToggle( "fast", function() { // When clicked navigation bar slides down or up
 			// Animation complete. 
-			recalibrate_margins();
+			if ($('.shower').length > 0) 
+				recalibrate_margins();
 		});
 	});
 

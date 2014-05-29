@@ -92,15 +92,17 @@ function recalibrate_margins(){
 
 
 $(document).on('page:change',function()  {
-
-  lastSlideNo = $('#fg_holder').children().length - 1;
-   $('.shower').on('mousewheel', function(event) {
-    slide(event.deltaY);
-    }); 
+    if ($('.shower').length > 0) {  // if .shower exists, then we're on the home page
+        lastSlideNo = $('#fg_holder').children().length - 1;
+        $('.shower').on('mousewheel', function(event) {
+        slide(event.deltaY);
+        }); 
+    }
 
 });
 
 //on resize, recalibrate margin to point to desired (current) slide
 $(window).resize(function() {
-    recalibrate_margins();
+    if ($('.shower').length > 0) 
+        recalibrate_margins();
 });
