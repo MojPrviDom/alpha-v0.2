@@ -115,10 +115,10 @@ $(document).on('page:change',function()  {
             slide(event.deltaY);
         });
 
-        $('.shower').on('swiperight', function() {      //mobile
+        $('.shower').on('swiperight', function(event) { //mobile
             slide(1);
         }); 
-        $('.shower').on('swipeleft', function() {       //mobile
+        $('.shower').on('swipeleft', function(event) {  //mobile
             slide(-1);
         }); 
     }
