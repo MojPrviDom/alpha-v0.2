@@ -34,7 +34,7 @@
 #bckg_holder{ width:  200%; }
 #bckg_holder .slide{ width: 50%;   background-color: #F3F1EA;}
 #bckg_city{    background-image: url(/assets/home/background/city_background.png); }
-#bckg_country{ background-image: url(/assets/home/background/city_background.png); }
+#bckg_country{ background-image: url(/assets/home/background/selo_background.png); }
 
 
 #middle_shower{ z-index: -20; }
