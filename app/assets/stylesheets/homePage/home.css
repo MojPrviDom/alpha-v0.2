@@ -1,3 +1,7 @@
+
+.background_color {
+  *background-color:red;
+}
 .shower{ 
   height:  calc( 100% - 0.3em);    /* change HERE desired height and width */
   width:   100%;    /* the rest will be scaled accordingly */
@@ -56,13 +60,41 @@
 #txt_holder .slide { width: calc(100% / 7); opacity: 0; }
 #txt_txt.slide{ opacity: 1; }
 
-#txt_holder .slide p{
-  color: #292421;
+.slide p{
   font-size: 3em;
   font-weight: bold;
   font-family: "Bitter", sans-serif;
   line-height: 1.6em;
-  text-indent: 2em;
-  *text-shadow: 1px 1px 5px #2d2d2d, -1px -1px 5px #2d2d2d;
-  /*zvjezdicaaa !!*/
+  margin: 0.9em auto;
+  background: rgba(0, 0, 0, 0.25);
+  color: #FFF;
+}
+
+
+#txt_txt {
+  padding-top: 9em !important;
+}
+
+.text_mojprvidom {
+  font-size: 8em !important;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Bitter", sans-serif;
+  line-height: 1.6em;
+  background: rgba(0, 0, 0, 0.25);
+  color: #FFF;
+}
+
+.text_nasaprica {
+  font-size: 3em !important;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Bitter", sans-serif;
+  line-height: 1.6em;
+  background: rgba(0, 0, 0, 0.25);
+  color: #FFF;
+}
+
+#txt_holder { 
+  text-align: center !important;
 }
