@@ -8,7 +8,7 @@ function slide(direction){
     if ( direction > 0 && activeSlideNo == 0 ) return;    //do not animate backwards if at beginning
     if ( direction < 0 && activeSlideNo == lastSlideNo) return;    //do not animate forward if at the end     
     
-    (direction > 0) ? slide_left(): slide_right();
+    (direction > 0) ? slide_left() : slide_right();
 }
 
 
@@ -75,11 +75,11 @@ function hideNextText(){
 }
 
 function animateKitchenCustom(holders, callbackFun){
-    $('#fg_holder, #txt_holder').stop().animate(             //animate!
+    $("#fg_holder, #txt_holder").stop().animate(             //animate!
         {'margin-left': "-=" + 0.3*  $('.slide').width()}, 10, function(){
          $('#fg_kitchen').css('visibility', 'visible');
         
-         $('#fg_holder, #txt_holder').stop().animate(
+         $("#fg_holder, #txt_holder").stop().animate(
              { marginLeft : -1 * activeSlideNo * $('.slide').width() +"px"},1000, function(){
                 showText();
         });
@@ -93,7 +93,7 @@ function recalibrate_margins(){
             function() { // Animation complete. 
         }); 
 
-    $('#fg_holder, #txt_holder').css({ marginLeft : -1 * activeSlideNo * $('.slide').width()});  
+    $("#fg_holder, #txt_holder").css({ marginLeft : -1 * activeSlideNo * $('.slide').width()});  
 
     if (activeSlideNo >= 6) //fg_slides[6:] =  [ "hart"];
         $('#bckg_holder').css({ marginLeft : -1 * $('.slide').width()});  
@@ -110,8 +110,16 @@ function recalibrate_margins(){
 $(document).on('page:change',function()  {
     if ($('.shower').length > 0) {  // if .shower exists, then we're on the home page
         lastSlideNo = $('#fg_holder').children().length - 1;
-        $('.shower').on('mousewheel', function(event) {
-        slide(event.deltaY);
+        
+        $('.shower').on('mousewheel', function(event) { //desktop
+            slide(event.deltaY);
+        });
+
+        $('.shower').on('swiperight', function() {      //mobile
+            slide(1);
+        }); 
+        $('.shower').on('swipeleft', function() {       //mobile
+            slide(-1);
         }); 
     }
 
