@@ -14,11 +14,11 @@ function slide(direction){
 
 function slide_left(){
     activeSlideNo -= 1;                         //keep track of the current slide nb
-    animateLeft( $("#fg_holder, #txt_holder" ), null );
+    animateLeft( $("#fg_holder, #txt_holder" ), showText );
     
     if (fg_slides[activeSlideNo] == "txt"){
         animateLeft( $("#middle_holder" ), null);
-        animateLeft( $("#fg_holder, #txt_holder" ), showText);
+        animateLeft( $("#fg_holder, #txt_holder" ),showText);
     }
     else if (fg_slides[activeSlideNo] == "none"){
         animateLeft(  $("#bckg_holder" ), null );
@@ -46,7 +46,8 @@ function slide_right(){
 
 
 function animateLeft(holders, callbackFun){
-  holders.stop().animate(             //animate!
+    hideNextText();
+    holders.stop().animate(             //animate!
             {'margin-left': "+=" + $('.slide').width()}, 2000, function(){
                 if (typeof callbackFun == 'function')
                     callbackFun();
@@ -54,7 +55,8 @@ function animateLeft(holders, callbackFun){
 }
 
 function animateRight(holders, callbackFun){
-  holders.stop().animate(             //animate!
+    hidePreviousText();
+    holders.stop().animate(             //animate!
             {'margin-left': "-=" + $('.slide').width()}, 2000, function(){
                 if (typeof callbackFun == 'function')
                     callbackFun();
@@ -63,6 +65,13 @@ function animateRight(holders, callbackFun){
 
 function showText(){
      $('#txt_'+fg_slides[activeSlideNo]).animate({opacity: 1.0}, 1000);
+}
+
+function hidePreviousText(){
+    $('#txt_'+fg_slides[activeSlideNo-1]).stop().animate({opacity: 0.0}, 500);
+}
+function hideNextText(){
+    $('#txt_'+fg_slides[activeSlideNo+1]).stop().animate({opacity: 0.0}, 500);
 }
 
 function animateKitchenCustom(holders, callbackFun){
@@ -85,8 +94,10 @@ function recalibrate_margins(){
             // Animation complete. 
             $('#fg_holder').css({ marginLeft : -1 * activeSlideNo * $('.slide').width()});  
 
-            if (activeSlideNo >=5) //fg_slides[4:] =  ["none", "hart"];
-                $('#bckg_holder').css({ marginLeft : -1 * $('.slide').width()});    
+            if (activeSlideNo >=6) //fg_slides[6:] =  [ "hart"];
+                $('#bckg_holder').css({ marginLeft : -1 * $('.slide').width()});  
+            if (activeSlideNo >0) 
+                $('#middle_holder').css({ marginLeft : -1 * $('.slide').width()});    
         }); 
 }
 
