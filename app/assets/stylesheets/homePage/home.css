@@ -1,7 +1,4 @@
 
-.background_color {
-  *background-color:red;
-}
 .shower{ 
   height:  calc( 100% - 0.3em);    /* change HERE desired height and width */
   width:   100%;    /* the rest will be scaled accordingly */
