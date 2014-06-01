@@ -1,6 +1,6 @@
 var activeSlideNo = 0;    // keep track of the current slide nb
 var lastSlideNo = 0;      // number of slides
-var fg_slides = ["txt", "steve", "ppl", "job", "kitchen", "none", "hart"];
+var fg_slides = ["txt", "steve", "ppl", "job", "kitchen", "help", "hart"];
 
 function slide(direction){
     if ($('.holder').is(':animated'))  return;            //do not animate it an animation is already in motion
@@ -18,12 +18,16 @@ function slide_left(){
     
     if (fg_slides[activeSlideNo] == "txt"){
         animateLeft( $("#middle_holder" ), null);
-        animateLeft( $("#fg_holder, #txt_holder" ),showText);
     }
-    else if (fg_slides[activeSlideNo] == "none"){
+    else if (fg_slides[activeSlideNo] == "help"){
         animateLeft(  $("#bckg_holder" ), null );
+    } 
+    else if (fg_slides[activeSlideNo] == "kitchen"){
+        $('#fg_help').animate({opacity: 0.0}, 500);
+        
     }
 }
+
 
 function slide_right(){
     activeSlideNo += 1;                         //keep track of the current slide nb
@@ -34,6 +38,9 @@ function slide_right(){
     else if (fg_slides[activeSlideNo] == "kitchen"){
         $('#fg_kitchen').css('visibility', 'hidden');
         animateRight( $("#fg_holder, #txt_holder"), animateKitchenCustom);
+    }
+    else if (fg_slides[activeSlideNo] == "help"){
+        animateRight( $("#fg_holder, #txt_holder"), showHelpCustom);
     }
     else if (fg_slides[activeSlideNo] == "hart"){
         animateRight( $("#bckg_holder" ), null);
@@ -73,6 +80,11 @@ function hidePreviousText(){
 
 function hideNextText(){
     $('#txt_'+fg_slides[activeSlideNo+1]).stop().animate({opacity: 0.0}, 500);
+}
+
+function showHelpCustom(holders, callbackFun){
+    showText();
+    $('#fg_help').animate({opacity: 1.0},1000);
 }
 
 function animateKitchenCustom(holders, callbackFun){

@@ -45,6 +45,7 @@
 #fg_holder .slide{ width:  calc(100% / 7); }
 #fg_ppl{     background-image: url(/assets/home/foreground/people.png); }
 #fg_job{     background-image: url(/assets/home/foreground/posao.png);  }
+#fg_help{    background-image: url(/assets/home/foreground/pomoc.png);  opacity: 0;}
 #fg_hart{    background-image: url(/assets/home/foreground/pola.png);   }
 #fg_steve{   background-image: url(/assets/home/foreground/steve.png);  }
 #fg_kitchen{ background-image: url(/assets/home/foreground/kuhinja.png);}
@@ -92,15 +93,6 @@
 
 }
 
-.pomoc_txt {
-  text-align: left;
-  color: #fff;
-  font-size: 3em;
-  font-weight: bold;
-  margin: 40vh 0 0 5%;
-  font-family: "Bitter", sans-serif;
-  text-decoration: underline;
-}
 
 .stepenica_siromastva {
   font-size: 2em !important;
@@ -110,10 +102,3 @@
 .moj_prvi_dom_txt {}
 .pomoc_gradana_txt {}
 .doniraj_volontiraj {}
-
-@media screen and (max-width: 1385px) {
-  .pomoc_txt {
-    margin: 25vh 0 0 5%;
-    font-size: 2.5em;
-  }
-}
