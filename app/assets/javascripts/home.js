@@ -20,12 +20,11 @@ function slide_left(){
         animateLeft( $("#middle_holder" ), null);
     }
     else if (fg_slides[activeSlideNo] == "help"){
-        animateLeft(  $("#bckg_holder" ), null );
+        animateLeft(  $("#bckg_holder" ), showHelpCustom);
+        $('#fg_hart').animate({opacity: 0.0}, 500);
+        $('.doniraj_volontiraj').animate({opacity: 0.0}, 500);
     } 
-    else if (fg_slides[activeSlideNo] == "kitchen"){
-        $('#fg_help').animate({opacity: 0.0}, 500);
-        
-    }
+
 }
 
 
@@ -36,6 +35,7 @@ function slide_right(){
         animateRight( $("#fg_holder, #txt_holder" ), showText);
     }
     else if (fg_slides[activeSlideNo] == "kitchen"){
+        $('#fg_help').css({opacity: 0.0}, 1000);
         $('#fg_kitchen').css('visibility', 'hidden');
         animateRight( $("#fg_holder, #txt_holder"), animateKitchenCustom);
     }
@@ -44,7 +44,8 @@ function slide_right(){
     }
     else if (fg_slides[activeSlideNo] == "hart"){
         animateRight( $("#bckg_holder" ), null);
-        animateRight( $("#fg_holder, #txt_holder"), showText);
+        animateRight( $("#fg_holder, #txt_holder"), animateHartCustom);
+        $('#fg_help').animate({opacity: 0.0}, 1000);
     }
     else {
         animateRight( $("#fg_holder, #txt_holder"), showText);
@@ -82,12 +83,21 @@ function hideNextText(){
     $('#txt_'+fg_slides[activeSlideNo+1]).stop().animate({opacity: 0.0}, 500);
 }
 
-function showHelpCustom(holders, callbackFun){
+function animateHartCustom(){
+    $('#txt_hart').animate({opacity: 1.0}, 1000, function(){
+         $('#fg_hart').animate({opacity: 1.0}, 1000, function(){
+            $('.doniraj_volontiraj').animate({opacity: 1.0}, 1000);
+         });
+    });
+
+}
+
+function showHelpCustom(){
     showText();
     $('#fg_help').animate({opacity: 1.0},1000);
 }
 
-function animateKitchenCustom(holders, callbackFun){
+function animateKitchenCustom(){
     $("#fg_holder, #txt_holder").stop().animate(             //animate!
         {'margin-left': "-=" + 0.3*  $('.slide').width()}, 10, function(){
          $('#fg_kitchen').css('visibility', 'visible');

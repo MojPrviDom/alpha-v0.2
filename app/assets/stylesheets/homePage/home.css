@@ -46,7 +46,7 @@
 #fg_ppl{     background-image: url(/assets/home/foreground/people.png); }
 #fg_job{     background-image: url(/assets/home/foreground/posao.png);  }
 #fg_help{    background-image: url(/assets/home/foreground/pomoc.png);  opacity: 0;}
-#fg_hart{    background-image: url(/assets/home/foreground/pola.png);   }
+#fg_hart{    background-image: url(/assets/home/foreground/pola.png);   opacity: 0;}
 #fg_steve{   background-image: url(/assets/home/foreground/steve.png);  }
 #fg_kitchen{ background-image: url(/assets/home/foreground/kuhinja.png);}
 
@@ -119,6 +119,7 @@
   color: #757575;
   font-size: 2.2em;
   font-weight: bold;
+  opacity: 0;
 }
 
 .doniraj_volontiraj a,.doniraj_volontiraj a:visited, .doniraj_volontiraj a:active {
