@@ -36,7 +36,7 @@
           <div class="text_mojprvidom">Moj Prvi Dom<br/>
           <span class="ovo">..ovo je naša priča..</span><br/>
 
-          <span class="scroll">scroll -></span> </div>
+          <span class="scroll">scroll   <%= image_tag("icons/scroll.svg")%></span> </div>
         </div>
         <div class="slide" id="txt_steve"> 
          
@@ -59,12 +59,12 @@
           <p class="stepenica_siromastva">Siromaštvo je stepenica na putu do socijalne isključenosti,proces iz kojeg pojedinac/građanin bez pomoći zajednice teško pronalazi izlaz.</p>
         </div>
         <div class="slide" id="txt_hart">
-          <div class="moj_prvi_dom_txt">"Moj Prvi Dom" izlaz vidi u osposobljavanju isključenih za rad i samozapošljavanje,potičući korištenje prirodnih resursa, ekološki uzgoj,oživljavanje sela"</div>
-          <div class="pomoc_gradana_txt">Za građane koji žele svojim pozivom, razmjenom iskustva, ideja ili dobivanjem potrebnih informacija pomoći u izgradnji Centra “MojPrviDom” za majku i dijete koji su socijalno isključeni</div>
-          <div class="doniraj_volontiraj">Doniraj ili Volonitraj</div>
-
-        
+          <div class="moj_prvi_dom_txt">"Moj Prvi Dom" izlaz vidi u osposobljavanju isključenih za rad i samozapošljavanje,potičući korištenje prirodnih resursa, ekološki uzgoj,oživljavanje sela</div>
           
+          <div class="doniraj_volontiraj">
+            <%= link_to "Doniraj",        donations_path %> ili 
+            <%= link_to "Volontiraj",      volunteer_path %>
+          </div> 
         </div>
       </div>
   </div> 
