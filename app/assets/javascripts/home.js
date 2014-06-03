@@ -157,11 +157,11 @@ $(document).on('page:change',function()  {
         });
         // click
          $('#left_arrow').click(function(){
-            slide_left();
+            slide(1);
         });
          
         $('#right_arrow').click(function(){
-            slide_right();
+            slide(-1);
         });
         //mobile slide
     //     $('.shower').on('swiperight', function(event) { //mobile
