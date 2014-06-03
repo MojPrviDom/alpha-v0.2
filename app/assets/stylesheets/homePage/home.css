@@ -1,3 +1,12 @@
+.arrow{
+  font-size: 10em;
+  margin:    50vh 0;
+  position:  absolute;
+}
+  
+#left_arrow{ }
+#right_arrow{ margin-left: calc( 100vw - 0.5em );}
+
 
 .shower{ 
   height:  calc( 100% - 0.3em);    /* change HERE desired height and width */
