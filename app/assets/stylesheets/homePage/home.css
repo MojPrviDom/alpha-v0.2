@@ -81,9 +81,14 @@
   font-family: "Bitter", sans-serif;
   line-height: 1.6em;
   margin: 0.9em auto;
-  background: rgba(0, 0, 0, 0.24);
   color: #FFF;
   text-align: center;
+  text-shadow:
+     2px  2px 0 #777,
+    -2px -2px 0 #777,  
+     2px -2px 0 #777,
+    -2px  2px 0 #777,
+     2px  2px 0 #777;
 }
 
 
@@ -149,4 +154,75 @@
 
 .doniraj_volontiraj a:hover {
   background-color: rgba(255, 255, 255, 1);
+}
+
+.pocetna_za_mob {
+  display: none;
+}
+
+@media screen and (max-width: 795px) {
+  .pocetna_slideshow {
+    display: none;
+  }
+
+  .pocetna_za_mob {
+    display: block;
+  }
+
+  .home_small_mobile_layout {
+    background-image: url(/assets/footer/home_small_pic.png);
+    background-position: center center;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    color: #555555;
+    font-weight: bold;
+    font-family: "bitter";
+    text-align: center;
+    }
+
+   .home_small_mobile_layout a {
+    color: #555555;
+    text-decoration: underline;
+    background-color: rgba(255, 255,255, 1);
+   }
+
+   .small_layout_links {
+    width: 10.5em;
+    margin: 7vh auto;
+    font-size:1.3em;
+   }
+
+  .zelja_sudjelovanje {
+    margin: 0 auto;
+    font-size: 1.3em;
+    text-align: center;
+    color: #555;
+    font-weight: normal;
+    text-align:center;
+    line-height: 1.6em;
+  }
+  
+  .mojprvidom_mobile_layout {
+    font-size: 4em !important;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Bitter", sans-serif;
+    line-height:1em;
+    color: #FFF;
+    text-shadow: 1px 2px 5px #5d5d5d;
+    margin: 1em auto;
+    width: 95%;
+  }
+
+  .udruga_txt {
+    font-size: 1.5em !important;
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Bitter", sans-serif;
+    color: #555;
+    text-align: center;
+
+
+  }
 }

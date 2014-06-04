@@ -119,16 +119,6 @@
 		border-right: 1px solid #EDEAE4;
 	}
 
-	#contact {
-		width: 100%;
-		text-align: center;
-	}
-
-	#contact a {
-		text-align: center;
-		text-indent: 0;
-	}
-
   	.small_menu a {
 	  	text-align: left;
 	  	width: 100%;
@@ -175,10 +165,6 @@
 }
 
 @media only screen and (max-width : 320px) {
-	#contact a {
-		text-align: left;
-		text-indent: 15px;
-	}
 	.small_menu li {
 		display: block;
 		float: none;
