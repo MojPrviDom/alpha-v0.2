@@ -176,8 +176,6 @@
     background-size: cover;
     height: 100vh;
     color: #555555;
-    font-weight: bold;
-    font-family: "bitter";
     text-align: center;
     }
 
@@ -191,6 +189,7 @@
     width: 10.5em;
     margin: 7vh auto;
     font-size:1.3em;
+    font-family: "Bitter";
    }
 
   .zelja_sudjelovanje {
@@ -198,9 +197,10 @@
     font-size: 1.3em;
     text-align: center;
     color: #555;
-    font-weight: normal;
+    font-weight: normal ;
     text-align:center;
     line-height: 1.6em;
+    font-family: "Open sans";
   }
   
   .mojprvidom_mobile_layout {
@@ -219,7 +219,7 @@
     font-size: 1.5em !important;
     width: 90%;
     margin: 0 auto;
-    font-family: "Bitter", sans-serif;
+    font-family: "Open sans", sans-serif;
     color: #555;
     text-align: center;
 
