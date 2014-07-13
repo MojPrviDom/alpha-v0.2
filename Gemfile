@@ -49,9 +49,6 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 # Read more: https://github.com/mislav/will_paginate
 gem 'will_paginate', '~> 3.0.5'
 
-# Image upload. Read more https://github.com/thoughtbot/paperclip
-gem "paperclip", "~> 3.0"
-
 # Wysiwyg editor for active_admin. Read more: https://github.com/ejholmes/active_admin_editor
 gem 'active_admin_editor'
 

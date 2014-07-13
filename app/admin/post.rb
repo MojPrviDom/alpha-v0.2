@@ -3,7 +3,7 @@ ActiveAdmin.register Post do
   
   index do
     column :photo do |post|
-      image_tag(post.photo.url)
+      image_tag(post.photo)
     end
     column :title
     column :body do |post|
@@ -29,12 +29,8 @@ ActiveAdmin.register Post do
         end
         row :created_at
         row :updated_at
-        row :photo_file_name
-        row :photo_content_type
-        row :photo_file_size
-        row :photo_updated_at
         row :photo do
-          image_tag(post.photo.url)
+          image_tag(post.photo)
         end
       end
     end

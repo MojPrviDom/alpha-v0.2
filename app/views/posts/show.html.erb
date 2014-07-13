@@ -5,7 +5,7 @@
 <p id="notice"><%= notice %></p>
 
 <div class="show_outer">
-	<div class="show_image"><%= image_tag @post.photo.url %></div>
+	<div class="show_image"><%= image_tag @post.photo %></div>
 
 	<div class="show_content"><p><%= simple_format(@post.body,  { class: 'description' },  wrapper_tag: "div")%></p></div>
 

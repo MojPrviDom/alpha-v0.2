@@ -4,7 +4,7 @@
   <div class="post_outer">
     <% @posts.each do |post| %>
       <div class="post_inner">
-        <div class="post_image"><%= image_tag post.photo.url %></div>
+        <div class="post_image"><%= image_tag post.photo %></div>
         <div class="post_title_content">
           <div class="post_title"><%= post.title %></div>
           <div class="post_content">

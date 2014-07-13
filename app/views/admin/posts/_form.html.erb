@@ -3,11 +3,13 @@
     <%= f.inputs do %>   
 	    <%= f.input :title %>
 	    <%= f.input :body,  as: :html_editor %>
-	    <%= f.input  :photo, :as => :file %>
+	    <%= f.input :photo, :label => "Photo <br> &nbsp; <i> npr. http://slika.jpg </i>".html_safe %>
+      
+   
 
 	    <li class="input custom"> 
 	    	<%= f.label :Current_photo %>
-	    	<%= image_tag @post.photo.url %>
+    	 	<%= image_tag @post.photo %>
 	    </li>
   	<% end %>
     <%= f.actions %>
