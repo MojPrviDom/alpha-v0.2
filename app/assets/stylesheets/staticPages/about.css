@@ -81,7 +81,6 @@ font-family: "Bitter", sans-serif;
 
 .lijevi_textbox, .desni_textbox{
 	float: left;
-	text-align:justify;
 	width:46.143%;
 	height: auto;
 	margin: 0 auto 3em auto;
@@ -89,6 +88,7 @@ font-family: "Bitter", sans-serif;
 }
 .textbox {
 	font-size: 1.25em;
+	text-align:justify;
 }
 
 .lijevi_textbox {
